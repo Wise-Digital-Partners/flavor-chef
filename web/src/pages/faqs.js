@@ -130,7 +130,6 @@ const Page = ({ data }) => {
           <Accordion allowZeroExpanded={true}>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20">
               <div>
-                {" "}
                 {questionsAnswers.slice(0, 5).map((faq, i) => {
                   return (
                     <div key={i}>
