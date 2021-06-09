@@ -115,28 +115,25 @@ const Modal = () => {
             role="dialog"
             aria-modal="true"
           >
-            <div className="flex justify-end items-center py-4 md:py-6 px-6">
+            <div className="flex justify-end items-center py-12 md:pt-5 pb-4 px-6">
               <i
-                className="close fal fa-times text-xl text-black hover:text-primary-600 cursor-pointer transition-all duration-300 ease-linear"
+                className="close fal fa-times text-3xl text-gray-600 hover:text-primary-400 cursor-pointer transition-all duration-300 ease-linear"
                 data-modal-close
               ></i>
             </div>
 
-            <div className="py-7 px-6 md:px-20">
-              <header className="mb-8">
-                <p className="heading-three">Contact Us</p>
-                <p>
-                  For more information or questions regarding our technologies,
-                  please fill out the form below or contact us at{" "}
-                  <a
-                    href="mailto:info@bt-tech.com"
-                    className="underline hover:text-primary-400"
-                  >
-                    info@bt-tech.com
-                  </a>
-                  .
-                </p>
+            <div className="px-6 md:px-20">
+              <header className="mb-3 flex justify-between items-center">
+                <p className="heading-three mb-0">Contact Us</p>
+                <a href="tel:619-430-3981" className="font-medium no-underline">
+                  <i className="fas fa-phone-alt mr-1"></i> (619) 430-3981
+                </a>
               </header>
+              <p className="text-sm">
+                Whether you’re looking to book an event to remember or you’re
+                interested in learning more about our menus and options, we’d
+                love to hear from you.
+              </p>
 
               <Contact />
             </div>

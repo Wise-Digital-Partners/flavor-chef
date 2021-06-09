@@ -98,6 +98,9 @@ module.exports = {
         wider: "0.08em",
         widest: "0.16em",
       },
+      ringWidth: {
+        3: "3px",
+      },
       screens: {
         xs: "480px",
       },

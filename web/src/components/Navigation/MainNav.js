@@ -28,9 +28,6 @@ const StyledMainNav = styled.nav`
   }
   &[data-fixed="true"] {
     ${tw`fixed top-0 left-0 w-full bg-white z-20`}
-    @media (max-width: 1023px) {
-      ${({ offcanvasOpen }) => (offcanvasOpen ? tw`bg-gray-900` : null)};
-    }
     #navigation-desktop {
       > li {
         > a {

@@ -32,7 +32,7 @@ const StyledForm = styled.div`
   [type="week"],
   select,
   textarea {
-    ${tw`w-full bg-transparent px-4 py-3 border border-solid border-gray-200 rounded-sm focus:border-blue-300 focus:ring-blue-300`}
+    ${tw`text-sm w-full bg-transparent px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-50`}
   }
   select {
     &:invalid {
@@ -98,7 +98,7 @@ export default class Form extends Component {
 
           <div className="field">
             <label className="label" htmlFor="name">
-              Name
+              Name*
             </label>
             <input
               type="text"
@@ -109,23 +109,10 @@ export default class Form extends Component {
             />
           </div>
 
-          <div className="field">
-            <label className="label" htmlFor="company-name">
-              Company Name
-            </label>
-            <input
-              type="text"
-              name="company-name"
-              onChange={this.handleChange}
-              id="company-name"
-              required={true}
-            />
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-6 w-full">
             <div className="field">
               <label className="label" htmlFor="phone">
-                Phone Number
+                Phone Number*
               </label>
               <input
                 type="tel"
@@ -137,7 +124,7 @@ export default class Form extends Component {
             </div>
             <div className="field">
               <label className="label" htmlFor="email">
-                Email Address
+                Email Address*
               </label>
               <input
                 type="email"
@@ -149,31 +136,70 @@ export default class Form extends Component {
             </div>
           </div>
 
-          {/* <div className="field">
-            <label className="label" htmlFor="service-select">
-              What Can We Help You With?
+          <div className="field">
+            <label className="label" htmlFor="type-of-event">
+              Type of Event*
             </label>
             <select
-              name="service-select"
-              id="service-select"
+              name="type-of-event"
+              id="type-of-event"
               onBlur={this.handleChange}
               required={true}
             >
               <option value="" disabled defaultValue>
-                Select one...
+                Please Select One
               </option>
-              <option value="Estate Planning">Estate Planning</option>
-              <option value="Business Advising">Business Advising</option>
-              <option value="Long Term Care Planning">
-                Long Term Care Planning
-              </option>
+              <option value="Wedding">Wedding</option>
+              <option value="Social Event">Social Event</option>
+              <option value="Corporate Occasion">Corporate Occasion</option>
+              <option value="Food Truck">Food Truck Catering</option>
               <option value="Other">Other</option>
             </select>
-          </div> */}
+          </div>
+
+          <div className="field">
+            <label className="label" htmlFor="event-location">
+              Event Location
+            </label>
+            <input
+              type="text"
+              name="event-location"
+              onChange={this.handleChange}
+              id="event-location"
+              required={false}
+            />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-6 w-full">
+            <div className="field">
+              <label className="label" htmlFor="date-of-event">
+                Date of Event
+              </label>
+              <input
+                type="date"
+                name="date-of-event"
+                onChange={this.handleChange}
+                id="date-of-event"
+                required={false}
+              />
+            </div>
+            <div className="field">
+              <label className="label" htmlFor="number-of-guests">
+                Number of Guests
+              </label>
+              <input
+                type="number"
+                name="number-of-guests"
+                onChange={this.handleChange}
+                id="number-of-guests"
+                required={false}
+              />
+            </div>
+          </div>
 
           <div className="field">
             <label className="label" htmlFor="message">
-              Message (optional)
+              Anything else we should know?
             </label>
             <textarea
               className="textarea"
@@ -185,9 +211,7 @@ export default class Form extends Component {
             />
           </div>
 
-          <div className="mt-2">
-            <ButtonSolid as="button" type="submit" text="Submit" />
-          </div>
+          <ButtonSolid as="button" type="submit" text="Get Started" />
         </form>
       </StyledForm>
     );
