@@ -11,7 +11,6 @@ import Testimonials from "../components/Repeating/Testimonials";
 import AreasWeServe from "../components/Repeating/AreasWeServe";
 import CallToAction from "../components/Repeating/CTA";
 import ButtonSolid from "../components/Button/ButtonSolid";
-import Logo from "../images/global/Flavor Chef Icon.png";
 import DiamondIcon from "../images/global/diamond.svg";
 
 const Page = ({ data }) => {
@@ -308,7 +307,7 @@ const Page = ({ data }) => {
       <AreasWeServe className="mb-20 md:mb-32" headingLevel="h2" />
       <Testimonials className="mb-20 md:mb-32" headingLevel="h2" />
 
-      <section className="bg-white relative mb-20 md:mb-32">
+      <section className="bg-white relative mb-20 md:mb-24">
         <div className="container">
           <div className="grid md:grid-cols-3 gap-y-8 md:gap-x-6 lg:gap-x-10">
             <div className="relative group">
@@ -362,6 +361,20 @@ const Page = ({ data }) => {
                 <span className="absolute top-0 left-0 w-full h-full"></span>
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-16 md:mb-20">
+        <div class="container">
+          <div className="flex items-center justify-center">
+            <div className="bg-gray-400 bg-opacity-30 h-px w-full mr-6"></div>
+            <GatsbyImage
+              image={data.logo.childImageSharp.gatsbyImageData}
+              alt="Flavor Chef Catering logo"
+              className="min-w-[71px]"
+            />
+            <div className="bg-gray-400 bg-opacity-30 h-px w-full ml-6"></div>
           </div>
         </div>
       </section>
@@ -437,7 +450,7 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
-    logo: file(relativePath: { eq: "about-us/faqs.jpg" }) {
+    logo: file(relativePath: { eq: "global/Flavor Chef Icon.png" }) {
       childImageSharp {
         gatsbyImageData(
           layout: FIXED

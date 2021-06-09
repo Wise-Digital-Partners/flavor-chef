@@ -15,8 +15,8 @@ const Page = () => {
             business planning. These Terms and Conditions of Use (“Agreement”)
             apply to any use of and access to our website,
           </p>
-          <a href="https://www.bt-tech.com">
-            <p>https://www.bt-tech.com</p>
+          <a href="https://flavorchefcatering.com">
+            <p>https://flavorchefcatering.com</p>
           </a>
           <p>
             (“the website”) by you and/or your agents (“you”).  By using the
@@ -35,8 +35,8 @@ const Page = () => {
                 Technologies upon posting of the modified Agreement. Any such
                 modifications shall be effective immediately. You can view the
                 most recent version of these terms at any time at
-                https://www.bt-tech.com. Each use by you shall constitute and be
-                deemed your unconditional acceptance of this Agreement.
+                https://flavorchefcatering.com. Each use by you shall constitute
+                and be deemed your unconditional acceptance of this Agreement.
               </p>
             </li>
           </ul>
@@ -46,7 +46,7 @@ const Page = () => {
               <p>
                 Your visit to our website is also governed by our Privacy
                 Policy. Please review our Privacy Policy at
-                https://www.bt-tech.com. 
+                https://flavorchefcatering.com. 
               </p>
             </li>
           </ul>

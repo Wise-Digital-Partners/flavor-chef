@@ -10,7 +10,7 @@ import Burger from "./Burger";
 import OffCanvas from "../OffCanvas/OffCanvas";
 import ButtonSolid from "../Button/ButtonSolid";
 // import ButtonGhost from "../Button/ButtonGhost";
-// import Accordion from "./Accordion";
+import Accordion from "./Accordion";
 
 const StyledMainNav = styled.nav`
   ${({ headerStyle }) => (headerStyle === "hidden" ? tw`hidden` : null)};
@@ -31,7 +31,7 @@ const StyledMainNav = styled.nav`
     #navigation-desktop {
       > li {
         > a {
-          ${tw`text-gray-700`}
+          ${tw`text-gray-600`}
         }
       }
     }
@@ -51,7 +51,7 @@ const StyledMainNav = styled.nav`
         ${({ headerLinkColor }) =>
           headerLinkColor === "white" ? tw`text-white` : tw`text-gray-600`};
         /* ${({ megaMenuHovering }) =>
-          megaMenuHovering ? tw`text-gray-700` : null}; */
+          megaMenuHovering ? tw`text-gray-600` : null}; */
         ${tw`relative font-display text-base tracking-wider no-underline pb-8`}
         &:after {
           ${tw`content absolute bottom-0 right-0 left-0 mx-auto h-0.5	 w-0 bg-primary-400 transform -translate-y-6 transition-all duration-300 ease-linear`}
@@ -99,13 +99,9 @@ const StyledMainNav = styled.nav`
       }
     }
     .submenu {
-      ${tw`flex-col pl-6`}
       li {
-        &:not(:last-child) {
-          ${tw`mb-2`}
-        }
         a {
-          ${tw`text-white hover:text-primary-400`}
+          ${tw`font-display tracking-wider leading-5 text-gray-600 text-opacity-80 hover:text-opacity-100 no-underline`}
         }
       }
     }
@@ -266,7 +262,7 @@ const MainNav = ({
 
             <li>
               <AniLink fade to="/menus/">
-                Menus
+                Menu
               </AniLink>
             </li>
 
@@ -313,38 +309,125 @@ const MainNav = ({
               aria-controls="offcanvas-navigation"
             />
             <OffCanvas offcanvasOpen={offcanvasOpen} id="offcanvas-navigation">
-              <ul id="navigation-mobile" className="mb-16">
-                <li className="mb-8">
+              <ul id="navigation-mobile" className="mb-20">
+                <li className="mb-7">
+                  <Accordion title="Services" className="submenu-parent">
+                    <li>
+                      <AniLink
+                        fade
+                        to="/catering-services-san-diego/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        All Services
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/full-service-wedding-catering/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        Weddings
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/social-event-catering/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        Social Events
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/corporate-catering-san-diego/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        Corporate
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/mobile-food-truck-catering/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        Food Truck
+                      </AniLink>
+                    </li>
+                  </Accordion>
+                </li>
+                <li className="mb-7">
                   <AniLink
                     fade
-                    to="#"
+                    to="/menus/"
                     onKeyDown={clickHandler}
                     onClick={clickHandler}
                   >
-                    Services
+                    Menu
                   </AniLink>
                 </li>
-                <li className="mb-8">
-                  <AniLink
-                    fade
-                    to="#"
-                    onKeyDown={clickHandler}
-                    onClick={clickHandler}
-                  >
-                    Menus
-                  </AniLink>
-                </li>
-                <li className="mb-8">
-                  <AniLink
-                    fade
-                    to="#"
-                    onKeyDown={clickHandler}
-                    onClick={clickHandler}
-                  >
-                    About
-                  </AniLink>
+                <li className="mb-7">
+                  <Accordion title="About" className="submenu-parent">
+                    <li>
+                      <AniLink
+                        fade
+                        to="/about/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        Our Company
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/faqs/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        FAQs
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/careers/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        Careers
+                      </AniLink>
+                    </li>
+                  </Accordion>
                 </li>
               </ul>
+
+              <div className="flex justify-center space-x-3 mb-12">
+                <a
+                  href="https://www.facebook.com/flavorchefcatering/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 flex items-center justify-center rounded-full text-white md:text-white bg-primary-400 hover:bg-primary-600 no-underline"
+                >
+                  <i className="fab fa-facebook-f text-sm"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/flavorchefcatering/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 flex items-center justify-center rounded-full text-white md:text-white bg-primary-400 hover:bg-primary-600  no-underline"
+                >
+                  <i className="fab fa-instagram text-sm"></i>
+                </a>
+              </div>
 
               <div className="flex justify-center">
                 <ButtonSolid

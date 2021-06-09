@@ -10,12 +10,13 @@ const Page = () => {
           <h1>Privacy Policy</h1>
           <p>
             Protecting your private information is our priority. This Statement
-            of Privacy applies to https://www.bt-tech.com, and Breakthrough
-            Technologies and governs data collection and usage. For the purposes
-            of this Privacy Policy, unless otherwise noted, all references to
-            Flavor Chef include https://www.bt-tech.com. The Flavor Chef website
-            is a general informational site. By using the Flavor Chef website,
-            you consent to the data practices described in this statement. 
+            of Privacy applies to https://flavorchefcatering.com, and
+            Breakthrough Technologies and governs data collection and usage. For
+            the purposes of this Privacy Policy, unless otherwise noted, all
+            references to Flavor Chef include https://flavorchefcatering.com.
+            The Flavor Chef website is a general informational site. By using
+            the Flavor Chef website, you consent to the data practices described
+            in this statement. 
           </p>
           <h3>Collection of your Personal Information</h3>
           <p>

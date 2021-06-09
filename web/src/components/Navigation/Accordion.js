@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Accordion = ({ title, children }) => {
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("0px");
-  const [setIcon, setIconState] = useState("fal fa-plus");
+  // const [setIcon, setIconState] = useState("fal fa-plus");
 
   const content = useRef(null);
 
@@ -13,13 +13,13 @@ const Accordion = ({ title, children }) => {
     setHeightState(
       setActive === "active" ? "0px" : `${content.current.scrollHeight}px`
     );
-    setIconState(setActive === "active" ? "fal fa-plus" : "fal fa-minus");
+    // setIconState(setActive === "active" ? "fal fa-plus" : "fal fa-minus");
   }
 
   return (
     <ul className="submenu-parent overflow-hidden">
       <button className={`${setActive}`} onClick={toggleAccordion}>
-        <i className={`${setIcon} text-xl text-gray-600 mr-2`} />
+        {/* <i className={`${setIcon} text-xl text-gray-600 mr-2`} /> */}
         {title}
       </button>
       <div
@@ -27,7 +27,9 @@ const Accordion = ({ title, children }) => {
         className="overflow-auto transition-all duration-300 ease-linear"
         style={{ maxHeight: `${setHeight}` }}
       >
-        <div className="submenu pt-5 pb-0">{children}</div>
+        <div className="submenu pt-2 flex-col pl-0 space-y-2 pb-0">
+          {children}
+        </div>
       </div>
     </ul>
   );
