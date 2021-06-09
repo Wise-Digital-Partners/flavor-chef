@@ -46,7 +46,7 @@ const CTA = ({ heading, headingLevel, subtext }) => {
         textAlignment="text-center mx-auto"
         textMaxWidth="max-w-2xl"
       >
-        <HeadingTag className="text-mobile-7xl sm:text-7xl">
+        <HeadingTag className="text-7xl">
           {heading || "Bring Flavor To Your Event"}
         </HeadingTag>
         <p className="text-xl">

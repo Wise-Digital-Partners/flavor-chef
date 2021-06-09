@@ -13,7 +13,7 @@ const WhyUs = ({ className, headingLevel }) => {
   const data = useStaticQuery(graphql`
     {
       wallpaperBackground: file(
-        relativePath: { eq: "home/wallpaper-background.png" }
+        relativePath: { eq: "global/wallpaper-bg.jpg" }
       ) {
         childImageSharp {
           gatsbyImageData(

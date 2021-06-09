@@ -57,9 +57,9 @@ const Page = ({ data }) => {
         <ButtonSolid as="button" modal="modal-contact" text="Contact Us" />
       </HeroFullWidth>
 
-      <section className="bg-white pt-20 md:pt-32 mb-20 md:mb-32">
+      <section className="bg-white pt-12 md:pt-32 mb-20 md:mb-32">
         <div className="container">
-          <header className="max-w-3xl mx-auto text-center mb-20 md:mb-26">
+          <header className="max-w-3xl mx-auto text-center mb-12 md:mb-26">
             <h1>San Diego Full-Service Catering Company</h1>
             <p>
               Flavor Chef Catering mixes classical French technique with
@@ -74,7 +74,7 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <section className="bg-white relative pt-32 mb-20 md:mb-32">
+      <section className="bg-gray-50 relative pt-20 md:pt-32 pb-20 md:pb-32 mb-20 md:mb-32">
         <GatsbyImage
           image={data.wallpaperBackground.childImageSharp.gatsbyImageData}
           alt="Decorative Wallpaper"
@@ -86,7 +86,7 @@ const Page = ({ data }) => {
           </header>
 
           <ScrollWrapper className="grid lg:grid-cols-12 lg:gap-x-14">
-            <ScrollNavigation className="hidden lg:block lg:col-start-1 lg:col-span-3">
+            <ScrollNavigation className="hidden lg:block md:col-start-1 md:col-span-3">
               <li>
                 <AnchorLink to={url + "#weddings"} title="Weddings" stripHash />
               </li>
@@ -113,18 +113,18 @@ const Page = ({ data }) => {
               </li>
             </ScrollNavigation>
 
-            <ScrollContent className="lg:col-end-13 lg:col-span-9">
-              <div id="weddings" className="mb-16 md:mb-20">
+            <ScrollContent className="md:col-end-13 md:col-span-9">
+              <div id="weddings" className="mb-10 md:mb-20">
                 <GatsbyImage
                   image={data.weddings.childImageSharp.gatsbyImageData}
                   alt="Weddings"
-                  className="mb-10"
+                  className="mb-7 md:mb-10"
                 />
                 <div className="grid md:grid-cols-12 md:gap-x-16">
-                  <div className="lg:col-start-1 lg:col-span-4">
+                  <div className="md:col-start-1 md:col-span-4">
                     <h3>Weddings</h3>
                   </div>
-                  <div className="lg:col-end-13 lg:col-span-8">
+                  <div className="md:col-end-13 md:col-span-8">
                     <p>
                       For a special and carefree wedding day, you can trust
                       Flavor Chef to create a catering experience your guests
@@ -138,17 +138,17 @@ const Page = ({ data }) => {
                 </div>
               </div>
 
-              <div id="social-events" className="mb-16 md:mb-20">
+              <div id="social-events" className="mb-10 md:mb-20">
                 <GatsbyImage
                   image={data.socialEvents.childImageSharp.gatsbyImageData}
                   alt="Social Events"
-                  className="mb-10"
+                  className="mb-7 md:mb-10"
                 />
                 <div className="grid md:grid-cols-12 md:gap-x-16">
-                  <div className="lg:col-start-1 lg:col-span-4">
+                  <div className="md:col-start-1 md:col-span-4">
                     <h3>Social Events</h3>
                   </div>
-                  <div className="lg:col-end-13 lg:col-span-8">
+                  <div className="md:col-end-13 md:col-span-8">
                     <p>
                       We treat each and every detail with the utmost care, love,
                       and precision to ensure your event is nothing short of
@@ -163,19 +163,19 @@ const Page = ({ data }) => {
                 </div>
               </div>
 
-              <div id="corporate" className="mb-16 md:mb-20">
+              <div id="corporate" className="mb-10 md:mb-20">
                 <GatsbyImage
                   image={
                     data.corporateOccasions.childImageSharp.gatsbyImageData
                   }
                   alt="Corporate Occasions"
-                  className="mb-10"
+                  className="mb-7 md:mb-10"
                 />
                 <div className="grid md:grid-cols-12 md:gap-x-16">
-                  <div className="lg:col-start-1 lg:col-span-4">
+                  <div className="md:col-start-1 md:col-span-4">
                     <h3>Corporate Occasions</h3>
                   </div>
-                  <div className="lg:col-end-13 lg:col-span-8">
+                  <div className="md:col-end-13 md:col-span-8">
                     <p>
                       Our chefs can create memorable dishes for your corporate
                       function. We offer both on-site catering and delivery
@@ -189,17 +189,17 @@ const Page = ({ data }) => {
                 </div>
               </div>
 
-              <div id="flavor-mobile" className="mb-16 md:mb-20">
+              <div id="flavor-mobile">
                 <GatsbyImage
                   image={data.foodTruckCatering.childImageSharp.gatsbyImageData}
                   alt="Food Truck Catering"
-                  className="mb-10"
+                  className="mb-7 md:mb-10"
                 />
                 <div className="grid md:grid-cols-12 md:gap-x-16">
-                  <div className="lg:col-start-1 lg:col-span-4">
+                  <div className="md:col-start-1 md:col-span-4">
                     <h3>Food Truck Catering</h3>
                   </div>
-                  <div className="lg:col-end-13 lg:col-span-8">
+                  <div className="md:col-end-13 md:col-span-8">
                     <p>
                       Our Flavor Mobile delivers fresh and tasty eats – with a
                       fun and casual vibe – to your event. Our 'gastrotruck'
@@ -223,11 +223,15 @@ const Page = ({ data }) => {
 
       <section className="bg-white relative mb-20 md:mb-32">
         <div className="container">
-          <header className="mb-10 flex justify-between items-center">
+          <header className="mb-12 md:mb-10 md:flex md:justify-between md:items-center text-center md:text-left">
             <h2 className="mb-0">Our Menu Options</h2>
-            <ButtonWithIcon href="/menus/" text="Learn More" />
+            <ButtonWithIcon
+              href="/menus/"
+              text="Learn More"
+              className="hidden md:inline-flex"
+            />
           </header>
-          <div className="grid lg:grid-cols-3 gap-2">
+          <div className="grid md:grid-cols-3 gap-y-8 md:gap-2">
             <div className="relative group">
               <a href="# ">
                 <div className="overflow-hidden">
@@ -322,12 +326,12 @@ const Page = ({ data }) => {
 
       <section className="bg-white relative mb-20 md:mb-32">
         <div className="container">
-          <div className="grid lg:grid-cols-3 md:gap-x-12 gap-y-10 lg:items-center md:text-center">
+          <div className="grid md:grid-cols-3 md:gap-x-12 gap-y-16 text-center">
             <div>
               <img
                 src={data.ingredientFocused.publicURL}
                 alt="The Freshest Ingredients"
-                className="md:mx-auto mb-6"
+                className="mx-auto mb-5 md:mb-6"
               />
               <h3 className="heading-four">The Freshest Ingredients</h3>
               <p className="mb-0">
@@ -339,9 +343,8 @@ const Page = ({ data }) => {
             <div>
               <img
                 src={data.chefInspired.publicURL}
-                alt="Prepared by Chefs
-                "
-                className="md:mx-auto mb-6"
+                alt="Prepared by Chefs"
+                className="mx-auto mb-5 md:mb-6"
               />
               <h3 className="heading-four">Prepared by Chefs</h3>
               <p className="mb-0">
@@ -353,7 +356,7 @@ const Page = ({ data }) => {
               <img
                 src={data.creativeInnovative.publicURL}
                 alt="Innovative Concepts"
-                className="md:mx-auto mb-6"
+                className="mx-auto mb-5 md:mb-6"
               />
               <h3 className="heading-four">Innovative Concepts</h3>
               <p className="mb-0">
@@ -393,9 +396,7 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
-    wallpaperBackground: file(
-      relativePath: { eq: "home/wallpaper-background.png" }
-    ) {
+    wallpaperBackground: file(relativePath: { eq: "global/wallpaper-bg.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }

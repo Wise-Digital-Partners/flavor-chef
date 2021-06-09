@@ -66,7 +66,7 @@ const WhyUs = ({ className, headingLevel }) => {
           textMaxWidth="max-w-3xl"
           textMargin="mb-12 md:mb-16"
         />
-        <div className="grid grid-cols-2 gap-4 md:gap-2">
+        <div className="grid md:grid-cols-2 gap-y-4 md:gap-2">
           <div className="relative group">
             <a href="/downtown-san-diego-catering/">
               <div className="overflow-hidden">
