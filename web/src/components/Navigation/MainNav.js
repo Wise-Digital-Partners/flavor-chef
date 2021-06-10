@@ -143,22 +143,12 @@ const MainNav = ({
     {
       darkLogo: file(relativePath: { eq: "global/Logo - Dark.png" }) {
         childImageSharp {
-          gatsbyImageData(
-            layout: FIXED
-            width: 301
-            placeholder: NONE
-            quality: 100
-          )
+          gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE, quality: 100)
         }
       }
       lightLogo: file(relativePath: { eq: "global/Logo - Light.png" }) {
         childImageSharp {
-          gatsbyImageData(
-            layout: FIXED
-            width: 301
-            placeholder: NONE
-            quality: 100
-          )
+          gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE, quality: 100)
         }
       }
     }
@@ -191,7 +181,7 @@ const MainNav = ({
   return (
     <StyledMainNav
       id="main-navigation"
-      className={`py-1 md:py-1 w-full transition duration-300 ease-linear ${className}`}
+      className={`py-2.5 md:py-1 w-full transition duration-300 ease-linear ${className}`}
       role="navigation"
       aria-label="main-navigation"
       data-fixed={scrolled}
@@ -202,7 +192,16 @@ const MainNav = ({
       offcanvasOpen={offcanvasOpen}
     >
       <div className="container flex justify-between items-center">
-        <div className="flex-auto flex items-center">
+        <div className="flex-auto flex items-center md:hidden">
+          <a href="tel:619-430-3981">
+            <i
+              className={`fas fa-phone-alt text-lg ${
+                headerStyle === "overlap" ? "text-white" : "text-black"
+              } ${offcanvasOpen ? "text-black" : null}`}
+            ></i>
+          </a>
+        </div>
+        <div className="flex-auto flex items-center justify-center md:justify-start">
           <AniLink fade to="/">
             <div className="logo-initial">
               <GatsbyImage

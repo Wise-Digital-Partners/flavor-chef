@@ -107,7 +107,9 @@ const WhyUs = ({ className, headingLevel }) => {
 
   return (
     <section
-      className={`relative bg-gray-50 py-20 md:py-32 ${className || ""}`}
+      className={`relative overflow-hidden bg-gray-50 py-20 md:py-32 ${
+        className || ""
+      }`}
     >
       <GatsbyImage
         image={data.wallpaperBackground.childImageSharp.gatsbyImageData}

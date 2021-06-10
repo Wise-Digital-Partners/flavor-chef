@@ -70,7 +70,7 @@ const Page = ({ data }) => {
                 menu options and get an idea of what you’d like to serve.
               </p>
               <div className="flex space-x-6">
-                <ButtonSolid href="# " text="View Menu" />
+                <ButtonSolid href="/wedding-catering-menu/" text="View Menu" />
                 <a href="# " className="flex items-center no-underline">
                   <img
                     src={DownloadIcon}

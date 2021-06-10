@@ -70,7 +70,7 @@ const Page = ({ data }) => {
                 you’d like the Flavor Mobile chefs to make for you.
               </p>
               <div className="flex space-x-6">
-                <ButtonSolid href="# " text="View Menu" />
+                <ButtonSolid href="/flavor-mobile-menu/" text="View Menu" />
                 <a href="# " className="flex items-center no-underline">
                   <img
                     src={DownloadIcon}

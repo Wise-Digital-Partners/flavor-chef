@@ -24,7 +24,7 @@ const StyledSlider = styled.div`
     ${tw``}
   }
   .slick-dots {
-    ${tw`relative! flex! justify-center space-x-2 mt-12`}
+    ${tw`relative! md:absolute! flex! justify-center space-x-2 mt-6 md:mt-0 md:-bottom-14! z-10`}
     li {
       ${tw`mr-0 flex items-center justify-center`}
       ${tw`h-2.5 w-2.5`}

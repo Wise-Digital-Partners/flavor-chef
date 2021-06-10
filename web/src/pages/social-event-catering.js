@@ -72,7 +72,7 @@ const Page = ({ data }) => {
           </header>
           <div className="grid lg:grid-cols-3 gap-2">
             <div className="relative group">
-              <a href="# ">
+              <a href="/dinner-catering-menu/">
                 <div className="overflow-hidden">
                   <GatsbyImage
                     image={
@@ -88,7 +88,7 @@ const Page = ({ data }) => {
               </a>
             </div>
             <div className="relative group">
-              <a href="# ">
+              <a href="/appetizer-catering-menu/">
                 <div className="overflow-hidden">
                   <GatsbyImage
                     image={data.menuSmallBites.childImageSharp.gatsbyImageData}
@@ -102,7 +102,7 @@ const Page = ({ data }) => {
               </a>
             </div>
             <div className="relative group">
-              <a href="# ">
+              <a href="/dessert-catering-menu/">
                 <div className="overflow-hidden">
                   <GatsbyImage
                     image={data.menuSweetTreats.childImageSharp.gatsbyImageData}

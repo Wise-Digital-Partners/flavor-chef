@@ -233,7 +233,7 @@ const Page = ({ data }) => {
           </header>
           <div className="grid md:grid-cols-3 gap-y-8 md:gap-2">
             <div className="relative group">
-              <a href="# ">
+              <a href="/wedding-catering-menu/">
                 <div className="overflow-hidden">
                   <GatsbyImage
                     image={data.menuWeddings.childImageSharp.gatsbyImageData}
@@ -247,7 +247,7 @@ const Page = ({ data }) => {
               </a>
             </div>
             <div className="relative group">
-              <a href="# ">
+              <a href="/dinner-catering-menu/">
                 <div className="overflow-hidden">
                   <GatsbyImage
                     image={
@@ -263,7 +263,7 @@ const Page = ({ data }) => {
               </a>
             </div>
             <div className="relative group">
-              <a href="# ">
+              <a href="/appetizer-catering-menu/">
                 <div className="overflow-hidden">
                   <GatsbyImage
                     image={data.menuSmallBites.childImageSharp.gatsbyImageData}
@@ -277,7 +277,7 @@ const Page = ({ data }) => {
               </a>
             </div>
             <div className="relative group">
-              <a href="# ">
+              <a href="/dessert-catering-menu/">
                 <div className="overflow-hidden">
                   <GatsbyImage
                     image={data.menuSweetTreats.childImageSharp.gatsbyImageData}
@@ -291,7 +291,7 @@ const Page = ({ data }) => {
               </a>
             </div>
             <div className="relative group">
-              <a href="# ">
+              <a href="/boxed-lunch-catering-menu/">
                 <div className="overflow-hidden">
                   <GatsbyImage
                     image={data.menuBoxedLunch.childImageSharp.gatsbyImageData}
@@ -305,7 +305,7 @@ const Page = ({ data }) => {
               </a>
             </div>
             <div className="relative group">
-              <a href="# ">
+              <a href="/flavor-mobile-menu/">
                 <div className="overflow-hidden">
                   <GatsbyImage
                     image={

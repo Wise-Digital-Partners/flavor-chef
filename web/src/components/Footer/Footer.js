@@ -25,18 +25,98 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-primary-900 pt-14 md:pt-22 pb-6">
+      <footer className="bg-primary-900 pt-20 lg:pt-22 pb-10 lg:pb-6 text-center md:text-left">
         <div className="container">
-          <div className="flex flex-col md:flex-row md:justify-between space-y-14 md:space-y-0 mb-6 md:mb-28">
-            <div className="md:col-start-1 md:col-span-4">
+          <div className="flex flex-col lg:flex-row lg:justify-between space-y-16 lg:space-y-0 lg:space-x-6 mb-20 lg:mb-28">
+            <div>
               <AniLink fade to="/">
                 <img
                   src={data.logo.publicURL}
                   alt="Flavor Chef Logo"
                   width="258"
-                  className="mb-8 md:mb-0 mx-auto md:mx-0"
+                  className="mx-auto lg:mx-0"
                 />
               </AniLink>
+            </div>
+
+            <div>
+              <div className="flex flex-col lg:flex-row justify-center lg:justify-between space-y-16 lg:space-y-0 lg:space-x-18">
+                <div>
+                  <div className="font-display text-white tracking-wider leading-5 mb-3 lg:mb-4">
+                    Address
+                  </div>
+
+                  <a
+                    href="https://goo.gl/maps/FTkmRukcHTbWY7YW7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm no-underline font-normal text-white hover:text-white text-opacity-80 hover:text-opacity-100"
+                  >
+                    <address className="not-italic">
+                      1175 Park Center Dr Vista,
+                      <br /> CA 92081
+                    </address>
+                  </a>
+                </div>
+                <div>
+                  <div className="font-display text-white tracking-wider leading-5 mb-3 lg:mb-4">
+                    Contact
+                  </div>
+
+                  <ul>
+                    <li>
+                      <a
+                        href="tel:619-430-3981"
+                        className="text-sm no-underline font-normal text-white hover:text-white text-opacity-80 hover:text-opacity-100"
+                      >
+                        (619) 430-3981
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:flavorchefcatering@gmail.com"
+                        className="text-sm no-underline font-normal text-white hover:text-white text-opacity-80 hover:text-opacity-100"
+                      >
+                        flavorchefcatering@gmail.com
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="font-display text-white tracking-wider leading-5 mb-3 lg:mb-4">
+                    Contact
+                  </div>
+                  <ul>
+                    <li>
+                      <AniLink
+                        fde
+                        to="/about/"
+                        className="text-sm no-underline font-normal text-white hover:text-white text-opacity-80 hover:text-opacity-100"
+                      >
+                        About Us
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fde
+                        to="/faqs/"
+                        className="text-sm no-underline font-normal text-white hover:text-white text-opacity-80 hover:text-opacity-100"
+                      >
+                        FAQs
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fde
+                        to="/careers/"
+                        className="text-sm no-underline font-normal text-white hover:text-white text-opacity-80 hover:text-opacity-100"
+                      >
+                        Careers
+                      </AniLink>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -44,32 +124,37 @@ const Footer = () => {
         <div className="border-t border-white border-opacity-40"></div>
 
         <div className="container">
-          <div className="flex flex-wrap md:flex-nowrap flex-col md:flex-row justify-items-center md:justify-between items-center pt-4">
-            <div className="md:flex md:items-center order-2 md:order-1">
-              <ul className="flex items-center flex-row flex-wrap space-x-2 md:space-x-4 justify-center md:justify-start">
-                <li className="text-sm text-white text-opacity-50">
+          <div className="flex flex-wrap lg:flex-nowrap flex-col lg:flex-row justify-items-center lg:justify-between items-center pt-10 lg:pt-4">
+            <div className="lg:flex lg:items-center order-2 lg:order-1">
+              <ul className="flex items-center flex-row flex-wrap lg:space-x-4 justify-center lg:justify-start">
+                <li className="text-sm text-white text-opacity-50 w-full lg:w-auto">
                   © {getYear()} Flavor Chef Catering
                 </li>
+                <div className="flex lg:space-x-4 justify-center lg:justify-start w-full lg:w-auto">
+                  <li className="text-sm">
+                    <a
+                      href="/terms-conditions/"
+                      className="font-normal text-white hover:text-white text-opacity-50 hover:text-opacity-100 no-underline"
+                    >
+                      Terms & Conditions
+                    </a>
+                  </li>
+                  <div className="text-sm text-white text-opacity-50 mx-1 lg:hidden">
+                    |
+                  </div>
+                  <li className="text-sm">
+                    <AniLink
+                      fade
+                      to="/privacy-policy/"
+                      className="font-normal text-white hover:text-white text-opacity-50 hover:text-opacity-100 no-underline"
+                    >
+                      Privacy Policy
+                    </AniLink>
+                  </li>
+                </div>
                 <li className="text-sm">
-                  <a
-                    href="/terms-conditions/"
-                    className="text-white hover:text-white text-opacity-50 hover:text-opacity-100 no-underline"
-                  >
-                    Terms & Conditions
-                  </a>
-                </li>
-                <li className="text-sm">
-                  <AniLink
-                    fade
-                    to="/privacy-policy/"
-                    className="text-white hover:text-white text-opacity-50 hover:text-opacity-100 no-underline"
-                  >
-                    Privacy Policy
-                  </AniLink>
-                </li>
-                <li className="text-sm mb-3 md:mb-0 md:mr-6">
                   <button
-                    className="relative focus:outline-none text-white hover:text-white text-opacity-50 hover:text-opacity-100 no-underline"
+                    className="relative focus:outline-none font-normal text-white hover:text-white text-opacity-50 hover:text-opacity-100 no-underline"
                     onKeyDown={citiesClickHandler}
                     onClick={citiesClickHandler}
                   >
@@ -127,11 +212,14 @@ const Footer = () => {
                     </ul>
                   </button>
                 </li>
+                <div className="text-sm text-white text-opacity-50 mx-1 lg:hidden">
+                  |
+                </div>
                 <li className="text-sm text-white text-opacity-50">
                   <div className="flex items-center justify-center">
                     Powered by
                     <a
-                      className="group text-white hover:text-white hover:text-white text-opacity-50 hover:text-opacity-100 font-bold ml-1 no-underline"
+                      className="group text-white hover:font-normal text-white hover:text-white text-opacity-50 hover:text-opacity-100 font-bold ml-1 no-underline"
                       href="https://www.wisedigitalpartners.com/affordable-web-design/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -143,12 +231,12 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="flex justify-center md:justify-items-start space-x-3 order-1 md:order-2 mb-36 md:mb-0">
+            <div className="flex justify-center lg:justify-items-start space-x-3 order-1 lg:order-2 mb-10 lg:mb-0">
               <a
                 href="https://www.facebook.com/flavorchefcatering/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 flex items-center justify-center rounded-full text-primary-600 md:text-white hover:text-primary-600 bg-primary-50 md:bg-opacity-20 hover:bg-opacity-100 no-underline"
+                className="w-8 h-8 flex items-center justify-center rounded-full text-white hover:text-primary-600 bg-primary-50 bg-opacity-20 hover:bg-opacity-100 no-underline"
               >
                 <i className="fab fa-facebook-f text-sm"></i>
               </a>
@@ -156,7 +244,7 @@ const Footer = () => {
                 href="https://www.instagram.com/flavorchefcatering/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 flex items-center justify-center rounded-full text-primary-600 md:text-white hover:text-primary-600 bg-primary-50 md:bg-opacity-20 hover:bg-opacity-100 no-underline"
+                className="w-8 h-8 flex items-center justify-center rounded-full text-white hover:text-primary-600 bg-primary-50 bg-opacity-20 hover:bg-opacity-100 no-underline"
               >
                 <i className="fab fa-instagram text-sm"></i>
               </a>

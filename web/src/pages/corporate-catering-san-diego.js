@@ -71,7 +71,10 @@ const Page = ({ data }) => {
                 affair like an awards gala, we have menus for every occasion.
               </p>
               <div className="flex space-x-6">
-                <ButtonSolid href="# " text="View Menu" />
+                <ButtonSolid
+                  href="/boxed-lunch-catering-menu/"
+                  text="View Menu"
+                />
                 <a href="# " className="flex items-center no-underline">
                   <img
                     src={DownloadIcon}

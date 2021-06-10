@@ -26,7 +26,7 @@ const Page = ({ data }) => {
       heading: "Wedding Menu",
       text:
         "20-30 words Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor purus amet.",
-      viewMenu: "",
+      viewMenu: "/wedding-catering-menu/",
       downloadMenu: "",
     },
     {

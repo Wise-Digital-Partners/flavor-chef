@@ -9,6 +9,7 @@ import SearchEngineOptimization from "../components/SEO";
 import ReviewBadges from "../components/Repeating/ReviewBadges";
 import Testimonials from "../components/Repeating/Testimonials";
 import AreasWeServe from "../components/Repeating/AreasWeServe";
+import Divider from "../components/Repeating/Divider";
 import CallToAction from "../components/Repeating/CTA";
 import ButtonSolid from "../components/Button/ButtonSolid";
 import DiamondIcon from "../images/global/diamond.svg";
@@ -157,7 +158,7 @@ const Page = ({ data }) => {
             />
             <div className="hidden md:block w-px bg-gray-600 bg-opacity-5 h-full absolute left-0 right-0 mx-auto"></div>
             <div className="relative grid md:grid-cols-2 md:gap-x-24 gap-y-6 items-center mb-12 md:mb-20">
-              {/* <span class="bg-gray-50 h-1/2 w-px absolute left-0 right-0 top-0 m-auto"></span> */}
+              {/* <span className="bg-gray-50 h-1/2 w-px absolute left-0 right-0 top-0 m-auto"></span> */}
               <motion.div
                 ref={refStep1}
                 animate={animationStep1}
@@ -365,19 +366,7 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <section class="mb-16 md:mb-20">
-        <div class="container">
-          <div className="flex items-center justify-center">
-            <div className="bg-gray-400 bg-opacity-30 h-px w-full mr-6"></div>
-            <GatsbyImage
-              image={data.logo.childImageSharp.gatsbyImageData}
-              alt="Flavor Chef Catering logo"
-              className="min-w-[71px]"
-            />
-            <div className="bg-gray-400 bg-opacity-30 h-px w-full ml-6"></div>
-          </div>
-        </div>
-      </section>
+      <Divider />
 
       <CallToAction headingLevel="h2" />
     </Layout>
@@ -448,16 +437,6 @@ export const query = graphql`
     faqs: file(relativePath: { eq: "about-us/faqs.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
-      }
-    }
-    logo: file(relativePath: { eq: "global/Flavor Chef Icon.png" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          width: 71
-          placeholder: BLURRED
-          quality: 100
-        )
       }
     }
   }
