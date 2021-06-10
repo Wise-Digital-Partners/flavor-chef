@@ -132,6 +132,7 @@ const Page = ({ data }) => {
             <div className="order-1 md:order-2">
               <GatsbyImage
                 image={data.heroDesktop.childImageSharp.gatsbyImageData}
+                alt="About Our Chefs"
               />
             </div>
           </div>
@@ -332,7 +333,7 @@ const Page = ({ data }) => {
               <div className="overflow-hidden mb-4">
                 <GatsbyImage
                   image={data.menus.childImageSharp.gatsbyImageData}
-                  alt="Services"
+                  alt="Menus"
                   className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                 />
               </div>
@@ -349,7 +350,7 @@ const Page = ({ data }) => {
               <div className="overflow-hidden mb-4">
                 <GatsbyImage
                   image={data.faqs.childImageSharp.gatsbyImageData}
-                  alt="Services"
+                  alt="FAQs"
                   className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                 />
               </div>

@@ -8,7 +8,6 @@ import SearchEngineOptimization from "../components/SEO";
 import HeroFullWidth from "../components/Hero/HeroFullWidth";
 import CallToAction from "../components/Repeating/CTA";
 import ButtonSolid from "../components/Button/ButtonSolid";
-import DownloadIcon from "../images/global/Download.svg";
 
 const Page = ({ data }) => {
   const heroFullWidthImages = [
@@ -27,7 +26,7 @@ const Page = ({ data }) => {
       text:
         "20-30 words Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor purus amet.",
       viewMenu: "/wedding-catering-menu/",
-      downloadMenu: "",
+      downloadMenu: data.weddingPDF.publicURL,
     },
     {
       id: "summer-dinner-party",
@@ -36,7 +35,7 @@ const Page = ({ data }) => {
       text:
         "20-30 words Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor purus amet.",
       viewMenu: "",
-      downloadMenu: "",
+      downloadMenu: data.summerDinnerPartyPDF.publicURL,
     },
     {
       id: "small-bites",
@@ -63,7 +62,7 @@ const Page = ({ data }) => {
       text:
         "20-30 words Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor purus amet.",
       viewMenu: "",
-      downloadMenu: "",
+      downloadMenu: data.boxedMealsPDF.publicURL,
     },
     {
       id: "flavor-mobile",
@@ -72,7 +71,7 @@ const Page = ({ data }) => {
       text:
         "20-30 words Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor purus amet.",
       viewMenu: "",
-      downloadMenu: "",
+      downloadMenu: data.flavorMobilePDF.publicURL,
     },
   ];
 
@@ -164,10 +163,12 @@ const Page = ({ data }) => {
                       <ButtonSolid href={menu.viewMenu} text="View Menu" />
                       <a
                         href={menu.downloadMenu}
+                        target="_blank"
+                        rel="noreferrer"
                         className="flex items-center no-underline"
                       >
                         <img
-                          src={DownloadIcon}
+                          src={data.downloadIcon.publicURL}
                           alt="Download icon"
                           className="font-medium mr-2"
                         />{" "}
@@ -354,6 +355,24 @@ export const query = graphql`
         )
       }
     }
+    downloadIcon: file(relativePath: { eq: "global/Download.svg" }) {
+      publicURL
+    }
+    weddingPDF: file(relativePath: { eq: "wedding-menu.pdf" }) {
+      publicURL
+    }
+    summerDinnerPartyPDF: file(
+      relativePath: { eq: "summer-dinner-party-menu.pdf" }
+    ) {
+      publicURL
+    }
+    boxedMealsPDF: file(relativePath: { eq: "boxed-meals-menu.pdf" }) {
+      publicURL
+    }
+    flavorMobilePDF: file(relativePath: { eq: "flavor-mobile-menu.pdf" }) {
+      publicURL
+    }
   }
 `;
+
 export default Page;

@@ -71,7 +71,12 @@ const Page = ({ data }) => {
               </p>
               <div className="flex space-x-6">
                 <ButtonSolid href="/flavor-mobile-menu/" text="View Menu" />
-                <a href="# " className="flex items-center no-underline">
+                <a
+                  href={data.flavorMobilePDF.publicURL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center no-underline"
+                >
                   <img
                     src={DownloadIcon}
                     alt="Download icon"
@@ -251,6 +256,9 @@ export const query = graphql`
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
+    }
+    flavorMobilePDF: file(relativePath: { eq: "flavor-mobile-menu.pdf" }) {
+      publicURL
     }
   }
 `;

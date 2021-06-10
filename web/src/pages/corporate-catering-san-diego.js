@@ -75,7 +75,12 @@ const Page = ({ data }) => {
                   href="/boxed-lunch-catering-menu/"
                   text="View Menu"
                 />
-                <a href="# " className="flex items-center no-underline">
+                <a
+                  href={data.boxedMealsPDF.publicURL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center no-underline"
+                >
                   <img
                     src={DownloadIcon}
                     alt="Download icon"
@@ -177,7 +182,10 @@ const Page = ({ data }) => {
                   <span>Board Meetings & Shareholder Meetings</span>
                 </li>
               </ul>
-              <ButtonWithIcon href="# " text="Browser Offerings" />
+              <ButtonWithIcon
+                href="/boxed-lunch-catering-menu/"
+                text="Browser Offerings"
+              />
             </div>
             <div className="order-1 md:order-2">
               <GatsbyImage
@@ -319,6 +327,9 @@ export const query = graphql`
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
+    }
+    boxedMealsPDF: file(relativePath: { eq: "boxed-meals-menu.pdf" }) {
+      publicURL
     }
   }
 `;

@@ -89,7 +89,7 @@ const Footer = () => {
                   <ul>
                     <li>
                       <AniLink
-                        fde
+                        fade
                         to="/about/"
                         className="text-sm no-underline font-normal text-white hover:text-white text-opacity-80 hover:text-opacity-100"
                       >
@@ -98,7 +98,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <AniLink
-                        fde
+                        fade
                         to="/faqs/"
                         className="text-sm no-underline font-normal text-white hover:text-white text-opacity-80 hover:text-opacity-100"
                       >
@@ -107,7 +107,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <AniLink
-                        fde
+                        fade
                         to="/careers/"
                         className="text-sm no-underline font-normal text-white hover:text-white text-opacity-80 hover:text-opacity-100"
                       >

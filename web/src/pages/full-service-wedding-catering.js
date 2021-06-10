@@ -71,7 +71,12 @@ const Page = ({ data }) => {
               </p>
               <div className="flex space-x-6">
                 <ButtonSolid href="/wedding-catering-menu/" text="View Menu" />
-                <a href="# " className="flex items-center no-underline">
+                <a
+                  href={data.weddingPDF.publicURL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center no-underline"
+                >
                   <img
                     src={DownloadIcon}
                     alt="Download icon"
@@ -169,7 +174,10 @@ const Page = ({ data }) => {
                   <span>Anniversaries</span>
                 </li>
               </ul>
-              <ButtonWithIcon href="# " text="Browser Offerings" />
+              <ButtonWithIcon
+                href="/wedding-catering-menu/"
+                text="Browser Offerings"
+              />
             </div>
             <div className="order-1 md:order-2">
               <GatsbyImage
@@ -371,6 +379,9 @@ export const query = graphql`
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
+    }
+    weddingPDF: file(relativePath: { eq: "wedding-menu.pdf" }) {
+      publicURL
     }
   }
 `;

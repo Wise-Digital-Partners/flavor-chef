@@ -59,6 +59,7 @@ const CTA = ({ heading, headingLevel, subtext }) => {
 
       <GatsbyImage
         image={data.backgroundDesktop.childImageSharp.gatsbyImageData}
+        alt={heading || "Bring Flavor To Your Event"}
       />
     </>
   );

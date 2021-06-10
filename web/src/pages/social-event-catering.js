@@ -217,7 +217,10 @@ const Page = ({ data }) => {
                   <span>Quinceañeras</span>
                 </li>
               </ul>
-              <ButtonWithIcon href="# " text="Browser Offerings" />
+              <ButtonWithIcon
+                href="/flavor-mobile-menu/"
+                text="Browser Offerings"
+              />
             </div>
             <div className="order-1 md:order-2">
               <GatsbyImage

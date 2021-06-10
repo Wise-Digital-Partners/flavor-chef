@@ -31,7 +31,7 @@ const Page = ({ data }) => {
 
           <GatsbyImage
             image={data.careers.childImageSharp.gatsbyImageData}
-            alt="Careers"
+            alt="Careers at Flavor Chef Catering"
             className="mb-8"
           />
         </div>
