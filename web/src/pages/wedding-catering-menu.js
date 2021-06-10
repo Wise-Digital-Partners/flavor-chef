@@ -423,7 +423,9 @@ const Page = ({ data }) => {
           className={`bg-black bg-opacity-50 h-full w-full absolute transition-all duration-300 ease-linear z-10 md:hidden ${setOverlay}`}
         ></div>
         <div
-          className="bg-primary-900 md:bg-transparent flex justify-between text-white py-3 md:py-0 px-5 md:px-4 md:px-0 md:mt-12 mb-16 md:mb-12 sticky md:relative top-[61px] md:top-0 cursor-pointer md:cursor-auto z-20"
+          className="bg-primary-900 md:bg-transparent flex justify-between text-white py-3 md:py-0 px-5 md:px-4 md:px-0 md:mt-12 mb-16 md:mb-24 sticky md:relative top-[61px] md:top-0 cursor-pointer md:cursor-auto z-20"
+          role="button"
+          tabIndex={0}
           onKeyDown={clickHandler}
           onClick={clickHandler}
         >
@@ -483,7 +485,7 @@ const Page = ({ data }) => {
           </nav>
         </div>
 
-        <section id="appetizers" className="mb-16 md:mb-20">
+        <section id="appetizers" className="mb-12 md:mb-10">
           <div className="container">
             <header className="mb-12">
               <h2>Appetizers</h2>
@@ -551,7 +553,7 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="buffet" className="mb-16 md:mb-20">
+        <section id="buffet" className="mb-12 md:mb-10">
           <div className="container">
             <header className="mb-12">
               <h2>Buffet</h2>
@@ -632,7 +634,7 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="plated" className="mb-16 md:mb-20">
+        <section id="plated" className="mb-12 md:mb-10">
           <div className="container">
             <header className="mb-12">
               <h2>Plated</h2>
