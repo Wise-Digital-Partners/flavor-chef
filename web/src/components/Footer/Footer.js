@@ -84,7 +84,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <div className="font-display text-white tracking-wider leading-5 mb-3 lg:mb-4">
-                    Contact
+                    Company
                   </div>
                   <ul>
                     <li>
@@ -112,6 +112,15 @@ const Footer = () => {
                         className="text-sm no-underline font-normal text-white hover:text-white text-opacity-80 hover:text-opacity-100"
                       >
                         Careers
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/blog/"
+                        className="text-sm no-underline font-normal text-white hover:text-white text-opacity-80 hover:text-opacity-100"
+                      >
+                        Blog
                       </AniLink>
                     </li>
                   </ul>

@@ -1,12 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-// import { BgImage } from "gbimage-bridge";
-// import { motion } from "framer-motion";
 
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
-import ButtonSolid from "../components/Button/ButtonSolid";
 
 const Page = ({ data }) => {
   return (
@@ -48,11 +45,6 @@ const Page = ({ data }) => {
                 flavorchefcatering@gmail.com
               </a>
             </p>
-            <ButtonSolid
-              as="button"
-              modal="modal-contact"
-              text="Get in Touch"
-            />
           </header>
         </div>
       </section>

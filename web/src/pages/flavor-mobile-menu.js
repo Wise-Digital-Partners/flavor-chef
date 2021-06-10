@@ -400,8 +400,8 @@ const Page = ({ data }) => {
       headerHasBorder={true}
     >
       <SearchEngineOptimization
-        title="Wedding Catering Menu | Flavor Chef Catering"
-        description="Add an extra special touch to your big day with fresh dishes from Flavor Chef Catering. Our wedding catering menu features locally sourced ingredients."
+        title="Flavor Mobile Menu | Food Truck Catering | Flavor Chef"
+        description="Let us come to you. Hire the Flavor Chef Catering 'Flavor Mobile' for your next event. Our mobile food truck catering brings fresh dishes straight to you."
         // openGraphImage={data.openGraphImage.publicURL}
         // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
@@ -415,7 +415,7 @@ const Page = ({ data }) => {
         <div className="text-white font-display text-xl tracking-wider leading-5 mb-4">
           Menu
         </div>
-        <h1 className="text-white mb-0">Wedding</h1>
+        <h1 className="text-white mb-0">Flavor Mobile</h1>
       </HeroFullWidth>
 
       <div className="relative">
@@ -451,32 +451,72 @@ const Page = ({ data }) => {
             >
               <li>
                 <AnchorLink
-                  to={url + "#appetizers"}
-                  title="Appetizers"
+                  to={url + "#burger"}
+                  title="Burger"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
               </li>
               <li>
                 <AnchorLink
-                  to={url + "#buffet"}
-                  title="Buffet"
+                  to={url + "#bbq"}
+                  title="BBQ"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
               </li>
               <li>
                 <AnchorLink
-                  to={url + "#plated"}
-                  title="Plated"
+                  to={url + "#kona"}
+                  title="Kona"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
               </li>
               <li>
                 <AnchorLink
-                  to={url + "#family-style"}
-                  title="Family Style"
+                  to={url + "#south-of-the-border"}
+                  title="South of the Border"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  stripHash
+                />
+              </li>
+              <li>
+                <AnchorLink
+                  to={url + "#rice-bowls"}
+                  title="Rice Bowls"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  stripHash
+                />
+              </li>
+              <li>
+                <AnchorLink
+                  to={url + "#cali-fresh"}
+                  title="Cali Fresh"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  stripHash
+                />
+              </li>
+              <li>
+                <AnchorLink
+                  to={url + "#apps"}
+                  title="Apps"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  stripHash
+                />
+              </li>
+              <li>
+                <AnchorLink
+                  to={url + "#desserts"}
+                  title="Desserts"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  stripHash
+                />
+              </li>
+              <li>
+                <AnchorLink
+                  to={url + "#kids"}
+                  title="Kids"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
@@ -818,7 +858,7 @@ export const query = graphql`
     }
     heroDesktop: file(
       relativePath: {
-        eq: "menus/Wedding Menu/1.0 Weddings Menu Hero Desktop.jpg"
+        eq: "menus/Flavor Mobile Menu/1.0 Flavor Mobile Hero Desktop.jpg"
       }
     ) {
       childImageSharp {
@@ -827,7 +867,7 @@ export const query = graphql`
     }
     heroMobile: file(
       relativePath: {
-        eq: "menus/Wedding Menu/1.0 Weddings Menu Hero Mobile.jpg"
+        eq: "menus/Flavor Mobile Menu/1.0 Flavor Mobile Hero Mobile.jpg"
       }
     ) {
       childImageSharp {
@@ -835,6 +875,9 @@ export const query = graphql`
       }
     }
     menuIcon: file(relativePath: { eq: "global/menu.svg" }) {
+      publicURL
+    }
+    addOnIcon: file(relativePath: { eq: "menus/Add-on Icon.svg" }) {
       publicURL
     }
   }

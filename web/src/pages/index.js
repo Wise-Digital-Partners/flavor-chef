@@ -2,8 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-// import { BgImage } from "gbimage-bridge";
-// import { motion } from "framer-motion";
 
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
