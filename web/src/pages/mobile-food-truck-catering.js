@@ -56,8 +56,8 @@ const Page = ({ data }) => {
               instantly adds a fun, casual vibe.
             </p>
           </header>
-          <ReviewBadges />
         </div>
+        <ReviewBadges />
       </section>
 
       <section className="bg-white relative mb-20 md:mb-32">

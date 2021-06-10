@@ -44,7 +44,7 @@ const Page = ({ data }) => {
 
       <HeroFullWidth
         backgroundImages={heroFullWidthImages}
-        padding="pt-40 md:pt-80 pb-18 md:pb-60"
+        padding="pt-26 md:pt-80 pb-18 md:pb-60"
         textAlignment="text-center"
         textMaxWidth=""
       >
@@ -70,8 +70,8 @@ const Page = ({ data }) => {
               featuring cuisine from top local chefs.
             </p>
           </header>
-          <ReviewBadges />
         </div>
+        <ReviewBadges />
       </section>
 
       <section className="bg-gray-50 relative pt-20 md:pt-32 pb-20 md:pb-32 mb-20 md:mb-32">

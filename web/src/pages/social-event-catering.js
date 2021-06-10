@@ -56,8 +56,8 @@ const Page = ({ data }) => {
               your event is nothing short of perfection.
             </p>
           </header>
-          <ReviewBadges />
         </div>
+        <ReviewBadges />
       </section>
 
       <section className="bg-white relative mb-20 md:mb-32">

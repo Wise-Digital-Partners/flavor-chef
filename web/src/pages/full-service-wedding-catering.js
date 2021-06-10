@@ -56,8 +56,8 @@ const Page = ({ data }) => {
               catering to fit your style and vision.
             </p>
           </header>
-          <ReviewBadges />
         </div>
+        <ReviewBadges />
       </section>
 
       <section className="bg-white relative mb-20 md:mb-32">
