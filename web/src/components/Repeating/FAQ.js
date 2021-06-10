@@ -111,11 +111,12 @@ const WhyUs = ({ className, headingLevel }) => {
         className || ""
       }`}
     >
-      <GatsbyImage
-        image={data.wallpaperBackground.childImageSharp.gatsbyImageData}
-        alt="Decorative Wallpaper"
-        className="absolute top-0 w-full"
-      />
+      <div className="absolute top-0 w-full">
+        <GatsbyImage
+          image={data.wallpaperBackground.childImageSharp.gatsbyImageData}
+          alt="Decorative Wallpaper"
+        />
+      </div>
       <div className="container relative">
         <header className="mb-6 md:mb-16 text-center md:text-left">
           <HeadingTag>Catering FAQs</HeadingTag>

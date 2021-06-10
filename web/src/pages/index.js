@@ -75,11 +75,12 @@ const Page = ({ data }) => {
       </section>
 
       <section className="bg-gray-50 relative pt-20 md:pt-32 pb-20 md:pb-32 mb-20 md:mb-32">
-        <GatsbyImage
-          image={data.wallpaperBackground.childImageSharp.gatsbyImageData}
-          alt="Decorative Wallpaper"
-          className="absolute top-0 w-full"
-        />
+        <div className="absolute top-0 w-full">
+          <GatsbyImage
+            image={data.wallpaperBackground.childImageSharp.gatsbyImageData}
+            alt="Decorative Wallpaper"
+          />
+        </div>
         <div className="relative container">
           <header className="mb-8 md:mb-26">
             <h2>What We Do Best</h2>

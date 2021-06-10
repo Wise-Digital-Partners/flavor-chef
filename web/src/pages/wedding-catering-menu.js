@@ -401,7 +401,7 @@ const Page = ({ data }) => {
     >
       <SearchEngineOptimization
         title="Wedding Catering Menu | Flavor Chef Catering"
-        description=""
+        description="Add an extra special touch to your big day with fresh dishes from Flavor Chef Catering. Our wedding catering menu features locally sourced ingredients."
         // openGraphImage={data.openGraphImage.publicURL}
         // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
