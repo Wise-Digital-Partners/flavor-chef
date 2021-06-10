@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
@@ -378,6 +378,21 @@ const Page = ({ data }) => {
 
   const url = typeof window !== "undefined" ? window.location.pathname : "";
 
+  // Toggle Dropdown
+  const [setActive, setActiveState] = useState("");
+  const [setHeight, setHeightState] = useState("h-0");
+  const [setOverlay, setOverlayState] = useState("opacity-0");
+  const [setIcon, setIconState] = useState("rotate-0");
+
+  const clickHandler = () => {
+    setActiveState(setActive === "" ? "active" : "");
+    setHeightState(
+      setActive === "active" ? "max-h-0 py-0" : "py-6 max-h-[400px]"
+    );
+    setOverlayState(setActive === "active" ? "opacity-0" : "opacity-100");
+    setIconState(setActive === "active" ? "rotate-0" : "rotate-180");
+  };
+
   return (
     <Layout
       headerStyle="overlap"
@@ -403,118 +418,83 @@ const Page = ({ data }) => {
         <h1 className="text-white mb-0">Wedding</h1>
       </HeroFullWidth>
 
-      <section className="bg-white pt-12 md:pt-24 mb-16">
-        <div className="container">
-          <div className="flex justify-center max-w-4xl mx-auto">
-            <AnchorLink
-              to={url + "#appetizers"}
-              title="Appetizers"
-              className="font-display tracking-wider leading-5 text-primary-400 hover:bg-primary-50 no-underline py-3 px-6"
-              stripHash
+      <div className="relative">
+        <div
+          className={`bg-black bg-opacity-50 h-full w-full absolute transition-all duration-300 ease-linear z-10 md:hidden ${setOverlay}`}
+        ></div>
+        <div
+          className="bg-primary-900 md:bg-transparent flex justify-between text-white py-3 md:py-0 px-5 md:px-4 md:px-0 md:mt-12 mb-16 md:mb-12 sticky md:relative top-[61px] md:top-0 cursor-pointer md:cursor-auto z-20"
+          onKeyDown={clickHandler}
+          onClick={clickHandler}
+        >
+          <div className="md:hidden flex flex-1 items-center">
+            <img
+              src={data.menuIcon.publicURL}
+              alt="Burger menu icon"
+              className="mr-2"
             />
-            <AnchorLink
-              to={url + "#buffet"}
-              title="Buffet"
-              className="font-display tracking-wider leading-5 text-primary-400 hover:bg-primary-50 no-underline py-3 px-6"
-              stripHash
-            />
-            <AnchorLink
-              to={url + "#plated"}
-              title="Plated"
-              className="font-display tracking-wider leading-5 text-primary-400 hover:bg-primary-50 no-underline py-3 px-6"
-              stripHash
-            />
-            <AnchorLink
-              to={url + "#family-style"}
-              title="Family Style"
-              className="font-display tracking-wider leading-5 text-primary-400 hover:bg-primary-50 no-underline py-3 px-6"
-              stripHash
-            />
+            <span className="font-display text-lg md:text-base tracking-wider leading-5">
+              Menu Options
+            </span>
           </div>
+          <div className="md:hidden">
+            <i
+              className={`far fa-chevron-down transition-all duration-300 ease-linear transform ${setIcon}`}
+            ></i>
+          </div>
+
+          <nav className="flex justify-center max-w-4xl mx-auto absolute md:relative bg-white md:bg-transparent top-0 left-0 transform translate-y-12 md:translate-y-0 w-full md:w-auto">
+            <ul
+              className={`px-12 md:px-0 flex flex-col md:flex-row space-y-4 md:space-y-0 w-full md:w-auto overflow-y-scroll md:overflow-visible transition-all duration-300 ease-linear ${setHeight}`}
+            >
+              <li>
+                <AnchorLink
+                  to={url + "#appetizers"}
+                  title="Appetizers"
+                  className="font-display text-lg md:text-base tracking-wider leading-5 text-gray-600 md:text-primary-400 hover:text-primary-400 md:hover:bg-primary-50 no-underline md:py-3 md:px-6"
+                  stripHash
+                />
+              </li>
+              <li>
+                <AnchorLink
+                  to={url + "#buffet"}
+                  title="Buffet"
+                  className="font-display text-lg md:text-base tracking-wider leading-5 text-gray-600 md:text-primary-400 hover:text-primary-400 md:hover:bg-primary-50 no-underline md:py-3 md:px-6"
+                  stripHash
+                />
+              </li>
+              <li>
+                <AnchorLink
+                  to={url + "#plated"}
+                  title="Plated"
+                  className="font-display text-lg md:text-base tracking-wider leading-5 text-gray-600 md:text-primary-400 hover:text-primary-400 md:hover:bg-primary-50 no-underline md:py-3 md:px-6"
+                  stripHash
+                />
+              </li>
+              <li>
+                <AnchorLink
+                  to={url + "#family-style"}
+                  title="Family Style"
+                  className="font-display text-lg md:text-base tracking-wider leading-5 text-gray-600 md:text-primary-400 hover:text-primary-400 md:hover:bg-primary-50 no-underline md:py-3 md:px-6"
+                  stripHash
+                />
+              </li>
+            </ul>
+          </nav>
         </div>
-      </section>
 
-      <section id="appetizers" className="mb-16 md:mb-20">
-        <div className="container">
-          <header className="mb-12">
-            <h2>Appetizers</h2>
-          </header>
+        <section id="appetizers" className="mb-16 md:mb-20">
+          <div className="container">
+            <header className="mb-12">
+              <h2>Appetizers</h2>
+            </header>
 
-          <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-            <b>Passed Hors D‘eouvres</b> / Choose 3
-          </div>
-          <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-            <div>
-              {passedHorsDeouvres.slice(0, 7).map((item, i) => {
-                return (
-                  <div key={i} className="mb-8 md:mb-10">
-                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                      {item.name}
-                    </p>
-                    <p className="mb-0">{item.description}</p>
-                  </div>
-                );
-              })}
+            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+              <b>Passed Hors D‘eouvres</b> / Choose 3
             </div>
-            <div>
-              {passedHorsDeouvres.slice(7).map((item, i) => {
-                return (
-                  <div key={i} className="mb-8 md:mb-10">
-                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                      {item.name}
-                    </p>
-                    <p className="mb-0">{item.description}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-            <b>Appetizer Display</b> / Choose 1
-          </div>
-          <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20">
-            <div>
-              {appetizerDisplay.slice(0, 2).map((item, i) => {
-                return (
-                  <div key={i} className="mb-8 md:mb-10">
-                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                      {item.name}
-                    </p>
-                    <p className="mb-0">{item.description}</p>
-                  </div>
-                );
-              })}
-            </div>
-            <div>
-              {appetizerDisplay.slice(2).map((item, i) => {
-                return (
-                  <div key={i} className="mb-8 md:mb-10">
-                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                      {item.name}
-                    </p>
-                    <p className="mb-0">{item.description}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="buffet" className="mb-16 md:mb-20">
-        <div className="container">
-          <header className="mb-12">
-            <h2>Buffet</h2>
-          </header>
-
-          <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-            <div>
-              <div className="mb-14 md:mb-20">
-                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                  <b>Salads</b> / Choose 1
-                </div>
-                {buffetSalads.map((item, i) => {
+            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
+              <div>
+                {passedHorsDeouvres.slice(0, 7).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -525,28 +505,8 @@ const Page = ({ data }) => {
                   );
                 })}
               </div>
-
-              <div className="mb-14 md:mb-20">
-                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                  <b>Veggies</b> / Choose 1
-                </div>
-                {buffetVeggies.map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div className="mb-14 md:mb-20">
-                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                  <b>Starches</b> / Choose 1
-                </div>
-                {buffetStarches.map((item, i) => {
+              <div>
+                {passedHorsDeouvres.slice(7).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -559,195 +519,285 @@ const Page = ({ data }) => {
               </div>
             </div>
 
-            <div>
-              <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                <b>Mains</b> / Choose 2
+            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+              <b>Appetizer Display</b> / Choose 1
+            </div>
+            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20">
+              <div>
+                {appetizerDisplay.slice(0, 2).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
               </div>
-              {buffetMains.map((item, i) => {
-                return (
-                  <div key={i} className="mb-8 md:mb-10">
-                    {item.plantBased && (
-                      <div className="bg-[#269566] text-center text-white text-xs px-3 py-1.5 mb-3 rounded inline-flex">
-                        Plant Based
+              <div>
+                {appetizerDisplay.slice(2).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="buffet" className="mb-16 md:mb-20">
+          <div className="container">
+            <header className="mb-12">
+              <h2>Buffet</h2>
+            </header>
+
+            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
+              <div>
+                <div className="mb-14 md:mb-20">
+                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+                    <b>Salads</b> / Choose 1
+                  </div>
+                  {buffetSalads.map((item, i) => {
+                    return (
+                      <div key={i} className="mb-8 md:mb-10">
+                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                          {item.name}
+                        </p>
+                        <p className="mb-0">{item.description}</p>
                       </div>
-                    )}
-                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                      {item.name}
-                    </p>
-                    <p className="mb-0">{item.description}</p>
+                    );
+                  })}
+                </div>
+
+                <div className="mb-14 md:mb-20">
+                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+                    <b>Veggies</b> / Choose 1
                   </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="plated" className="mb-16 md:mb-20">
-        <div className="container">
-          <header className="mb-12">
-            <h2>Plated</h2>
-          </header>
-
-          <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-            <div>
-              <div className="mb-14 md:mb-20">
-                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                  <b>Salads</b> / Choose 1
-                </div>
-                {platedSalads.map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div className="mb-14 md:mb-20">
-                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                  <b>Veggies</b> / Choose 1
-                </div>
-                {platedVeggies.map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div className="mb-14 md:mb-20">
-                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                  <b>Starches</b> / Choose 1
-                </div>
-                {platedStarches.map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            <div>
-              <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                <b>Mains</b> / Choose 1 or 2
-              </div>
-              {platedMains.map((item, i) => {
-                return (
-                  <div key={i} className="mb-8 md:mb-10">
-                    {item.plantBased && (
-                      <div className="bg-[#269566] text-center text-white text-xs px-3 py-1.5 mb-3 rounded inline-flex">
-                        Plant Based
+                  {buffetVeggies.map((item, i) => {
+                    return (
+                      <div key={i} className="mb-8 md:mb-10">
+                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                          {item.name}
+                        </p>
+                        <p className="mb-0">{item.description}</p>
                       </div>
-                    )}
-                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                      {item.name}
-                    </p>
-                    <p className="mb-0">{item.description}</p>
+                    );
+                  })}
+                </div>
+
+                <div className="mb-14 md:mb-20">
+                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+                    <b>Starches</b> / Choose 1
                   </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="family-style" className="mb-8 md:mb-10">
-        <div className="container">
-          <header className="mb-12">
-            <h2>Family Style</h2>
-          </header>
-
-          <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-            <div>
-              <div className="mb-14 md:mb-20">
-                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                  <b>Salads</b> / Choose 1
-                </div>
-                {familyStyleSalads.map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div className="mb-14 md:mb-20">
-                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                  <b>Veggies</b> / Choose 1
-                </div>
-                {familyStyleVeggies.map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            <div>
-              <div className="mb-14 md:mb-20">
-                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                  <b>Starches</b> / Choose 1
-                </div>
-                {familyStyleStarches.map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                <b>Mains</b> / Choose 1 or 2
-              </div>
-              {familyStyleMains.map((item, i) => {
-                return (
-                  <div key={i} className="mb-8 md:mb-10">
-                    {item.plantBased && (
-                      <div className="bg-[#269566] text-center text-white text-xs px-3 py-1.5 mb-3 rounded inline-flex">
-                        Plant Based
+                  {buffetStarches.map((item, i) => {
+                    return (
+                      <div key={i} className="mb-8 md:mb-10">
+                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                          {item.name}
+                        </p>
+                        <p className="mb-0">{item.description}</p>
                       </div>
-                    )}
-                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                      {item.name}
-                    </p>
-                    <p className="mb-0">{item.description}</p>
-                  </div>
-                );
-              })}
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div>
+                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+                  <b>Mains</b> / Choose 2
+                </div>
+                {buffetMains.map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      {item.plantBased && (
+                        <div className="bg-[#269566] text-center text-white text-xs px-3 py-1.5 mb-3 rounded inline-flex">
+                          Plant Based
+                        </div>
+                      )}
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <Divider />
+        <section id="plated" className="mb-16 md:mb-20">
+          <div className="container">
+            <header className="mb-12">
+              <h2>Plated</h2>
+            </header>
 
-      <CallToAction headingLevel="h2" />
+            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
+              <div>
+                <div className="mb-14 md:mb-20">
+                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+                    <b>Salads</b> / Choose 1
+                  </div>
+                  {platedSalads.map((item, i) => {
+                    return (
+                      <div key={i} className="mb-8 md:mb-10">
+                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                          {item.name}
+                        </p>
+                        <p className="mb-0">{item.description}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <div className="mb-14 md:mb-20">
+                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+                    <b>Veggies</b> / Choose 1
+                  </div>
+                  {platedVeggies.map((item, i) => {
+                    return (
+                      <div key={i} className="mb-8 md:mb-10">
+                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                          {item.name}
+                        </p>
+                        <p className="mb-0">{item.description}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <div className="mb-14 md:mb-20">
+                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+                    <b>Starches</b> / Choose 1
+                  </div>
+                  {platedStarches.map((item, i) => {
+                    return (
+                      <div key={i} className="mb-8 md:mb-10">
+                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                          {item.name}
+                        </p>
+                        <p className="mb-0">{item.description}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div>
+                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+                  <b>Mains</b> / Choose 1 or 2
+                </div>
+                {platedMains.map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      {item.plantBased && (
+                        <div className="bg-[#269566] text-center text-white text-xs px-3 py-1.5 mb-3 rounded inline-flex">
+                          Plant Based
+                        </div>
+                      )}
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="family-style" className="mb-8 md:mb-10">
+          <div className="container">
+            <header className="mb-12">
+              <h2>Family Style</h2>
+            </header>
+
+            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
+              <div>
+                <div className="mb-14 md:mb-20">
+                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+                    <b>Salads</b> / Choose 1
+                  </div>
+                  {familyStyleSalads.map((item, i) => {
+                    return (
+                      <div key={i} className="mb-8 md:mb-10">
+                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                          {item.name}
+                        </p>
+                        <p className="mb-0">{item.description}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <div className="mb-14 md:mb-20">
+                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+                    <b>Veggies</b> / Choose 1
+                  </div>
+                  {familyStyleVeggies.map((item, i) => {
+                    return (
+                      <div key={i} className="mb-8 md:mb-10">
+                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                          {item.name}
+                        </p>
+                        <p className="mb-0">{item.description}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div>
+                <div className="mb-14 md:mb-20">
+                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+                    <b>Starches</b> / Choose 1
+                  </div>
+                  {familyStyleStarches.map((item, i) => {
+                    return (
+                      <div key={i} className="mb-8 md:mb-10">
+                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                          {item.name}
+                        </p>
+                        <p className="mb-0">{item.description}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+                  <b>Mains</b> / Choose 1 or 2
+                </div>
+                {familyStyleMains.map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      {item.plantBased && (
+                        <div className="bg-[#269566] text-center text-white text-xs px-3 py-1.5 mb-3 rounded inline-flex">
+                          Plant Based
+                        </div>
+                      )}
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <Divider />
+
+        <CallToAction headingLevel="h2" />
+      </div>
     </Layout>
   );
 };
@@ -781,6 +831,9 @@ export const query = graphql`
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
+    }
+    menuIcon: file(relativePath: { eq: "global/menu.svg" }) {
+      publicURL
     }
   }
 `;

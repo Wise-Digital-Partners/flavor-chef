@@ -197,7 +197,7 @@ const MainNav = ({
             <i
               className={`fas fa-phone-alt text-lg ${
                 headerStyle === "overlap" ? "text-white" : "text-black"
-              } ${offcanvasOpen ? "text-black" : null}`}
+              } ${offcanvasOpen || scrolled ? "text-black" : null}`}
             ></i>
           </a>
         </div>
