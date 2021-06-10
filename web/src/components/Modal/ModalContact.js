@@ -122,7 +122,7 @@ const Modal = () => {
               ></i>
             </div>
 
-            <div className="px-6 md:px-20">
+            <div className="px-6 md:px-20 pb-24">
               <header className="mb-3 flex justify-between items-center">
                 <p className="heading-three mb-0">Contact Us</p>
                 <a href="tel:619-430-3981" className="font-medium no-underline">

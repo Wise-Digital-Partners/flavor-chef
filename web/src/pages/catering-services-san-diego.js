@@ -1,8 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-// import { BgImage } from "gbimage-bridge";
-// import { motion } from "framer-motion";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
@@ -29,12 +28,14 @@ const Page = ({ data }) => {
             </p>
           </header>
           <div className="grid lg:grid-cols-2 gap-y-10 md:gap-y-20 md:gap-x-10 lg:gap-x-20">
-            <div>
-              <GatsbyImage
-                image={data.weddings.childImageSharp.gatsbyImageData}
-                alt="Weddings"
-                className="mb-8"
-              />
+            <div className="group relative">
+              <div className="overflow-hidden mb-8">
+                <GatsbyImage
+                  image={data.weddings.childImageSharp.gatsbyImageData}
+                  alt="Weddings"
+                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                />
+              </div>
               <h2>Weddings</h2>
               <p>
                 For a special and carefree wedding day, you can trust Flavor
@@ -44,15 +45,20 @@ const Page = ({ data }) => {
                 href="/full-service-wedding-catering/"
                 text="Learn More"
               />
+              <AniLink fade to="/full-service-wedding-catering/">
+                <span className="absolute w-full h-full top-0 left-0"></span>
+              </AniLink>
             </div>
 
-            <div>
+            <div className="group relative">
               <div className="md:mt-20">
-                <GatsbyImage
-                  image={data.socialEvents.childImageSharp.gatsbyImageData}
-                  alt="Social Events"
-                  className="mb-8"
-                />
+                <div className="overflow-hidden mb-8">
+                  <GatsbyImage
+                    image={data.socialEvents.childImageSharp.gatsbyImageData}
+                    alt="Social Events"
+                    className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                  />
+                </div>
                 <h2>Social Events</h2>
                 <p>
                   We treat each and every detail with the utmost care, love, and
@@ -65,15 +71,22 @@ const Page = ({ data }) => {
                   text="Learn More"
                 />
               </div>
+              <AniLink fade to="/social-event-catering/">
+                <span className="absolute w-full h-full top-0 left-0"></span>
+              </AniLink>
             </div>
 
-            <div>
+            <div className="group relative">
               <div className="md:-mt-26">
-                <GatsbyImage
-                  image={data.foodTruckCatering.childImageSharp.gatsbyImageData}
-                  alt="Food Truck Catering"
-                  className="mb-8"
-                />
+                <div className="overflow-hidden mb-8">
+                  <GatsbyImage
+                    image={
+                      data.foodTruckCatering.childImageSharp.gatsbyImageData
+                    }
+                    alt="Food Truck Catering"
+                    className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                  />
+                </div>
                 <h2>Food Truck Catering</h2>
                 <p>
                   Our Flavor Mobile delivers fresh and tasty eats – with a fun
@@ -86,14 +99,21 @@ const Page = ({ data }) => {
                   text="Learn More"
                 />
               </div>
+              <AniLink fade to="/mobile-food-truck-catering/">
+                <span className="absolute w-full h-full top-0 left-0"></span>
+              </AniLink>
             </div>
 
-            <div>
-              <GatsbyImage
-                image={data.corporateOccasions.childImageSharp.gatsbyImageData}
-                alt="Corporate Occasions"
-                className="mb-8"
-              />
+            <div className="group relative">
+              <div className="overflow-hidden mb-8">
+                <GatsbyImage
+                  image={
+                    data.corporateOccasions.childImageSharp.gatsbyImageData
+                  }
+                  alt="Corporate Occasions"
+                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                />
+              </div>
               <h2>Corporate Occasions</h2>
               <p>
                 Our chefs can create memorable dishes for your corporate
@@ -104,6 +124,9 @@ const Page = ({ data }) => {
                 href="/corporate-catering-san-diego/"
                 text="Learn More"
               />
+              <AniLink fade to="/corporate-catering-san-diego/">
+                <span className="absolute w-full h-full top-0 left-0"></span>
+              </AniLink>
             </div>
           </div>
         </div>

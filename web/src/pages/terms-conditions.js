@@ -10,10 +10,10 @@ const Page = () => {
           <h1>Terms and Conditions</h1>
 
           <p>
-            Welcome to our website. Flavor Chef is a California professional
-            corporation that provides legal services in the area of estate and
-            business planning. These Terms and Conditions of Use (“Agreement”)
-            apply to any use of and access to our website,
+            Welcome to our website. Flavor Chef Catering is a California
+            professional corporation that provides legal services in the area of
+            estate and business planning. These Terms and Conditions of Use
+            (“Agreement”) apply to any use of and access to our website,
           </p>
           <a href="https://flavorchefcatering.com">
             <p>https://flavorchefcatering.com</p>
@@ -31,10 +31,10 @@ const Page = () => {
               <p>
                 This Agreement specifies and describes the terms and conditions
                 applicable to your access of and use of the website. This
-                Agreement may be modified at any time by Breakthrough
-                Technologies upon posting of the modified Agreement. Any such
-                modifications shall be effective immediately. You can view the
-                most recent version of these terms at any time at
+                Agreement may be modified at any time by Flavor Chef Catering
+                upon posting of the modified Agreement. Any such modifications
+                shall be effective immediately. You can view the most recent
+                version of these terms at any time at
                 https://flavorchefcatering.com. Each use by you shall constitute
                 and be deemed your unconditional acceptance of this Agreement.
               </p>
@@ -55,10 +55,10 @@ const Page = () => {
               <h3>Ownership. </h3>
               <p>
                 All content included on this website is and shall continue to be
-                the property of Flavor Chef or its content suppliers and is
-                protected under applicable copyright, patent, trademark, and
-                other proprietary rights. Any copying, redistribution, use or
-                publication by you of any such content or any part of the
+                the property of Flavor Chef Catering or its content suppliers
+                and is protected under applicable copyright, patent, trademark,
+                and other proprietary rights. Any copying, redistribution, use
+                or publication by you of any such content or any part of the
                 website is prohibited, except as expressly permitted in this
                 Agreement. Under no circumstances will you acquire any ownership
                 rights or other interest in any content by or through your use
@@ -73,9 +73,9 @@ const Page = () => {
                 This website is provided as a service to clients, colleagues,
                 and others for general information only. This information is not
                 designed to provide legal or other advice or to create an
-                attorney-client relationship with Flavor Chef.  You should not
-                take, or refrain from taking, any action based on its content.
-                Unsolicited emails from non-clients do not establish an
+                attorney-client relationship with Flavor Chef Catering.  You
+                should not take, or refrain from taking, any action based on its
+                content. Unsolicited emails from non-clients do not establish an
                 attorney-client relationship. This website is intended for
                 adults only. This website is not intended for any children under
                 the age of 13.  
@@ -86,12 +86,12 @@ const Page = () => {
             <li>
               <h3>Trademarks. </h3>
               <p>
-                Flavor Chef and others are either trademarks or registered
-                trademarks of Flavor Chef. Other product and company names
-                mentioned on this Site may be trademarks of their respective
-                owners. Unauthorized use of any of Flavor Chef’s trademarks,
-                service marks, or logos is prohibited, and may be a violation of
-                federal or state trademark laws. 
+                Flavor Chef Catering and others are either trademarks or
+                registered trademarks of Flavor Chef Catering. Other product and
+                company names mentioned on this Site may be trademarks of their
+                respective owners. Unauthorized use of any of Flavor Chef
+                Catering’s trademarks, service marks, or logos is prohibited,
+                and may be a violation of federal or state trademark laws. 
               </p>
             </li>
           </ul>
@@ -99,15 +99,16 @@ const Page = () => {
             <li>
               <h3>Website Use. </h3>
               <p>
-                Flavor Chef grants you a limited, revocable, nonexclusive
-                license to use this website solely for your own personal use and
-                not for republication, distribution, assignment, sublicense,
-                sale, preparation of derivative works, or other use. You agree
-                not to copy materials on the site, reverse engineer or break
-                into the site, or use materials, products or services in
-                violation of any law. The use of this website is at the
-                discretion of Flavor Chef and Flavor Chef may terminate your use
-                of this website at any time.
+                Flavor Chef Catering grants you a limited, revocable,
+                nonexclusive license to use this website solely for your own
+                personal use and not for republication, distribution,
+                assignment, sublicense, sale, preparation of derivative works,
+                or other use. You agree not to copy materials on the site,
+                reverse engineer or break into the site, or use materials,
+                products or services in violation of any law. The use of this
+                website is at the discretion of Flavor Chef Catering and Flavor
+                Chef Catering may terminate your use of this website at any
+                time.
               </p>
             </li>
           </ul>
@@ -116,18 +117,18 @@ const Page = () => {
               <h3>Links to our Website. </h3>
               <p>
                 Unless otherwise set forth in a written agreement between you
-                and Flavor Chef, if you link to our website, you must adhere to
-                the following linking policy: (1) the appearance, position and
-                other aspects of the link may not be such as to damage or dilute
-                the goodwill associated with Flavor Chef’s name and trademarks;
-                (2) The appearance, position, and other attributes of the link
-                may not create the false appearance that your organization or
-                entity is sponsored by, affiliated with, or associated with
-                Flavor Chef; (3) when selected by a user, the link must display
-                the website on full-screen and not within a “frame” on the
-                linking website; and (4) Flavor Chef reserves the right to
-                revoke its consent to the link at any time in its sole
-                discretion. 
+                and Flavor Chef Catering, if you link to our website, you must
+                adhere to the following linking policy: (1) the appearance,
+                position and other aspects of the link may not be such as to
+                damage or dilute the goodwill associated with Flavor Chef
+                Catering’s name and trademarks; (2) The appearance, position,
+                and other attributes of the link may not create the false
+                appearance that your organization or entity is sponsored by,
+                affiliated with, or associated with Flavor Chef Catering; (3)
+                when selected by a user, the link must display the website on
+                full-screen and not within a “frame” on the linking website; and
+                (4) Flavor Chef Catering reserves the right to revoke its
+                consent to the link at any time in its sole discretion. 
               </p>
             </li>
           </ul>
@@ -144,10 +145,11 @@ const Page = () => {
                     <a href="http://www.facebook.com">www.facebook.com</a>) and
                     Instagram (
                     <a href="http://www.instagram.com">www.instagram.com</a>
-                    ). Flavor Chef provides these links as a convenience, and
-                    use of these sites is at your own risk. The linked sites are
-                    not under the control of Flavor Chef, and Flavor Chef is not
-                    responsible for the content available on the other sites.
+                    ). Flavor Chef Catering provides these links as a
+                    convenience, and use of these sites is at your own risk. The
+                    linked sites are not under the control of Flavor Chef
+                    Catering, and Flavor Chef Catering is not responsible for
+                    the content available on the other sites.
                   </p>
                 </li>
               </ol>
@@ -167,11 +169,11 @@ const Page = () => {
             <li>
               <h3>Indemnification. </h3>
               <p>
-                You agree to indemnify, defend and hold Breakthrough
-                Technologies and our owners, employees, and affiliates, harmless
-                from any liability, loss, claim and expense, including
-                reasonable attorney's fees, related to your violation of this
-                Agreement or use of the website.
+                You agree to indemnify, defend and hold Flavor Chef Catering and
+                our owners, employees, and affiliates, harmless from any
+                liability, loss, claim and expense, including reasonable
+                attorney's fees, related to your violation of this Agreement or
+                use of the website.
               </p>
             </li>
           </ul>
@@ -182,14 +184,14 @@ const Page = () => {
                 THE INFORMATION ON THIS WEBSITE IS PROVIDED ON AN "AS IS," "AS
                 AVAILABLE" BASIS AND IS INTENDED TO BE A GENERAL INFORMATION
                 RESOURCE ONLY. YOU AGREE THAT USE OF THIS WEBSITE IS AT YOUR
-                SOLE RISK. Flavor Chef DISCLAIMS ALL WARRANTIES OF ANY KIND,
-                INCLUDING BUT NOT LIMITED TO ANY EXPRESS WARRANTIES, STATUTORY
-                WARRANTIES, AND ANY IMPLIED WARRANTIES OF MERCHANTABILITY,
-                FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. TO THE
-                EXTENT YOUR JURISDICTION DOES NOT ALLOW LIMITATIONS ON
-                WARRANTIES, THIS LIMITATION MAY NOT APPLY TO YOU. YOUR SOLE AND
-                EXCLUSIVE REMEDY RELATING TO YOUR USE OF THE WEBSITE SHALL BE TO
-                DISCONTINUE USING THE WEBSITE.
+                SOLE RISK. Flavor Chef Catering DISCLAIMS ALL WARRANTIES OF ANY
+                KIND, INCLUDING BUT NOT LIMITED TO ANY EXPRESS WARRANTIES,
+                STATUTORY WARRANTIES, AND ANY IMPLIED WARRANTIES OF
+                MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+                NON-INFRINGEMENT. TO THE EXTENT YOUR JURISDICTION DOES NOT ALLOW
+                LIMITATIONS ON WARRANTIES, THIS LIMITATION MAY NOT APPLY TO YOU.
+                YOUR SOLE AND EXCLUSIVE REMEDY RELATING TO YOUR USE OF THE
+                WEBSITE SHALL BE TO DISCONTINUE USING THE WEBSITE.
               </p>
             </li>
           </ul>
@@ -198,14 +200,15 @@ const Page = () => {
               <h3>Limitation of Liability. </h3>
               <p>
                 TO THE MAXIMUM EXTENT PERMITTED BY LAW, UNDER NO CIRCUMSTANCES
-                WILL Flavor Chef BE LIABLE OR RESPONSIBLE FOR ANY DIRECT,
-                INDIRECT, INCIDENTAL, CONSEQUENTIAL (INCLUDING DAMAGES FROM LOSS
-                OF BUSINESS, LOST PROFITS, LITIGATION, OR THE LIKE), SPECIAL,
-                EXEMPLARY, PUNITIVE, OR OTHER DAMAGES, UNDER ANY LEGAL THEORY,
-                ARISING OUT OF OR IN ANY WAY RELATING TO THE WEBSITE, YOUR
-                WEBSITE USE, OR THE CONTENT, EVEN IF ADVISED OF THE POSSIBILITY
-                OF SUCH DAMAGES. YOUR SOLE REMEDY FOR DISSATISFACTION WITH THE
-                WEBSITE AND/OR CONTENT IS TO CEASE ALL OF YOUR WEBSITE USE.
+                WILL Flavor Chef Catering BE LIABLE OR RESPONSIBLE FOR ANY
+                DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL (INCLUDING DAMAGES
+                FROM LOSS OF BUSINESS, LOST PROFITS, LITIGATION, OR THE LIKE),
+                SPECIAL, EXEMPLARY, PUNITIVE, OR OTHER DAMAGES, UNDER ANY LEGAL
+                THEORY, ARISING OUT OF OR IN ANY WAY RELATING TO THE WEBSITE,
+                YOUR WEBSITE USE, OR THE CONTENT, EVEN IF ADVISED OF THE
+                POSSIBILITY OF SUCH DAMAGES. YOUR SOLE REMEDY FOR
+                DISSATISFACTION WITH THE WEBSITE AND/OR CONTENT IS TO CEASE ALL
+                OF YOUR WEBSITE USE.
               </p>
             </li>
           </ul>
@@ -221,10 +224,10 @@ const Page = () => {
             <li>
               <h3>Use of Information. </h3>
               <p>
-                Flavor Chef reserves the right, and you authorize us, to use and
-                assign all information regarding website uses by you and all
-                information provided by you in any manner consistent with our
-                Privacy Policy.
+                Flavor Chef Catering reserves the right, and you authorize us,
+                to use and assign all information regarding website uses by you
+                and all information provided by you in any manner consistent
+                with our Privacy Policy.
               </p>
             </li>
           </ul>
@@ -285,16 +288,14 @@ const Page = () => {
           </ol>
           <p>
             Our Copyright Agent for Notice of claims of copyright infringement
-            on the Site is Alanna Pearl, who can be reached as follows:
+            on the Site can be reached as follows:
           </p>
 
-          <p>
-            By Mail: 3919 30<sup>th</sup> Street,San Diego CA 92104
-          </p>
+          <p>By Mail: 1175 Park Center Dr, Vista, CA 92081</p>
 
-          <p>By Phone: 619-987-3532</p>
+          <p>By Phone: (619) 430-3981</p>
 
-          <p>By E-mail: info@bt-tech.com</p>
+          <p>By E-mail: flavorchefcatering@gmail.com</p>
           <ul>
             <li>
               <h3>Applicable Law. </h3>
@@ -302,7 +303,7 @@ const Page = () => {
                 You agree that the laws of the state of California, without
                 regard to conflicts of laws provisions will govern these Terms
                 and Condition of Use and any dispute that may arise between you
-                and Flavor Chef or its affiliates.
+                and Flavor Chef Catering or its affiliates.
               </p>
             </li>
           </ul>
@@ -347,10 +348,11 @@ const Page = () => {
 
           <p>
             Opt-out of Agreement to Arbitrate.  You can decline this agreement
-            to arbitrate by contacting info@bt-tech.com within 30 days of first
-            accepting these Terms and Conditions of Use and/or accessing our
-            Website, whichever is earlier, and stating that you (including your
-            first and last name) decline this arbitration agreement.
+            to arbitrate by contacting flavorchefcatering@gmail.com within 30
+            days of first accepting these Terms and Conditions of Use and/or
+            accessing our Website, whichever is earlier, and stating that you
+            (including your first and last name) decline this arbitration
+            agreement.
           </p>
           <ul>
             <li>
@@ -368,13 +370,14 @@ const Page = () => {
             <li>
               <h3>Waiver.</h3>
               <p>
-                The failure of Flavor Chef exercise or enforce any right or
-                provision of this Agreement shall not operate as a waiver of
-                such right or provision.
+                The failure of Flavor Chef Catering exercise or enforce any
+                right or provision of this Agreement shall not operate as a
+                waiver of such right or provision.
               </p>
               <p>
-                Any waiver of this Agreement by Flavor Chef must be in writing
-                and signed by an authorized representative of Flavor Chef. 
+                Any waiver of this Agreement by Flavor Chef Catering must be in
+                writing and signed by an authorized representative of Flavor
+                Chef Catering. 
               </p>
             </li>
           </ul>
@@ -382,8 +385,8 @@ const Page = () => {
             <li>
               <h3>Termination. </h3>
               <p>
-                Flavor Chef may terminate this Agreement at any time, with or
-                without notice, for any reason.
+                Flavor Chef Catering may terminate this Agreement at any time,
+                with or without notice, for any reason.
               </p>
             </li>
           </ul>
@@ -411,11 +414,11 @@ const Page = () => {
               <h3>Entire Agreement.</h3>
               <p>
                 This Terms and Conditions of Use constitutes the entire
-                agreement between you and Flavor Chef and governs the terms and
-                conditions of your use of the website, and supersedes all prior
-                or contemporaneous communications and proposals, whether
-                electronic, oral or written, between you and Flavor Chef with
-                respect to this website.
+                agreement between you and Flavor Chef Catering and governs the
+                terms and conditions of your use of the website, and supersedes
+                all prior or contemporaneous communications and proposals,
+                whether electronic, oral or written, between you and Flavor Chef
+                Catering with respect to this website.
               </p>
               <p>
                 Notwithstanding the foregoing, you may also be subject to
@@ -424,8 +427,9 @@ const Page = () => {
                 may apply when you use the website.
               </p>
               <p>
-                Flavor Chef may revise this Terms and Conditions of Use at any
-                time by updating this Agreement and posting it on the website.
+                Flavor Chef Catering may revise this Terms and Conditions of Use
+                at any time by updating this Agreement and posting it on the
+                website.
               </p>
               <p>
                 Accordingly, you should visit the website and review the Terms
@@ -442,7 +446,7 @@ const Page = () => {
               <h3>Contact Information</h3>
             </li>
           </ul>
-          <p>info@bt-tech.com</p>
+          <p>flavorchefcatering@gmail.com</p>
         </div>
       </section>
     </Layout>

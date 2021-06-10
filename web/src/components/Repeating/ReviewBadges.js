@@ -66,7 +66,7 @@ const WhyUs = ({ className }) => {
     <section className={`${className || ""}`}>
       <div className="container">
         <div className="grid grid-cols-5 justify-between text-center">
-          <div className="md:border-r md:border-gray-400 md:border-opacity-40">
+          <div className="md:border-r md:border-gray-300 md:border-opacity-40">
             <div className="font-heading text-xl md:text-7xl md:leading-8 font-bold text-gray-600 text-opacity-60 mb-1 md:mb-7">
               5.0
             </div>
@@ -82,7 +82,7 @@ const WhyUs = ({ className }) => {
             />
           </div>
 
-          <div className="md:border-r md:border-gray-400 md:border-opacity-40">
+          <div className="md:border-r md:border-gray-300 md:border-opacity-40">
             <div className="font-heading text-xl md:text-7xl md:leading-8 font-bold text-gray-600 text-opacity-60 mb-1 md:mb-7">
               5.0
             </div>
@@ -98,7 +98,7 @@ const WhyUs = ({ className }) => {
             />
           </div>
 
-          <div className="md:border-r md:border-gray-400 md:border-opacity-40">
+          <div className="md:border-r md:border-gray-300 md:border-opacity-40">
             <div className="font-heading text-xl md:text-7xl md:leading-8 font-bold text-gray-600 text-opacity-60 mb-1 md:mb-7">
               5.0
             </div>
@@ -114,7 +114,7 @@ const WhyUs = ({ className }) => {
             />
           </div>
 
-          <div className="md:border-r md:border-gray-400 md:border-opacity-40">
+          <div className="md:border-r md:border-gray-300 md:border-opacity-40">
             <div className="font-heading text-xl md:text-7xl md:leading-8 font-bold text-gray-600 text-opacity-60 mb-1 md:mb-7">
               4.9
             </div>

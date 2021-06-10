@@ -261,7 +261,7 @@ const MainNav = ({
 
             <li>
               <AniLink fade to="/menus/">
-                Menu
+                Menus
               </AniLink>
             </li>
 
@@ -290,6 +290,11 @@ const MainNav = ({
                 <li>
                   <AniLink fade to="/careers/">
                     Careers
+                  </AniLink>
+                </li>
+                <li>
+                  <AniLink fade to="/blog/">
+                    Blog
                   </AniLink>
                 </li>
               </ul>
@@ -370,7 +375,7 @@ const MainNav = ({
                     onKeyDown={clickHandler}
                     onClick={clickHandler}
                   >
-                    Menu
+                    Menus
                   </AniLink>
                 </li>
                 <li className="mb-7">
@@ -403,6 +408,16 @@ const MainNav = ({
                         onClick={clickHandler}
                       >
                         Careers
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/blog/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        Blog
                       </AniLink>
                     </li>
                   </Accordion>

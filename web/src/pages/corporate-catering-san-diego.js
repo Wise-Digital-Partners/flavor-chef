@@ -183,8 +183,8 @@ const Page = ({ data }) => {
                 </li>
               </ul>
               <ButtonWithIcon
-                href="/boxed-lunch-catering-menu/"
-                text="Browser Offerings"
+                href="/catering-services-san-diego/"
+                text="Browse Offerings"
               />
             </div>
             <div className="order-1 md:order-2">

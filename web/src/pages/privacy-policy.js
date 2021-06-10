@@ -10,19 +10,20 @@ const Page = () => {
           <h1>Privacy Policy</h1>
           <p>
             Protecting your private information is our priority. This Statement
-            of Privacy applies to https://flavorchefcatering.com, and
-            Breakthrough Technologies and governs data collection and usage. For
-            the purposes of this Privacy Policy, unless otherwise noted, all
-            references to Flavor Chef include https://flavorchefcatering.com.
-            The Flavor Chef website is a general informational site. By using
-            the Flavor Chef website, you consent to the data practices described
-            in this statement. 
+            of Privacy applies to https://flavorchefcatering.com, and Flavor
+            Chef Catering and governs data collection and usage. For the
+            purposes of this Privacy Policy, unless otherwise noted, all
+            references to Flavor Chef Catering include
+            https://flavorchefcatering.com. The Flavor Chef Catering website is
+            a general informational site. By using the Flavor Chef Catering
+            website, you consent to the data practices described in this
+            statement. 
           </p>
           <h3>Collection of your Personal Information</h3>
           <p>
             In order to better provide you with products and services offered,
-            Flavor Chef may collect personally identifiable information, such as
-            your: 
+            Flavor Chef Catering may collect personally identifiable
+            information, such as your: 
           </p>
           <p>
             - First and Last Name 
@@ -47,75 +48,75 @@ const Page = () => {
           </p>
           <h3>Use of your Personal Information </h3>
           <p>
-            Flavor Chef collects and uses your personal information to operate
-            and deliver the services you have requested. 
+            Flavor Chef Catering collects and uses your personal information to
+            operate and deliver the services you have requested. 
           </p>
           <p>
-            Flavor Chef may also use your personally identifiable information to
-            inform you of other products or services available from Flavor Chef
-            and its affiliates. 
+            Flavor Chef Catering may also use your personally identifiable
+            information to inform you of other products or services available
+            from Flavor Chef Catering and its affiliates. 
           </p>
           <h3>Sharing Information with Third Parties</h3>
           <p>
-            Flavor Chef does not sell, rent or lease its customer lists to third
-            parties. 
+            Flavor Chef Catering does not sell, rent or lease its customer lists
+            to third parties. 
           </p>
           <p>
-            Flavor Chef may share data with trusted partners to help perform
-            statistical analysis, send you email or postal mail, provide
+            Flavor Chef Catering may share data with trusted partners to help
+            perform statistical analysis, send you email or postal mail, provide
             customer support, or arrange for deliveries. All such third parties
             are prohibited from using your personal information except to
-            provide these services to Flavor Chef, and they are required to
-            maintain the confidentiality of your information. 
+            provide these services to Flavor Chef Catering, and they are
+            required to maintain the confidentiality of your information. 
           </p>
           <p>
-            Flavor Chef may disclose your personal information, without notice,
-            if required to do so by law or in the good faith belief that such
-            action is necessary to: (a) conform to the edicts of the law or
-            comply with legal process served on Flavor Chef or the site; (b)
-            protect and defend the rights or property of Flavor Chef; and/or (c)
-            act under exigent circumstances to protect the personal safety of
-            users of Flavor Chef, or the public. 
+            Flavor Chef Catering may disclose your personal information, without
+            notice, if required to do so by law or in the good faith belief that
+            such action is necessary to: (a) conform to the edicts of the law or
+            comply with legal process served on Flavor Chef Catering or the
+            site; (b) protect and defend the rights or property of Flavor Chef
+            Catering; and/or (c) act under exigent circumstances to protect the
+            personal safety of users of Flavor Chef Catering, or the public. 
           </p>
           <h3>Automatically Collected Information</h3>
           <p>
             Information about your computer hardware and software may be
-            automatically collected by Flavor Chef. This information can
-            include: your IP address, browser type, domain names, access times
-            and referring website addresses. This information is used for the
-            operation of the service, to maintain quality of the service, and to
-            provide general statistics regarding use of the Flavor Chef
-            website. 
+            automatically collected by Flavor Chef Catering. This information
+            can include: your IP address, browser type, domain names, access
+            times and referring website addresses. This information is used for
+            the operation of the service, to maintain quality of the service,
+            and to provide general statistics regarding use of the Flavor Chef
+            Catering website. 
           </p>
           <h3>Use of Cookies</h3>
           <p>
-            The Flavor Chef website may use "cookies" to help you personalize
-            your online experience. A cookie is a text file that is placed on
-            your hard disk by a web page server. Cookies cannot be used to run
-            programs or deliver viruses to your computer. Cookies are uniquely
-            assigned to you, and can only be read by a web server in the domain
-            that issued the cookie to you. 
+            The Flavor Chef Catering website may use "cookies" to help you
+            personalize your online experience. A cookie is a text file that is
+            placed on your hard disk by a web page server. Cookies cannot be
+            used to run programs or deliver viruses to your computer. Cookies
+            are uniquely assigned to you, and can only be read by a web server
+            in the domain that issued the cookie to you. 
           </p>
           <p>
             One of the primary purposes of cookies is to provide a convenience
             feature to save you time. The purpose of a cookie is to tell the Web
             server that you have returned to a specific page. For example, if
-            you personalize Flavor Chef pages, or register with Flavor Chef site
-            or services, a cookie helps Flavor Chef to recall your specific
-            information on subsequent visits. This simplifies the process of
-            recording your personal information, such as billing addresses,
-            shipping addresses, and so on. When you return to the same Flavor
-            Chef website, the information you previously provided can be
-            retrieved, so you can easily use the Flavor Chef features that you
-            customized. 
+            you personalize Flavor Chef Catering pages, or register with Flavor
+            Chef Catering site or services, a cookie helps Flavor Chef Catering
+            to recall your specific information on subsequent visits. This
+            simplifies the process of recording your personal information, such
+            as billing addresses, shipping addresses, and so on. When you return
+            to the same Flavor Chef website, the information you previously
+            provided can be retrieved, so you can easily use the Flavor Chef
+            Catering features that you customized. 
           </p>
           <p>
             You have the ability to accept or decline cookies. Most Web browsers
             automatically accept cookies, but you can usually modify your
             browser setting to decline cookies if you prefer. If you choose to
             decline cookies, you may not be able to fully experience the
-            interactive features of the Flavor Chef services or websites you
-            visit. 
+            interactive features of the Flavor Chef Catering services or
+            websites you visit. 
           </p>
           <h3>Links</h3>
           <p>
@@ -211,47 +212,49 @@ const Page = () => {
           </ul>
           <h3>Children Under Thirteen</h3>
           <p>
-            Flavor Chef does not knowingly collect personally identifiable
-            information from children under the age of thirteen. If you are
-            under the age of thirteen, you must ask your parent or guardian for
-            permission to use this website. 
+            Flavor Chef Catering does not knowingly collect personally
+            identifiable information from children under the age of thirteen. If
+            you are under the age of thirteen, you must ask your parent or
+            guardian for permission to use this website. 
           </p>
           <h3>E-mail Communications</h3>
           <p>
-            From time to time, Flavor Chef may contact you via email for the
-            purpose of providing announcements, promotional offers, alerts,
-            confirmations, surveys, and/or other general communication. In order
-            to improve our Services, we may receive a notification when you open
-            an email from Flavor Chef or click on a link therein. 
+            From time to time, Flavor Chef Catering may contact you via email
+            for the purpose of providing announcements, promotional offers,
+            alerts, confirmations, surveys, and/or other general communication.
+            In order to improve our Services, we may receive a notification when
+            you open an email from Flavor Chef Catering or click on a link
+            therein. 
           </p>
           <p>
             If you would like to stop receiving marketing or promotional
-            communications via email from Flavor Chef, you may opt out of such
-            communications by clicking on the UNSUBSCRIBE button. 
+            communications via email from Flavor Chef Catering, you may opt out
+            of such communications by clicking on the UNSUBSCRIBE button. 
           </p>
           <h3>Changes to this Statement</h3>
           <p>
-            Flavor Chef reserves the right to change this Privacy Policy from
-            time to time. We will notify you about significant changes in the
-            way we treat personal information by sending a notice to the primary
-            email address specified in your account, by placing a prominent
-            notice on our website, and/or by updating any privacy information.
-            Your continued use of the website and/or Services available after
-            such modifications will constitute your: (a) acknowledgment of the
-            modified Privacy Policy; and (b) agreement to abide and be bound by
-            that Policy. 
+            Flavor Chef Catering reserves the right to change this Privacy
+            Policy from time to time. We will notify you about significant
+            changes in the way we treat personal information by sending a notice
+            to the primary email address specified in your account, by placing a
+            prominent notice on our website, and/or by updating any privacy
+            information. Your continued use of the website and/or Services
+            available after such modifications will constitute your: (a)
+            acknowledgment of the modified Privacy Policy; and (b) agreement to
+            abide and be bound by that Policy. 
           </p>
           <h3>Contact Information</h3>
           <p>
-            Flavor Chef welcomes your questions or comments regarding this
-            Statement of Privacy. If you believe that Flavor Chef has not
-            adhered to this Statement, please contact Flavor Chef at: 
+            Flavor Chef Catering welcomes your questions or comments regarding
+            this Statement of Privacy. If you believe that Flavor Chef Catering
+            has not adhered to this Statement, please contact Flavor Chef
+            Catering at: 
           </p>
-          <p>Flavor Chef </p>
+          <p>Flavor Chef Catering </p>
           <p>
             Email Address: 
             <br />
-            info@bt-tech.com
+            flavorchefcatering@gmail.com
           </p>
           <p>Effective as of June 7, 2021 </p>
         </div>

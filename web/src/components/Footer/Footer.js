@@ -53,8 +53,8 @@ const Footer = () => {
                     className="text-sm no-underline font-normal text-white hover:text-white text-opacity-80 hover:text-opacity-100"
                   >
                     <address className="not-italic">
-                      1175 Park Center Dr Vista,
-                      <br /> CA 92081
+                      1175 Park Center Dr.
+                      <br /> Vista,CA 92081
                     </address>
                   </a>
                 </div>

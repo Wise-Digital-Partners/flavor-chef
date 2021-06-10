@@ -152,7 +152,7 @@ const Page = ({ data }) => {
           {menus.map((menu, i) => {
             return (
               <div id={menu.id} className="group" key={i}>
-                <div className="grid md:grid-cols-2 gap-y-8 md:gap-x-10 lg:gap-x-20 items-center mb-20 md:mb-32 md:group-hover:shadow-3xl transition-all duration-300 ease-linear">
+                <div className="grid md:grid-cols-2 gap-y-8 md:gap-x-10 lg:gap-x-20 items-center mb-20 md:mb-32 transition-all duration-300 ease-linear">
                   <div>
                     <GatsbyImage image={menu.image} alt={menu.heading} />
                   </div>
