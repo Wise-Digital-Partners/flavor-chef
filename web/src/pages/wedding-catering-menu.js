@@ -387,7 +387,9 @@ const Page = ({ data }) => {
   const clickHandler = () => {
     setActiveState(setActive === "" ? "active" : "");
     setHeightState(
-      setActive === "active" ? "max-h-0 py-0" : "py-6 max-h-[400px]"
+      setActive === "active"
+        ? "max-h-0 py-0"
+        : "py-6 md:py-0 max-h-[400px] md:max-h-0"
     );
     setOverlayState(setActive === "active" ? "opacity-0" : "opacity-100");
     setIconState(setActive === "active" ? "rotate-0" : "rotate-180");
@@ -485,9 +487,9 @@ const Page = ({ data }) => {
           </nav>
         </div>
 
-        <section id="appetizers" className="mb-12 md:mb-10">
+        <section id="appetizers" className="mb-12 md:mb-16">
           <div className="container">
-            <header className="mb-12">
+            <header className="mb-14 md:mb-12">
               <h2>Appetizers</h2>
             </header>
 
@@ -553,9 +555,9 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="buffet" className="mb-12 md:mb-10">
+        <section id="buffet" className="mb-12 md:mb-16">
           <div className="container">
-            <header className="mb-12">
+            <header className="mb-14 md:mb-12">
               <h2>Buffet</h2>
             </header>
 
@@ -634,9 +636,9 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="plated" className="mb-12 md:mb-10">
+        <section id="plated" className="mb-12 md:mb-16">
           <div className="container">
-            <header className="mb-12">
+            <header className="mb-14 md:mb-12">
               <h2>Plated</h2>
             </header>
 
@@ -717,7 +719,7 @@ const Page = ({ data }) => {
 
         <section id="family-style" className="mb-8 md:mb-10">
           <div className="container">
-            <header className="mb-12">
+            <header className="mb-14 md:mb-12">
               <h2>Family Style</h2>
             </header>
 

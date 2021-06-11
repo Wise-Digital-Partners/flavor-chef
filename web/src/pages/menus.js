@@ -24,7 +24,7 @@ const Page = ({ data }) => {
       image: data.menuWedding.childImageSharp.gatsbyImageData,
       heading: "Wedding Menu",
       text:
-        "20-30 words Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor purus amet.",
+        "Impress your wedding guests with our unique blend of classical French technique and California flair. Our wedding menu features memorable dishes from our top chefs.",
       viewMenu: "/wedding-catering-menu/",
       downloadMenu: data.weddingPDF.publicURL,
     },
@@ -33,7 +33,7 @@ const Page = ({ data }) => {
       image: data.menuSummerDinnerParty.childImageSharp.gatsbyImageData,
       heading: "Summer Dinner Party Menu",
       text:
-        "20-30 words Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor purus amet.",
+        "Make it a dinner party to remember with great summer eats from Flavor Chef Catering. This menu features lighter fare perfect for summertime evening celebrations.",
       viewMenu: "/dinner-catering-menu/",
       downloadMenu: data.summerDinnerPartyPDF.publicURL,
     },
@@ -42,7 +42,7 @@ const Page = ({ data }) => {
       image: data.menuSmallBites.childImageSharp.gatsbyImageData,
       heading: "Small Bites Menu",
       text:
-        "20-30 words Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor purus amet.",
+        "Don’t forget the appetizers! Your guests will love our menu of delectable small bites. They’re created by our top chefs and feature, as always, locally sourced ingredients.",
       viewMenu: "/appetizer-catering-menu/",
       downloadMenu: "",
     },
@@ -51,7 +51,7 @@ const Page = ({ data }) => {
       image: data.menuSweetTreats.childImageSharp.gatsbyImageData,
       heading: "Sweet Treats Menu",
       text:
-        "20-30 words Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor purus amet.",
+        "Serve up scrumptious sweet treats at your next event or celebration. Our menu includes heavenly desserts your guests will rave about.",
       viewMenu: "/dessert-catering-menu/",
       downloadMenu: "",
     },
@@ -60,7 +60,7 @@ const Page = ({ data }) => {
       image: data.menuBoxedLunch.childImageSharp.gatsbyImageData,
       heading: "Boxed Lunch Menu",
       text:
-        "20-30 words Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor purus amet.",
+        "When you want to keep it simple, order from our boxed lunch menu. These fresh meals are packaged and ready to go!",
       viewMenu: "/boxed-lunch-catering-menu/",
       downloadMenu: data.boxedMealsPDF.publicURL,
     },
@@ -69,7 +69,7 @@ const Page = ({ data }) => {
       image: data.menuFlavorMobile.childImageSharp.gatsbyImageData,
       heading: "Flavor Mobile Mneu",
       text:
-        "20-30 words Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor purus amet.",
+        "Our top chefs will come to you! Our Flavor Mobile menu features the same types of high-quality, locally sourced dishes we’re known for.",
       viewMenu: "/flavor-mobile-menu/",
       downloadMenu: data.flavorMobilePDF.publicURL,
     },
@@ -86,7 +86,9 @@ const Page = ({ data }) => {
   const clickHandler = () => {
     setActiveState(setActive === "" ? "active" : "");
     setHeightState(
-      setActive === "active" ? "max-h-0 py-0" : "py-6 max-h-[400px]"
+      setActive === "active"
+        ? "max-h-0 py-0"
+        : "py-6 md:py-0 max-h-[400px] md:max-h-0"
     );
     setOverlayState(setActive === "active" ? "opacity-0" : "opacity-100");
     setIconState(setActive === "active" ? "rotate-0" : "rotate-180");
@@ -117,11 +119,11 @@ const Page = ({ data }) => {
       <section className="pt-12 md:pt-20 mb-14">
         <div className="container">
           <header className="max-w-3xl mx-auto text-center">
-            <h2>Intro Heading</h2>
+            <h2>Flavor Chef Menus</h2>
             <p>
-              20-30 words Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit ut aliquam, purus sit amet luctus venenatis, lectus magna
-              fringilla urna, porttitor purus amet.
+              Our menus feature chef-inspired dishes made with locally sourced
+              ingredients. Whether you’re planning a wedding, throwing a bash,
+              or want to make a celebration special, we have the menu to match.
             </p>
           </header>
         </div>

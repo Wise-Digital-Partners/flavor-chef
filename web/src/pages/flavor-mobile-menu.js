@@ -18,361 +18,215 @@ const Page = ({ data }) => {
     },
   ];
 
-  const passedHorsDeouvres = [
+  const burgerPackage = [
     {
-      name: "Stuffed Mushroom",
-      description: "cremini, goat cheese, parmesan, fresh herbs",
-    },
-    {
-      name: "Bacon Wrapped Date",
+      name: "Flavor Burger",
       description:
-        "medjool date, applewood smoked bacon, goat cheese, caramelized onions, basil, balsamic reduction",
+        "7 oz patty, American cheese, arugula, caramelized onions, garlic mayo, tomato, brioche bun, house pickles, shoestring fries",
     },
     {
-      name: "Mini Crab Cake",
-      description: "lump crab, onions, peppers, basil aoli",
-    },
-    {
-      name: "Sweet Potato Empanada",
+      name: "Cowboy Flavor Burger",
       description:
-        "roasted sweet potato, black beans, cheese, smoked jalapeño relish, chipotle aioli",
+        "7oz patty, pepper-jack cheese, BBQ aioli, crispy fried onions, mixed greens, brioche bun, house pickles, shoestring fries",
     },
     {
-      name: "Avocado Toast Pointe",
+      name: "So Cal Flavor Burger",
       description:
-        "fresh avocado, pickled red onion, pickled cumquat, lemon oil, cilantro, grilled baguette",
+        "7oz patty, pepper-jack cheese, peppered bacon, guacamole, mixed greens, chipotle aioli, brioche bun, house pickles, shoestring fries",
     },
     {
-      name: "Curry Chicken Skewer",
-      description: "Curry Chicken Skewer",
-    },
-    {
-      name: "Steak & Brie Crostini",
-      description: "NY strip steak, brie, caramelized onion, dijon",
-    },
-    {
-      name: "Prosciutto Shrimp Skewer",
-      description: "shrimp, prosciutto, sriracha aioli",
-    },
-    {
-      name: "Heirloom Tomato Bruschetta",
-      description: "Heirloom Tomato Bruschetta",
-    },
-    {
-      name: "Mediterranean Beef Skewer",
-      description: "dry rubbed beef sirloin, cucumber tzatziki",
-    },
-    {
-      name: "Ahi Poke Crisps",
+      name: "Beyond Flavor Burger",
       description:
-        "crispy wonton, tamari, ginger, scallion, sesame seeds, sriracha aioli",
-    },
-    {
-      name: "Chicken & Waffle",
-      description:
-        "fried chicken, buttermilk waffle, buffalo maple glaze, house pickle",
-    },
-    {
-      name: "Lamb Chops",
-      description: "marinated lamb chop, rosemary, mustard dill sauce",
-    },
-    {
-      name: "Fresh Spring Roll",
-      description:
-        "rice paper, mint, cilantro, sesame noodles, pickled vegetables, sweet chili sauce",
+        "beyond meatless patty, American cheese, arugula, caramelized onions, garlic mayo, tomato, brioche bun, house pickles, shoestring fries",
     },
   ];
 
-  const appetizerDisplay = [
+  const bbq = [
     {
-      name: "Seasonal Crudites",
+      name: "BBQ Brisket Sandwich",
       description:
-        "seasonal vegetables, warm pita chips, artichoke spinach dip, sprouted bean hummus",
+        "smoked brisket, sweet and spicy BBQ, honey-ginger slaw, brioche bun, steak fries",
     },
     {
-      name: "Charcuterie Display",
+      name: "BBQ Pork Sandwich",
       description:
-        "seasonal vegetables, warm pita chips, artichoke spinach dip, sprouted bean hummus",
+        "braised pork, peach habanero BBQ, honey-ginger slaw, brioche bun, steak fries",
     },
     {
-      name: "The Hodge Podge",
-      description:
-        "variety of cheeses, dried fruit, toasted nuts, crackers, baguette, assorted fresh fruit, berries, seasonal vegetables, sprouted bean hummus, dried and cured meats, seasonal jam",
+      name: "Rib Plate",
+      description: "baby back ribs, house BBQ, honey-ginger slaw, steak fries",
     },
     {
-      name: "Raw Bar",
+      name: "BBQ Braised Jackfruit Sandwich",
       description:
-        "live oyster shucking, crab legs, grilled shrimp cocktail garnish station of mignonette sauce, raw horseradish, lemon, spicy cocktail sauce",
+        "braised jackfruit, sweet and spicy BBQ, honey-ginger slaw, brioche bun, steak fries",
     },
   ];
 
-  const buffetSalads = [
+  const kona = [
     {
-      name: "Bistro Salad",
+      name: "Loco Moco",
       description:
-        "organic greens, candied pecan, seasonal fruits, heirloom carrot, cucumber, radish, feta, orange balsamic, EVOO",
+        "beef patty, fried egg, caramelized onion demi, green onion, steamed jasmine rice, Hawaiian mac salad",
     },
     {
-      name: "Organic Green Salad",
+      name: "Kahlua Pork Sliders",
       description:
-        "organic greens, heirloom carrot, cucumber, radish, cherry tomato, infused balsamic, EVOO",
+        "braised pork butt, Hawaiian sea salt, banana leaves, Korean BBQ sauce, Hawaiian slider buns, cole slaw, Hawaiian mac salad, shoestring fries",
     },
     {
-      name: "House Salad",
+      name: "Huli Huli Chicken",
       description:
-        "baby greens, slivered red onion, pepperoncini, carrot, radish, cucumber, red wine vinaigrette, parmesan Reggiano",
+        "seared bone in chicken thigh, grilled pineapple, steamed jasmine rice, Hawaiian mac salad",
+    },
+    {
+      name: "Korean BBQ Spare Ribs",
+      description:
+        "Korean style bone in short rib, Fresno chilis green onion, steamed jasmine rice, Hawaiian mac salad",
     },
   ];
 
-  const buffetVeggies = [
+  const southOfTheBorder = [
     {
-      name: "Farmer’s Market Medley ",
+      name: "Baja Tacos",
       description:
-        "seasonal vegetables, broccoli, cauliflower, heirloom carrot, summer squash, garlic, herbs, butte",
+        "beer battered cod, pico slaw, cilantro lime crema, corn tortilla",
     },
     {
-      name: "Seasonal Roasted Vegetable Platter",
+      name: "Birria Taco",
       description:
-        "grilled asparagus, seasonal squash, broccolini, bell pepper, roasted mushrooms, balsamic vinegar, EVOO",
+        "braised beef, jack cheese, onion & cilantro mix, corn tortilla, consommé",
     },
     {
-      name: "Petit Heirloom Carrots",
-      description: "Heirloom carrots, butter, garlic, fresh herbs",
+      name: "Chicken Adobada Quesadilla",
+      description:
+        "seared chicken, pineapple, jalapeno, jack cheese, flour tortilla, crema, green onion",
+    },
+    {
+      name: "Black Bean & Yam Taquitos",
+      description:
+        "chipotle black bean, sweet potato, jack cheese, smoked jalapeno relish, roasted salad & guacamole",
     },
   ];
 
-  const buffetStarches = [
+  const riceBowl = [
     {
-      name: "Garlic Mashed Potatoes",
-      description: "Yukon gold potato, cream, roasted garlic, butter ",
+      name: "Poke Bowl",
+      description:
+        "fresh ahi, house poke sauce, cucumber, carrot, green onion, cilantro, edamame, radishes, sriracha aioli, sesame seeds, steamed jasmine rice",
     },
     {
-      name: "Roasted Fingerling Potatoes",
-      description: "fingerling potatoes, fresh herbs, garlic ",
+      name: "Beef Bulgogi Bowl",
+      description:
+        "bulgogi beef, house kimchi, fresh orange, sesame seeds, green onion, steamed jasmine rice",
     },
     {
-      name: "Citrus Risotto",
-      description: "arborio rice, thyme, lemon zest, parmesan ",
+      name: "Chicken Teriyaki Bowl",
+      description:
+        "chicken teriyaki, house kimchi, fresh orange, sesame seeds, green onion, steamed jasmine rice",
+    },
+    {
+      name: "Crispy Coconut Shrimp Bowl",
+      description:
+        "coconut shrimp, house sweet chili sauce, green onion, jalapeno, pineapple, steamed jasmine rice",
     },
   ];
 
-  const buffetMains = [
+  const caliFresh = [
     {
-      name: "Pan Roasted Dijon Chicken",
+      name: "Wild Isle Salmon Plate",
       description:
-        "Jidori airline chicken breast, Dijon, white wine, thyme, garlic",
+        "seared salmon, smashed coconut sweet potato, cabbage slaw, fresh citrus",
     },
     {
-      name: "Chicken Florentine",
+      name: "Steak Salad",
       description:
-        "chicken breast, panko, spinach, goat cheese, citrus bechamel",
+        "seared flank steak, arugula, chimichurri, blistered cherry tomato, crispy fried onion, marcona almonds ",
     },
     {
-      name: "Pan Seared Salmon",
-      description: "Wild Isle salmon, orange, basil, California EVOO",
-    },
-    {
-      name: "Citrus Seabass",
+      name: "Citrus Chicken Plate",
       description:
-        "local seabass, ginger & lime beurre blanc, cilantro gremolat",
-    },
-    {
-      name: "Grilled Flank Steak",
-      description:
-        "Cedar River Farms flank steak, garlic, herbs, Argentinian chimichurri, Fresno chili peppers ",
-    },
-    {
-      name: "Braised Beef Short Ribs",
-      description:
-        "Cedar River Farms boneless beef short rib, traditional vegetables, fresh herbs, red wine jus",
-    },
-    {
-      name: "Prime Rib Carving",
-      description:
-        "slow roasted Prime Rib, au jus, horseradish cream, giardiniera",
-    },
-    {
-      name: "Spinach Stuffed Mushroom",
-      description:
-        "Portabella mushroom, creamy spinach, artichoke heart, parmesan",
-      plantBased: true,
-    },
-    {
-      name: "Eggplant Parmesan",
-      description:
-        "panko crusted eggplant, house marinara, parmesan Reggiano , fresh basil",
-      plantBased: true,
-    },
-  ];
-
-  const platedSalads = [
-    {
-      name: "Butter Lettuce Caesar",
-      description:
-        "butter lettuce, garlic crouton, house dressing, blistered cherry tomato, parmesan Reggiano",
-    },
-    {
-      name: "Bistro Salad",
-      description:
-        "organic greens, candied pecan, seasonal fruits, heirloom carrot, cucumber, radish, feta, orange balsamic, EVOO",
-    },
-    {
-      name: "Wedge Salad",
-      description:
-        "baby iceburg lettuce, house Point Reyes blue cheese, heirloom cherry tomatoes, crumbled bacon, green onion",
-    },
-  ];
-
-  const platedVeggies = [
-    {
-      name: "Grilled Asparagus",
-      description: "grilled asparagus, sea salt, lemon, EVOO",
-    },
-    {
-      name: "Petit Heirloom Carrots",
-      description: "Heirloom carrots, butter, garlic, fresh herbs",
-    },
-    {
-      name: "Sautéed Broccolini ",
-      description: "broccolini, garlic, sea salt, butter",
-    },
-  ];
-
-  const platedStarches = [
-    {
-      name: "Garlic Mashed Potatoes",
-      description: "Yukon gold potato, cream, roasted garlic, butter ",
-    },
-    {
-      name: "Sweet Potato Mash",
-      description: "Garnet yam, coconut milk, nutmeg",
-    },
-    {
-      name: "Citrus Risotto",
-      description: "arborio rice, thyme, lemon zest, parmesan ",
-    },
-  ];
-
-  const platedMains = [
-    {
-      name: "Pan Roasted Dijon Chicken",
-      description:
-        "Jidori airline chicken breast, Dijon, white wine, thyme, garlic",
-    },
-    {
-      name: "Chicken Saltimbocca",
-      description:
-        "stuffed chicken breast, prosciutto, sage, mozzarella, fig & tomato ragout",
-    },
-    {
-      name: "Pan Seared Salmon",
-      description: "Wild Isle salmon, orange, basil, California EVOO",
-    },
-    {
-      name: "Tropical Sea Bass",
-      description:
-        "citrus marinated local seabass, pineapple & mango salsa, micro cilantro, EVOO",
-    },
-    {
-      name: "Split Lobster Tail ",
-      description: "Maine lobster, lemon, butter, white wine, parsley",
-    },
-    {
-      name: "Braised Beef Short Ribs",
-      description:
-        "Cedar River Farms boneless beef short rib, traditional vegetables, fresh herbs, red wine jus",
-    },
-    {
-      name: "Pepper Crusted Filet Mignon",
-      description: "7oz center cut filet mignon, tamarind mushroom demi",
-    },
-    {
-      name: "Shrimp Scampi",
-      description: "fresh shrimp, butter, lemon, white wine, fresh herbs",
-    },
-    {
-      name: "Spinach Stuffed Mushroom",
-      description:
-        "Portabella mushroom, creamy spinach, artichoke heart, parmesan",
-      plantBased: true,
+        "seared chicken breast, smashed coconut sweet potato, cabbage slaw, fresh citrus",
     },
     {
       name: "Grilled Polenta Cake",
       description:
-        "organic polenta, fresh herbs, tomato ragout, parmesan Reggiano",
-      plantBased: true,
+        "grilled polenta, arugula, chimichurri, tomato ragout, blistered cherry tomato",
     },
   ];
 
-  const familyStyleSalads = [
+  const apps = [
     {
-      name: "House Salad",
+      name: "Deep Fried Artichoke Hearts",
       description:
-        "baby greens, slivered red onion, pepperoncini, carrot, radish, cucumber, red wine vinaigrette ",
+        "beer battered artichoke hearts, house made buttermilk ranch",
     },
     {
-      name: "Bistro Salad",
-      description:
-        "organic greens, candied pecan, seasonal fruits, heirloom carrot, cucumber, radish, feta, orange balsamic, EVOO",
+      name: "Crispy Coconut shrimp",
+      description: "fried coconut shrimp, house sweet chili sauce",
     },
     {
-      name: "Roasted Beet Salad ",
+      name: "Sweet Potato black bean empanadas",
       description:
-        "arugula, roasted red & gold beets, goat cheese, heirloom carrot, orange squeeze, pistachio, grapefruit balsamic, EVOO",
+        "sweet potato, chipotle black bean, jack cheese, smoked jalapeno relish",
+    },
+    {
+      name: "Mozzarella sticks",
+      description: "fried mozzarella sticks, house made marinara ",
+    },
+    {
+      name: "Mini Loaded Fries",
+      description:
+        "fresh fries, house queso, ground beef, jalapeno, green onion, crema",
+    },
+    {
+      name: "Thai Chili Wings",
+      description:
+        "freshly fried wings, house sweet chili sauce, green onion, ",
     },
   ];
 
-  const familyStyleVeggies = [
+  const desserts = [
     {
-      name: "Seasonal Roasted Vegetable Platter",
+      name: "Beignets",
       description:
-        "grilled asparagus, seasonal squash, broccolini, bell pepper, roasted mushrooms, balsamic vinegar, EVOO ",
+        "fresh beignets, powdered sugar, chocolate raspberry drizzle",
     },
     {
-      name: "Grilled Asparagus",
-      description: "grilled asparagus, sea salt, lemon, EVOO",
+      name: "Seasonal Fried Hand Pies",
+      description: "seasonal fruit compote, fried pie dough",
     },
     {
-      name: "Petit Heirloom Carrots",
-      description: "Heirloom carrots, butter, garlic, fresh herbs",
+      name: "Crème Brulees",
+      description: "vanilla bean, sweet cream, caramelized sugar",
+    },
+    {
+      name: "Churros",
+      description: "fresh churros, cinnamon sugar, caramel drizzle",
+    },
+    {
+      name: "Deep Fried Oreos",
+      description: "deep fried oreos, chocolate syrup drizzle, powdered sugar",
+    },
+    {
+      name: "Strawberry Cheesecake",
+      description: "Wontonscream cheese, strawberry compote, fried wonton",
     },
   ];
 
-  const familyStyleStarches = [
+  const kids = [
     {
-      name: "Garlic Mashed Potatoes",
-      description: "Yukon gold potato, cream, roasted garlic, butter ",
+      name: "Cheese Quesadilla",
+      description: "jack cheese, flour tortilla, fresh fries & ketchup",
     },
     {
-      name: "Wild Rice Pilaf",
+      name: "Jr. Flavor Burger",
       description:
-        "wild rice, traditional vegetables, fresh herbs, toasted almonds",
+        "all beef patty, American cheese, brioche bun, fresh fries & ketchup",
     },
     {
-      name: "Roasted Root Vegetables",
-      description:
-        "sweet potato, carrot, purple potato, gold potato, rutabaga, garlic, fresh herbs",
-    },
-  ];
-
-  const familyStyleMains = [
-    {
-      name: "Pan Roasted Dijon Chicken",
-      description:
-        "Jidori airline chicken breast, Dijon, white wine, thyme, garlic",
-    },
-    {
-      name: "Grilled Tomahawk Steak",
-      description:
-        "grilled tomahawk steak, rosemary, garlic, shallot & herb compound butter",
-    },
-    {
-      name: "Grilled Berkshire Pork Chop",
-      description: "grilled Berkshire pork, blackberry & sage compote",
-    },
-    {
-      name: "Blackened Shrimp Skewers",
-      description: "Cajun marinated shrimp, tequila & lime butter",
+      name: "Chicken Tenders",
+      description: "fried chicken tenders, fresh fries & ketchup",
     },
   ];
 
@@ -387,7 +241,9 @@ const Page = ({ data }) => {
   const clickHandler = () => {
     setActiveState(setActive === "" ? "active" : "");
     setHeightState(
-      setActive === "active" ? "max-h-0 py-0" : "py-6 max-h-[400px]"
+      setActive === "active"
+        ? "max-h-0 py-0"
+        : "py-6 md:py-0 max-h-[400px] md:max-h-0"
     );
     setOverlayState(setActive === "active" ? "opacity-0" : "opacity-100");
     setIconState(setActive === "active" ? "rotate-0" : "rotate-180");
@@ -423,7 +279,7 @@ const Page = ({ data }) => {
           className={`bg-black bg-opacity-50 h-full w-full absolute transition-all duration-300 ease-linear z-10 lg:hidden ${setOverlay}`}
         ></div>
         <div
-          className="bg-primary-900 lg:bg-transparent flex justify-between text-white py-3 lg:py-0 px-4 lg:px-0 lg:mt-12 mb-16 lg:mb-24 sticky lg:relative top-[61px] lg:top-0 cursor-pointer lg:cursor-auto z-20"
+          className="bg-primary-900 lg:bg-transparent flex justify-between text-white py-3 lg:py-0 px-4 lg:px-0 lg:mt-16 mb-16 lg:mb-22 sticky lg:relative top-[61px] lg:top-0 cursor-pointer lg:cursor-auto z-20"
           role="button"
           tabIndex={0}
           onKeyDown={clickHandler}
@@ -447,7 +303,7 @@ const Page = ({ data }) => {
 
           <nav className="flex justify-center mx-auto absolute lg:relative bg-white lg:bg-transparent top-0 left-0 transform translate-y-12 lg:translate-y-0 w-full lg:w-auto">
             <ul
-              className={`px-14 lg:px-0 flex flex-col lg:flex-row space-y-4 lg:space-y-0 w-full lg:w-auto overflow-y-scroll lg:overflow-visible transition-all duration-300 ease-linear ${setHeight}`}
+              className={`px-14 lg:px-0 flex flex-col lg:flex-row md:items-center space-y-4 lg:space-y-0 w-full lg:w-auto overflow-y-scroll lg:overflow-visible transition-all duration-300 ease-linear ${setHeight}`}
             >
               <li>
                 <AnchorLink
@@ -497,46 +353,82 @@ const Page = ({ data }) => {
                   stripHash
                 />
               </li>
-              <li>
+              <li className="inline-flex items-center relative">
                 <AnchorLink
                   to={url + "#apps"}
                   title="Apps"
-                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:pl-6 lg:pr-12"
                   stripHash
                 />
+                <img
+                  src={data.addOnIcon.publicURL}
+                  alt="Add-on icon"
+                  className="-mt-1 ml-1 lg:ml-0 lg:right-7 md:absolute"
+                />
               </li>
-              <li>
+              <li className="inline-flex items-center relative">
                 <AnchorLink
                   to={url + "#desserts"}
                   title="Desserts"
-                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:pl-6 lg:pr-12"
                   stripHash
                 />
+                <img
+                  src={data.addOnIcon.publicURL}
+                  alt="Add-on icon"
+                  className="-mt-1 ml-1 lg:ml-0 lg:right-7 md:absolute"
+                />
               </li>
-              <li>
+              <li className="inline-flex items-center relative">
                 <AnchorLink
                   to={url + "#kids"}
                   title="Kids"
-                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:pl-6 lg:pr-12"
                   stripHash
+                />
+                <img
+                  src={data.addOnIcon.publicURL}
+                  alt="Add-on icon"
+                  className="-mt-1 ml-1 lg:ml-0 lg:right-7 md:absolute"
                 />
               </li>
             </ul>
           </nav>
         </div>
 
-        <section id="appetizers" className="mb-12 md:mb-10">
+        <section className="mb-12 md:mb-24">
           <div className="container">
-            <header className="mb-12">
-              <h2>Appetizers</h2>
+            <div className="max-w-3xl mx-auto text-center">
+              <p className="font-heading text-lg mb-4">
+                Pick your Flavor Mobile package and choose 3 entrees from that
+                package
+              </p>
+
+              <div className="flex items-center justify-center text-sm text-gray-600 text-opacity-50">
+                <img
+                  src={data.addOnIcon.publicURL}
+                  alt="Add-on icon"
+                  className="mr-3"
+                />
+                <span className="mr-2">=</span>
+                <span>add-ons</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="burger" className="mb-12 md:mb-16">
+          <div className="container">
+            <header className="mb-14 md:mb-12">
+              <h2>Burger Flavor Mobile</h2>
             </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Passed Hors D‘eouvres</b> / Choose 3
+              <b>Burger Package</b> / Choose 3
             </div>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
-                {passedHorsDeouvres.slice(0, 7).map((item, i) => {
+                {burgerPackage.slice(0, 2).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -548,7 +440,7 @@ const Page = ({ data }) => {
                 })}
               </div>
               <div>
-                {passedHorsDeouvres.slice(7).map((item, i) => {
+                {burgerPackage.slice(2).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -560,13 +452,21 @@ const Page = ({ data }) => {
                 })}
               </div>
             </div>
+          </div>
+        </section>
+
+        <section id="bbq" className="mb-12 md:mb-16">
+          <div className="container">
+            <header className="mb-14 md:mb-12">
+              <h2>BBQ Flavor Mobile</h2>
+            </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Appetizer Display</b> / Choose 1
+              <b>BBQ Package</b> / Choose 3
             </div>
-            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20">
+            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
-                {appetizerDisplay.slice(0, 2).map((item, i) => {
+                {bbq.slice(0, 2).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -578,7 +478,7 @@ const Page = ({ data }) => {
                 })}
               </div>
               <div>
-                {appetizerDisplay.slice(2).map((item, i) => {
+                {bbq.slice(2).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -593,75 +493,32 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="buffet" className="mb-12 md:mb-10">
+        <section id="kona" className="mb-12 md:mb-16">
           <div className="container">
-            <header className="mb-12">
-              <h2>Buffet</h2>
+            <header className="mb-14 md:mb-12">
+              <h2>Kona Flavor Mobile</h2>
             </header>
 
+            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+              <b>Kona Package</b> / Choose 3
+            </div>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
-                <div className="mb-14 md:mb-20">
-                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                    <b>Salads</b> / Choose 1
-                  </div>
-                  {buffetSalads.map((item, i) => {
-                    return (
-                      <div key={i} className="mb-8 md:mb-10">
-                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                          {item.name}
-                        </p>
-                        <p className="mb-0">{item.description}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                <div className="mb-14 md:mb-20">
-                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                    <b>Veggies</b> / Choose 1
-                  </div>
-                  {buffetVeggies.map((item, i) => {
-                    return (
-                      <div key={i} className="mb-8 md:mb-10">
-                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                          {item.name}
-                        </p>
-                        <p className="mb-0">{item.description}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                <div className="mb-14 md:mb-20">
-                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                    <b>Starches</b> / Choose 1
-                  </div>
-                  {buffetStarches.map((item, i) => {
-                    return (
-                      <div key={i} className="mb-8 md:mb-10">
-                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                          {item.name}
-                        </p>
-                        <p className="mb-0">{item.description}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div>
-                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                  <b>Mains</b> / Choose 2
-                </div>
-                {buffetMains.map((item, i) => {
+                {kona.slice(0, 2).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
-                      {item.plantBased && (
-                        <div className="bg-[#269566] text-center text-white text-xs px-3 py-1.5 mb-3 rounded inline-flex">
-                          Plant Based
-                        </div>
-                      )}
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+              <div>
+                {kona.slice(2).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
                         {item.name}
                       </p>
@@ -674,75 +531,32 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="plated" className="mb-12 md:mb-10">
+        <section id="south-of-the-border" className="mb-12 md:mb-16">
           <div className="container">
-            <header className="mb-12">
-              <h2>Plated</h2>
+            <header className="mb-14 md:mb-12">
+              <h2>South of the Border Flavor Mobile</h2>
             </header>
 
+            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+              <b>South of the Border Package</b> / Choose 3
+            </div>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
-                <div className="mb-14 md:mb-20">
-                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                    <b>Salads</b> / Choose 1
-                  </div>
-                  {platedSalads.map((item, i) => {
-                    return (
-                      <div key={i} className="mb-8 md:mb-10">
-                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                          {item.name}
-                        </p>
-                        <p className="mb-0">{item.description}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                <div className="mb-14 md:mb-20">
-                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                    <b>Veggies</b> / Choose 1
-                  </div>
-                  {platedVeggies.map((item, i) => {
-                    return (
-                      <div key={i} className="mb-8 md:mb-10">
-                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                          {item.name}
-                        </p>
-                        <p className="mb-0">{item.description}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                <div className="mb-14 md:mb-20">
-                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                    <b>Starches</b> / Choose 1
-                  </div>
-                  {platedStarches.map((item, i) => {
-                    return (
-                      <div key={i} className="mb-8 md:mb-10">
-                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                          {item.name}
-                        </p>
-                        <p className="mb-0">{item.description}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div>
-                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                  <b>Mains</b> / Choose 1 or 2
-                </div>
-                {platedMains.map((item, i) => {
+                {southOfTheBorder.slice(0, 2).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
-                      {item.plantBased && (
-                        <div className="bg-[#269566] text-center text-white text-xs px-3 py-1.5 mb-3 rounded inline-flex">
-                          Plant Based
-                        </div>
-                      )}
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+              <div>
+                {southOfTheBorder.slice(2).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
                         {item.name}
                       </p>
@@ -755,75 +569,205 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="family-style" className="mb-8 md:mb-10">
+        <section id="rice-bowls" className="mb-12 md:mb-16">
           <div className="container">
-            <header className="mb-12">
-              <h2>Family Style</h2>
+            <header className="mb-14 md:mb-12">
+              <h2>Rice Bowl Flavor Mobile</h2>
             </header>
 
+            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+              <b>Rice Bowls Package</b> / Choose 3
+            </div>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
-                <div className="mb-14 md:mb-20">
-                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                    <b>Salads</b> / Choose 1
-                  </div>
-                  {familyStyleSalads.map((item, i) => {
-                    return (
-                      <div key={i} className="mb-8 md:mb-10">
-                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                          {item.name}
-                        </p>
-                        <p className="mb-0">{item.description}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                <div className="mb-14 md:mb-20">
-                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                    <b>Veggies</b> / Choose 1
-                  </div>
-                  {familyStyleVeggies.map((item, i) => {
-                    return (
-                      <div key={i} className="mb-8 md:mb-10">
-                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                          {item.name}
-                        </p>
-                        <p className="mb-0">{item.description}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div>
-                <div className="mb-14 md:mb-20">
-                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                    <b>Starches</b> / Choose 1
-                  </div>
-                  {familyStyleStarches.map((item, i) => {
-                    return (
-                      <div key={i} className="mb-8 md:mb-10">
-                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                          {item.name}
-                        </p>
-                        <p className="mb-0">{item.description}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                  <b>Mains</b> / Choose 1 or 2
-                </div>
-                {familyStyleMains.map((item, i) => {
+                {riceBowl.slice(0, 2).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
-                      {item.plantBased && (
-                        <div className="bg-[#269566] text-center text-white text-xs px-3 py-1.5 mb-3 rounded inline-flex">
-                          Plant Based
-                        </div>
-                      )}
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+              <div>
+                {riceBowl.slice(2).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="cali-fresh" className="mb-12 md:mb-16">
+          <div className="container">
+            <header className="mb-14 md:mb-12">
+              <h2>Cali Fresh Flavor Mobile</h2>
+            </header>
+
+            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+              <b>Cali Fresh Package</b> / Choose 3
+            </div>
+            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
+              <div>
+                {caliFresh.slice(0, 2).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+              <div>
+                {caliFresh.slice(2).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="apps" className="mb-12 md:mb-16">
+          <div className="container">
+            <header className="mb-14 md:mb-12">
+              <h2>Passed Hors D‘eouvres</h2>
+            </header>
+
+            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12 flex items-center">
+              <span>
+                <b>Apps</b> / Add-ons
+              </span>
+              <img
+                src={data.addOnIcon.publicURL}
+                alt="Add-on icon"
+                className="ml-3"
+              />
+            </div>
+            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
+              <div>
+                {apps.slice(0, 3).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+              <div>
+                {apps.slice(3).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="desserts" className="mb-12 md:mb-16">
+          <div className="container">
+            <header className="mb-14 md:mb-12">
+              <h2>Desserts</h2>
+            </header>
+
+            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12 flex items-center">
+              <span>
+                <b>Dessert</b> / Add-ons
+              </span>
+              <img
+                src={data.addOnIcon.publicURL}
+                alt="Add-on icon"
+                className="ml-3"
+              />
+            </div>
+            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
+              <div>
+                {desserts.slice(0, 3).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+              <div>
+                {desserts.slice(3).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="kids" className="mb-12 md:mb-16">
+          <div className="container">
+            <header className="mb-14 md:mb-12">
+              <h2>Kids Flavor Mobile</h2>
+            </header>
+
+            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12 flex items-center">
+              <span>
+                <b>Kids</b> / Add-ons
+              </span>
+              <img
+                src={data.addOnIcon.publicURL}
+                alt="Add-on icon"
+                className="ml-3"
+              />
+            </div>
+            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
+              <div>
+                {kids.slice(0, 2).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+              <div>
+                {kids.slice(2).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
                         {item.name}
                       </p>
