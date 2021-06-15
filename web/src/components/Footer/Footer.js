@@ -20,6 +20,9 @@ const Footer = () => {
       logo: file(relativePath: { eq: "global/Logo - Light.png" }) {
         publicURL
       }
+      nestLogo: file(relativePath: { eq: "global/Nest Logo.svg" }) {
+        publicURL
+      }
     }
   `);
 
@@ -228,12 +231,12 @@ const Footer = () => {
                   <div className="flex items-center justify-center">
                     Powered by
                     <a
-                      className="group text-white hover:font-normal text-white hover:text-white text-opacity-50 hover:text-opacity-100 font-bold ml-1 no-underline"
+                      className="ml-1 no-underline"
                       href="https://www.wisedigitalpartners.com/affordable-web-design/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      NEST
+                      <img src={data.nestLogo.publicURL} alt="NEST logo" />
                     </a>
                   </div>
                 </li>

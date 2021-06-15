@@ -381,7 +381,7 @@ const Page = ({ data }) => {
   // Toggle Dropdown
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("h-0");
-  const [setOverlay, setOverlayState] = useState("opacity-0");
+  const [setOverlay, setOverlayState] = useState("opacity-0 invisible");
   const [setIcon, setIconState] = useState("rotate-0");
 
   const clickHandler = () => {
@@ -391,7 +391,9 @@ const Page = ({ data }) => {
         ? "max-h-0 py-0"
         : "py-6 md:py-0 max-h-[400px] md:max-h-0"
     );
-    setOverlayState(setActive === "active" ? "opacity-0" : "opacity-100");
+    setOverlayState(
+      setActive === "active" ? "opacity-0 invisible" : "opacity-100 visible"
+    );
     setIconState(setActive === "active" ? "rotate-0" : "rotate-180");
   };
 

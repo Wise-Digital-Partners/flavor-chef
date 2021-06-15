@@ -44,7 +44,7 @@ const Page = ({ data }) => {
       text:
         "Don’t forget the appetizers! Your guests will love our menu of delectable small bites. They’re created by our top chefs and feature, as always, locally sourced ingredients.",
       viewMenu: "/appetizer-catering-menu/",
-      downloadMenu: "",
+      downloadMenu: data.smallBitesPDF.publicURL,
     },
     {
       id: "sweet-treats",
@@ -53,7 +53,7 @@ const Page = ({ data }) => {
       text:
         "Serve up scrumptious sweet treats at your next event or celebration. Our menu includes heavenly desserts your guests will rave about.",
       viewMenu: "/dessert-catering-menu/",
-      downloadMenu: "",
+      downloadMenu: data.sweetTreatsPDF.publicURL,
     },
     {
       id: "boxed-lunch",
@@ -80,7 +80,7 @@ const Page = ({ data }) => {
   // Toggle Dropdown
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("h-0");
-  const [setOverlay, setOverlayState] = useState("opacity-0");
+  const [setOverlay, setOverlayState] = useState("opacity-0 invisible");
   const [setIcon, setIconState] = useState("rotate-0");
 
   const clickHandler = () => {
@@ -90,7 +90,9 @@ const Page = ({ data }) => {
         ? "max-h-0 py-0"
         : "py-6 md:py-0 max-h-[400px] md:max-h-0"
     );
-    setOverlayState(setActive === "active" ? "opacity-0" : "opacity-100");
+    setOverlayState(
+      setActive === "active" ? "opacity-0 invisible" : "opacity-100 visible"
+    );
     setIconState(setActive === "active" ? "rotate-0" : "rotate-180");
   };
 
@@ -250,7 +252,7 @@ const Page = ({ data }) => {
 
         <section className="bg-white mb-20 md:mb-32">
           <div className="container">
-            <div className="grid grid-cols-3 md:grid-cols-none md:flex flex-wrap md:flex-nowrap justify-between items-center">
+            <div className="grid grid-cols-3 md:grid-cols-6 justify-between items-center">
               <GatsbyImage
                 image={data.catalina.childImageSharp.gatsbyImageData}
               />
@@ -351,60 +353,35 @@ export const query = graphql`
       relativePath: { eq: "menus/Menus Hub/Partner Logos/Baker _ Olive.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          width: 200
-          placeholder: BLURRED
-          quality: 100
-        )
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
     catalina: file(
       relativePath: { eq: "menus/Menus Hub/Partner Logos/Catalina.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          width: 200
-          placeholder: BLURRED
-          quality: 100
-        )
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
     hamilton: file(
       relativePath: { eq: "menus/Menus Hub/Partner Logos/Hamilton.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          width: 200
-          placeholder: BLURRED
-          quality: 100
-        )
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
     jrOrganics: file(
       relativePath: { eq: "menus/Menus Hub/Partner Logos/JR Organics.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          width: 200
-          placeholder: BLURRED
-          quality: 100
-        )
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
     praegerBros: file(
       relativePath: { eq: "menus/Menus Hub/Partner Logos/Praeger Bros.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          width: 200
-          placeholder: BLURRED
-          quality: 100
-        )
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
     specialtyProduce: file(
@@ -413,12 +390,7 @@ export const query = graphql`
       }
     ) {
       childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          width: 200
-          placeholder: BLURRED
-          quality: 100
-        )
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
     downloadIcon: file(relativePath: { eq: "global/Download.svg" }) {
@@ -436,6 +408,12 @@ export const query = graphql`
       publicURL
     }
     flavorMobilePDF: file(relativePath: { eq: "flavor-mobile-menu.pdf" }) {
+      publicURL
+    }
+    sweetTreatsPDF: file(relativePath: { eq: "sweet-treats-menu.pdf" }) {
+      publicURL
+    }
+    smallBitesPDF: file(relativePath: { eq: "small-bites-menu.pdf" }) {
       publicURL
     }
     menuIcon: file(relativePath: { eq: "global/menu.svg" }) {
