@@ -28,7 +28,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-primary-900 pt-20 lg:pt-22 pb-10 lg:pb-6 text-center md:text-left">
+      <footer className="bg-primary-900 pt-20 lg:pt-22 pb-10 lg:pb-6 text-center lg:text-left">
         <div className="container">
           <div className="flex flex-col lg:flex-row lg:justify-between space-y-16 lg:space-y-0 lg:space-x-6 mb-20 lg:mb-28">
             <div>

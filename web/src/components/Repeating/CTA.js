@@ -5,7 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import ButtonSolid from "../Button/ButtonSolid";
 import CTAFullWidth from "../CTA/CTAFullWidth";
 
-const CTA = ({ heading, headingLevel, subtext }) => {
+const CTA = ({ heading, headingLevel, subtext, className }) => {
   const data = useStaticQuery(graphql`
     {
       backgroundDesktop: file(
@@ -36,9 +36,8 @@ const CTA = ({ heading, headingLevel, subtext }) => {
   const HeadingTag = headingLevel;
 
   return (
-    <>
+    <section className={`${className || ""}`}>
       <CTAFullWidth
-        className="mb-2"
         // backgroundImages={backgroundImages}
         // backgroundSize="cover"
         // backgroundPosition="100% 0"
@@ -60,8 +59,9 @@ const CTA = ({ heading, headingLevel, subtext }) => {
       <GatsbyImage
         image={data.backgroundDesktop.childImageSharp.gatsbyImageData}
         alt={heading || "Bring Flavor To Your Event"}
+        className="mt-10 md:mt-2"
       />
-    </>
+    </section>
   );
 };
 
