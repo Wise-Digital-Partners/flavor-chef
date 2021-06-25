@@ -83,13 +83,13 @@ const Testimonial = ({ className, headingLevel, backgroundImage }) => {
     },
     {
       quote:
-        "Other than marrying my husband, the second-best decision I made was using Flavor Chef. They are so amazing. The food is better than most restaurants, and the team is beyond professional. I am doing an event next year for all the guests that couldn't make it due to COVID, and I will 10,000% use them again.",
+        "The best ever! Everything about my experience was absolutely first class!",
       name: "Rachel Brodsky",
       platform: data.google.childImageSharp.gatsbyImageData,
     },
     {
       quote:
-        "Other than marrying my husband, the second-best decision I made was using Flavor Chef. They are so amazing. The food is better than most restaurants, and the team is beyond professional. I am doing an event next year for all the guests that couldn't make it due to COVID, and I will 10,000% use them again.",
+        "Everyone who attended our fundraiser is raving about the food from Flavor Chef! The presentation was wonderful with great attention to detail, which upgraded the experience like you don't find with other delivery services.",
       name: "Rachel Brodsky",
       platform: data.google.childImageSharp.gatsbyImageData,
     },

@@ -182,8 +182,7 @@ const Page = ({ data }) => {
                 <h3>Stewardship</h3>
                 <p className="mb-0">
                   Stewardship is at the heart of the Flavor Chef philosophy. As
-                  a team, we want to have a positive influence on our customers
-                  and the world around us.
+                  a team, we want to influence the people and world around us.
                 </p>
               </motion.div>
             </div>
@@ -258,8 +257,9 @@ const Page = ({ data }) => {
                 <h3>Compassion</h3>
                 <p className="mb-0">
                   Food made with love is always the best kind! We genuinely care
-                  for people and that is evident in our wholesome, delicious
-                  food. We value the relationships we form with our customers.
+                  for people, and that is evident in our wholesome, delicious
+                  food. We value the relationships we build with you and your
+                  guests.
                 </p>
               </motion.div>
               <motion.div
@@ -298,7 +298,7 @@ const Page = ({ data }) => {
                 <p className="mb-0">
                   At Flavor Chef, we take full accountability for all that we
                   do. We are constantly improving ourselves and our services to
-                  ensure our customers receive the best of us.
+                  ensure the best experience.
                 </p>
               </motion.div>
             </div>

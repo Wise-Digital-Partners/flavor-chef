@@ -41,7 +41,7 @@ const Page = ({ data }) => {
     {
       question: "What is your specialty?",
       answer:
-        "Our culinary chefs specialize in Traditional French techniques and then add a bit of California flair.",
+        "Our chefs specialize in Traditional French techniques and then add a bit of California flair.",
     },
     {
       question:
