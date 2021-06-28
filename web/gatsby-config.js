@@ -9,7 +9,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = "https://breakthrough-technologies-studio.netlify.app/",
+  URL: NETLIFY_SITE_URL = "https://flavor-chef.netlify.app/",
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env;
@@ -114,6 +114,14 @@ module.exports = {
         token: process.env.SANITY_READ_TOKEN,
         watchMode: !isProd,
         overlayDrafts: !isProd,
+      },
+    },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `3269465088`,
+        access_token: "a valid access token",
+        instagram_id: "your instagram_business_account id",
       },
     },
     {
