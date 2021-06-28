@@ -276,14 +276,14 @@ export const query = graphql`
       }
     }
     eventCoordination: file(
-      relativePath: { eq: "services/Weddings/3.0 Event Coordination.jpg" }
+      relativePath: { eq: "services/Weddings/3.0 Event Coordination-1.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
     eventsWeCater: file(
-      relativePath: { eq: "services/Weddings/4.0 Events We Cater.jpg" }
+      relativePath: { eq: "services/Weddings/4.0 Events We Cater-1.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)

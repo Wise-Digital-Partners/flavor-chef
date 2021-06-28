@@ -82,7 +82,7 @@ const Page = ({ data }) => {
                 <GatsbyImage
                   image={data.weddings.childImageSharp.gatsbyImageData}
                   alt="Weddings"
-                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                  className="w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                 />
               </div>
               <h2>Weddings</h2>
@@ -105,7 +105,7 @@ const Page = ({ data }) => {
                   <GatsbyImage
                     image={data.socialEvents.childImageSharp.gatsbyImageData}
                     alt="Social Events"
-                    className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                    className="w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                   />
                 </div>
                 <h2>Social Events</h2>
@@ -133,7 +133,7 @@ const Page = ({ data }) => {
                       data.foodTruckCatering.childImageSharp.gatsbyImageData
                     }
                     alt="Food Truck Catering"
-                    className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                    className="w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                   />
                 </div>
                 <h2>Food Truck Catering</h2>
@@ -160,7 +160,7 @@ const Page = ({ data }) => {
                     data.corporateOccasions.childImageSharp.gatsbyImageData
                   }
                   alt="Corporate Occasions"
-                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                  className="w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                 />
               </div>
               <h2>Corporate Occasions</h2>
@@ -193,14 +193,14 @@ const Page = ({ data }) => {
               className="hidden md:inline-flex"
             />
           </header>
-          <div className="grid md:grid-cols-3 gap-y-8 md:gap-2">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-y-8 sm:gap-2">
             <div className="relative group">
               <a href="/wedding-catering-menu/">
                 <div className="overflow-hidden">
                   <GatsbyImage
                     image={data.menuWeddings.childImageSharp.gatsbyImageData}
                     alt="Menu - Weddings"
-                    className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                    className="w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                   />
                 </div>
                 <span className="font-display text-white tracking-wider leading-5 absolute bottom-10 right-10 flex items-center justify-center">
@@ -216,7 +216,7 @@ const Page = ({ data }) => {
                       data.menuSummerDinnerParty.childImageSharp.gatsbyImageData
                     }
                     alt="Menu - Summer Dinner Party"
-                    className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                    className="w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                   />
                 </div>
                 <span className="font-display text-white tracking-wider leading-5 absolute bottom-10 right-10 flex items-center justify-center">
@@ -230,7 +230,7 @@ const Page = ({ data }) => {
                   <GatsbyImage
                     image={data.menuSmallBites.childImageSharp.gatsbyImageData}
                     alt="Menu - Small Bites"
-                    className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                    className="w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                   />
                 </div>
                 <span className="font-display text-white tracking-wider leading-5 absolute bottom-10 right-10 flex items-center justify-center">
@@ -244,7 +244,7 @@ const Page = ({ data }) => {
                   <GatsbyImage
                     image={data.menuSweetTreats.childImageSharp.gatsbyImageData}
                     alt="Menu - Sweet Treats"
-                    className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                    className="w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                   />
                 </div>
                 <span className="font-display text-white tracking-wider leading-5 absolute bottom-10 right-10 flex items-center justify-center">
@@ -258,7 +258,7 @@ const Page = ({ data }) => {
                   <GatsbyImage
                     image={data.menuBoxedLunch.childImageSharp.gatsbyImageData}
                     alt="Menu - Boxed Lunch"
-                    className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                    className="w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                   />
                 </div>
                 <span className="font-display text-white tracking-wider leading-5 absolute bottom-10 right-10 flex items-center justify-center">
@@ -274,7 +274,7 @@ const Page = ({ data }) => {
                       data.menuFlavorMobile.childImageSharp.gatsbyImageData
                     }
                     alt="Menu - Flavor Mobile"
-                    className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                    className="w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                   />
                 </div>
                 <span className="font-display text-white tracking-wider leading-5 absolute bottom-10 right-10 flex items-center justify-center">
@@ -379,14 +379,24 @@ export const query = graphql`
     }
     heroDesktop: file(relativePath: { eq: "cities/Downtown SD/1.0 Hero.jpg" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+        gatsbyImageData(
+          layout: CONSTRAINED
+          width: 560
+          placeholder: BLURRED
+          quality: 100
+        )
       }
     }
     city: file(
       relativePath: { eq: "cities/Downtown SD/2.0 City Specific Content.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+        gatsbyImageData(
+          layout: CONSTRAINED
+          width: 560
+          placeholder: BLURRED
+          quality: 100
+        )
       }
     }
     wallpaperBackground: file(relativePath: { eq: "global/wallpaper-bg.jpg" }) {
@@ -426,42 +436,72 @@ export const query = graphql`
       relativePath: { eq: "home/Menu Images/Wedding Menu.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+        gatsbyImageData(
+          layout: CONSTRAINED
+          width: 394
+          placeholder: BLURRED
+          quality: 100
+        )
       }
     }
     menuSummerDinnerParty: file(
       relativePath: { eq: "home/Menu Images/Summer Dinner Party.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+        gatsbyImageData(
+          layout: CONSTRAINED
+          width: 394
+          placeholder: BLURRED
+          quality: 100
+        )
       }
     }
     menuSmallBites: file(
       relativePath: { eq: "home/Menu Images/Small Bites.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+        gatsbyImageData(
+          layout: CONSTRAINED
+          width: 394
+          placeholder: BLURRED
+          quality: 100
+        )
       }
     }
     menuSweetTreats: file(
       relativePath: { eq: "home/Menu Images/Sweet Treats.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+        gatsbyImageData(
+          layout: CONSTRAINED
+          width: 394
+          placeholder: BLURRED
+          quality: 100
+        )
       }
     }
     menuBoxedLunch: file(
       relativePath: { eq: "home/Menu Images/Boxed Lunch.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+        gatsbyImageData(
+          layout: CONSTRAINED
+          width: 394
+          placeholder: BLURRED
+          quality: 100
+        )
       }
     }
     menuFlavorMobile: file(
       relativePath: { eq: "home/Menu Images/Flavor Mobile.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+        gatsbyImageData(
+          layout: CONSTRAINED
+          width: 394
+          placeholder: BLURRED
+          quality: 100
+        )
       }
     }
     ingredientFocused: file(

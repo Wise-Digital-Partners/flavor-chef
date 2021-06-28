@@ -12,7 +12,8 @@ const WhyUs = ({ className, headingLevel }) => {
       ) {
         childImageSharp {
           gatsbyImageData(
-            layout: FULL_WIDTH
+            layout: CONSTRAINED
+            width: 595
             placeholder: BLURRED
             quality: 100
           )
@@ -23,7 +24,8 @@ const WhyUs = ({ className, headingLevel }) => {
       ) {
         childImageSharp {
           gatsbyImageData(
-            layout: FULL_WIDTH
+            layout: CONSTRAINED
+            width: 595
             placeholder: BLURRED
             quality: 100
           )
@@ -34,7 +36,8 @@ const WhyUs = ({ className, headingLevel }) => {
       ) {
         childImageSharp {
           gatsbyImageData(
-            layout: FULL_WIDTH
+            layout: CONSTRAINED
+            width: 595
             placeholder: BLURRED
             quality: 100
           )
@@ -45,7 +48,8 @@ const WhyUs = ({ className, headingLevel }) => {
       ) {
         childImageSharp {
           gatsbyImageData(
-            layout: FULL_WIDTH
+            layout: CONSTRAINED
+            width: 595
             placeholder: BLURRED
             quality: 100
           )
@@ -73,7 +77,7 @@ const WhyUs = ({ className, headingLevel }) => {
                 <GatsbyImage
                   image={data.downtownSanDiego.childImageSharp.gatsbyImageData}
                   alt="Downtown San Diego"
-                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                  className="w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                 />
               </div>
               <span className="font-display text-white tracking-wider leading-5 absolute inset-0 flex items-center justify-center">
@@ -87,7 +91,7 @@ const WhyUs = ({ className, headingLevel }) => {
                 <GatsbyImage
                   image={data.palmSprings.childImageSharp.gatsbyImageData}
                   alt="Palm Springs"
-                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                  className="w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                 />
               </div>
               <span className="font-display text-white tracking-wider leading-5 absolute inset-0 flex items-center justify-center">
@@ -103,7 +107,7 @@ const WhyUs = ({ className, headingLevel }) => {
                     data.sanDiegoNorthCounty.childImageSharp.gatsbyImageData
                   }
                   alt="San Diego North County"
-                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                  className="w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                 />
               </div>
               <span className="font-display text-white tracking-wider leading-5 absolute inset-0 flex items-center justify-center">
@@ -117,7 +121,7 @@ const WhyUs = ({ className, headingLevel }) => {
                 <GatsbyImage
                   image={data.temecula.childImageSharp.gatsbyImageData}
                   alt="Temecula"
-                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                  className="w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                 />
               </div>
               <span className="font-display text-white tracking-wider leading-5 absolute inset-0 flex items-center justify-center">
