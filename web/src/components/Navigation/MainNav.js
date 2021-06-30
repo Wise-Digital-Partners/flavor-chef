@@ -292,11 +292,11 @@ const MainNav = ({
                     Careers
                   </AniLink>
                 </li>
-                <li>
+                {/* <li>
                   <AniLink fade to="/blog/">
                     Blog
                   </AniLink>
-                </li>
+                </li> */}
               </ul>
             </li>
           </ul>
@@ -410,7 +410,7 @@ const MainNav = ({
                         Careers
                       </AniLink>
                     </li>
-                    <li>
+                    {/* <li>
                       <AniLink
                         fade
                         to="/blog/"
@@ -419,7 +419,7 @@ const MainNav = ({
                       >
                         Blog
                       </AniLink>
-                    </li>
+                    </li> */}
                   </Accordion>
                 </li>
               </ul>

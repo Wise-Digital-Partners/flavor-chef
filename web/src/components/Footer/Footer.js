@@ -117,7 +117,7 @@ const Footer = () => {
                         Careers
                       </AniLink>
                     </li>
-                    <li>
+                    {/* <li>
                       <AniLink
                         fade
                         to="/blog/"
@@ -125,7 +125,7 @@ const Footer = () => {
                       >
                         Blog
                       </AniLink>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
