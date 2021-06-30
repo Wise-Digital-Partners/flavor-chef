@@ -15,7 +15,7 @@ import ButtonWithIcon from "../components/Button/ButtonWithIcon";
 import ScrollWrapper from "../components/Scroll/ScrollWrapper";
 import ScrollNavigation from "../components/Scroll/ScrollNavigation";
 import ScrollContent from "../components/Scroll/ScrollContent";
-import InstagramFeed from "../components/Repeating/InstagramFeed";
+// import InstagramFeed from "../components/Repeating/InstagramFeed";
 
 const Page = ({ data }) => {
   const url = typeof window !== "undefined" ? window.location.pathname : "";
@@ -369,8 +369,8 @@ const Page = ({ data }) => {
       </section>
 
       <AreasWeServe className="mb-20 md:mb-32" headingLevel="h2" />
-      <CallToAction className="mb-20 md:mb-32" headingLevel="h2" />
-      <InstagramFeed className="mb-20 md:mb-32" />
+      <CallToAction headingLevel="h2" />
+      {/* <InstagramFeed className="mb-20 md:mb-32" /> */}
     </Layout>
   );
 };
