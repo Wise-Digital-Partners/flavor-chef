@@ -260,8 +260,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Flavor Mobile Menu | Food Truck Catering | Flavor Chef"
         description="Let us come to you. Hire the Flavor Chef Catering 'Flavor Mobile' for your next event. Our mobile food truck catering brings fresh dishes straight to you."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <HeroFullWidth
@@ -793,12 +793,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage_FB.jpg" }
+      relativePath: { eq: "open-graph/facebook/Flavor Mobile Menu.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage_TW.jpg" }
+      relativePath: { eq: "open-graph/twitter/Flavor Mobile Menu.jpg" }
     ) {
       publicURL
     }

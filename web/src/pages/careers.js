@@ -11,8 +11,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Catering Careers | San Diego | Flavor Chef Catering"
         description="Flavor Chef Catering supports those with a passion for catering careers. If you thrive on creativity and innovation, the Flavor Fam wants to hear from you."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <section className="bg-white pt-10 md:pt-16 mb-20 md:mb-32">
@@ -55,12 +55,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage_FB.jpg" }
+      relativePath: { eq: "open-graph/facebook/Careers.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage_TW.jpg" }
+      relativePath: { eq: "open-graph/twitter/Careers.jpg" }
     ) {
       publicURL
     }

@@ -152,8 +152,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Appetizer Catering Menu | Flavor Chef Catering"
         description="Don't forget the appetizers. Select your choice of delectable small bites from the Flavor Chef Catering appetizer catering menu."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <HeroFullWidth
@@ -250,12 +250,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage_FB.jpg" }
+      relativePath: { eq: "open-graph/facebook/Small Bites Menu.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage_TW.jpg" }
+      relativePath: { eq: "open-graph/twitter/Small Bites Menu.jpg" }
     ) {
       publicURL
     }

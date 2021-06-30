@@ -33,8 +33,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Corporate Catering San Diego | Flavor Chef Catering"
         description="Contact us, tell us your plan, and check the catering off your to-do list. Choose Flavor Chef Catering in San Diego for your next corporate catering event."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <HeroFullWidth
@@ -235,12 +235,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage_FB.jpg" }
+      relativePath: { eq: "open-graph/facebook/Corporate Events.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage_TW.jpg" }
+      relativePath: { eq: "open-graph/twitter/Corporate Events.jpg" }
     ) {
       publicURL
     }

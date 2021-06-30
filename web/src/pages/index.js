@@ -37,8 +37,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="San Diego Full-Service Catering Company | Flavor Chef"
         description="Make your next event unforgettable with Flavor Chef Catering, your San Diego full-service catering company. Enjoy chef-inspired, local ingredient dishes!"
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <HeroFullWidth
@@ -378,12 +378,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage_FB.jpg" }
+      relativePath: { eq: "open-graph/facebook/Global.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage_TW.jpg" }
+      relativePath: { eq: "open-graph/twitter/Global.jpg" }
     ) {
       publicURL
     }

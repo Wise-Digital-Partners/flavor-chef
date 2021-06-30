@@ -33,8 +33,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Full-Service Wedding Catering San Diego | Flavor Chef"
         description="You dream it. We make it a reality. Contact Flavor Chef Catering in San Diego for exceptional full-service wedding catering and event coordination."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <HeroFullWidth
@@ -247,12 +247,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage_FB.jpg" }
+      relativePath: { eq: "open-graph/facebook/Weddings.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage_TW.jpg" }
+      relativePath: { eq: "open-graph/twitter/Weddings.jpg" }
     ) {
       publicURL
     }

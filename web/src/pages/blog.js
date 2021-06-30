@@ -58,8 +58,8 @@ const ArchivePage = (props) => {
       <SearchEngineOptimization
         title="Blog | Full-Service Catering Company | Flavor Chef"
         description="Find inspiration for your next event in our Flavor Fresh Catering blog, which includes features and photos from our work as a full-service catering company."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
       <section className="pt-10 md:pt-16 mb-20 md:mb-32">
         <div className="container">

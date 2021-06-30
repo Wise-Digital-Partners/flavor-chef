@@ -17,8 +17,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Temecula Catering | Flavor Chef Catering"
         description="Make your next event unforgettable with Flavor Chef Catering, your full-service Temecula catering company. Enjoy chef-inspired, local ingredient dishes."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <section className="bg-white pt-6 md:pt-10 mb-20 md:mb-32">
@@ -367,12 +367,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage_FB.jpg" }
+      relativePath: { eq: "open-graph/facebook/Global.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage_TW.jpg" }
+      relativePath: { eq: "open-graph/twitter/Global.jpg" }
     ) {
       publicURL
     }

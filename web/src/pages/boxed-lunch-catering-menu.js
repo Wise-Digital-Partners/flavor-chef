@@ -229,8 +229,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Boxed Lunch Catering Menu | Flavor Chef Catering"
         description="Keep it simple and order from the Flavor Chef Catering boxed lunch catering menu. Enjoy fresh meals packaged and ready to go."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <HeroFullWidth
@@ -548,12 +548,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage_FB.jpg" }
+      relativePath: { eq: "open-graph/facebook/Boxed Lunch Menu.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage_TW.jpg" }
+      relativePath: { eq: "open-graph/twitter/Boxed Lunch Menu.jpg" }
     ) {
       publicURL
     }

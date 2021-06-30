@@ -406,8 +406,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Wedding Catering Menu | Flavor Chef Catering"
         description="Add an extra special touch to your big day with fresh dishes from Flavor Chef Catering. Our wedding catering menu features locally sourced ingredients."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <HeroFullWidth
@@ -811,12 +811,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage_FB.jpg" }
+      relativePath: { eq: "open-graph/facebook/Wedding Menu.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage_TW.jpg" }
+      relativePath: { eq: "open-graph/twitter/Wedding Menu.jpg" }
     ) {
       publicURL
     }

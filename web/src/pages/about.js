@@ -106,8 +106,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="About Flavor Chef Catering | San Diego Catering"
         description="Choose Flavor Chef Catering in San Diego for a top-notch culinary experience that's a mix of classical French techniques and local ingredients."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <section className="bg-white pt-1 md:pt-1 mb-20 md:mb-6">
@@ -378,12 +378,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage_FB.jpg" }
+      relativePath: { eq: "open-graph/facebook/Global.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage_TW.jpg" }
+      relativePath: { eq: "open-graph/twitter/Global.jpg" }
     ) {
       publicURL
     }

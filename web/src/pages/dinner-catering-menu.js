@@ -147,8 +147,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Dinner Catering Menu | Flavor Chef Catering"
         description="Transform any summer bash into a flavorful event with fresh dishes from Flavor Chef Catering. Our dinner catering menu has all the great eats!"
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <HeroFullWidth
@@ -369,12 +369,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage_FB.jpg" }
+      relativePath: { eq: "open-graph/facebook/Summer Dinner Party Menu.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage_TW.jpg" }
+      relativePath: { eq: "open-graph/twitter/Summer Dinner Party Menu.jpg" }
     ) {
       publicURL
     }
