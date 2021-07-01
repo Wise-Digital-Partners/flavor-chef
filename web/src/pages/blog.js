@@ -1,16 +1,26 @@
 import React from "react";
+import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
 import BlogPostPreviewList from "../components/Blog/BlogPostList";
 // import BlogPostFeaturedList from "../components/Blog/BlogPostFeaturedList";
 import GraphQLErrorList from "../components/Blog/graphql-error-list";
-import { graphql } from "gatsby";
 import { mapEdgesToNodes } from "../lib/helpers";
 import CallToAction from "../components/Repeating/CTA";
 
 export const query = graphql`
   {
+    openGraphImage: file(
+      relativePath: { eq: "open-graph/facebook/Global.jpg" }
+    ) {
+      publicURL
+    }
+    twitterOpenGraphImage: file(
+      relativePath: { eq: "open-graph/twitter/Global.jpg" }
+    ) {
+      publicURL
+    }
     posts: allSanityPost(
       sort: { fields: [publishedAt], order: DESC }
       filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }
