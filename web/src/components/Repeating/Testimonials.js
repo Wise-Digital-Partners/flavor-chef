@@ -66,9 +66,16 @@ const Testimonial = ({ className, headingLevel, backgroundImage }) => {
       ) {
         publicURL
       }
-      google: file(relativePath: { eq: "repeating/Testimonials/google.png" }) {
+      google: file(relativePath: { eq: "repeating/Testimonials/Google.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 82, quality: 100)
+          gatsbyImageData(layout: FIXED, width: 194, quality: 100)
+        }
+      }
+      facebook: file(
+        relativePath: { eq: "repeating/Testimonials/Facebook.jpg" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(layout: FIXED, width: 194, quality: 100)
         }
       }
     }
@@ -84,13 +91,13 @@ const Testimonial = ({ className, headingLevel, backgroundImage }) => {
     {
       quote:
         "The best ever! Everything about my experience was absolutely first class!",
-      name: "Rachel Brodsky",
-      platform: data.google.childImageSharp.gatsbyImageData,
+      name: "Chris L.",
+      platform: data.facebook.childImageSharp.gatsbyImageData,
     },
     {
       quote:
         "Everyone who attended our fundraiser is raving about the food from Flavor Chef! The presentation was wonderful with great attention to detail, which upgraded the experience like you don't find with other delivery services.",
-      name: "Rachel Brodsky",
+      name: "Hannah M.",
       platform: data.google.childImageSharp.gatsbyImageData,
     },
   ];
