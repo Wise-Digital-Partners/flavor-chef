@@ -1,11 +1,11 @@
 https://flavor-chef.netlify.app/* https://flavorchefcatering.com/:splat 301!
 
-^/weddings-social/?$ /full-service-wedding-catering/
-^/event-coordination/?$ /
-^/corporate-deliveries/?$ /corporate-catering-san-diego/
-^/about-us/?$ /about/
-^/menu/?$ /menus/
-^/contact/?$ /
-^/covid19-policies-and-procedures/?$ ?
-^/faq/?$ /faqs/
-^/flavor-mobile-2/?$ /mobile-food-truck-catering/
+/weddings-social/ /full-service-wedding-catering/
+/event-coordination/ /
+/corporate-deliveries/ /corporate-catering-san-diego/
+/about-us/ /about/
+/menu/ /menus/
+/contact/ /
+/covid19-policies-and-procedures/ ?
+/faq/ /faqs/
+/flavor-mobile-2/ /mobile-food-truck-catering/
