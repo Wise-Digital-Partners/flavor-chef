@@ -28,14 +28,23 @@ const Page = ({ data }) => {
       viewMenu: "/wedding-catering-menu/",
       downloadMenu: data.weddingPDF.publicURL,
     },
+    // {
+    //   id: "summer-dinner-party",
+    //   image: data.menuSummerDinnerParty.childImageSharp.gatsbyImageData,
+    //   heading: "Summer Dinner Party Menu",
+    //   text:
+    //     "Make it a dinner party to remember with great summer eats from Flavor Chef Catering. This menu features lighter fare perfect for summertime evening celebrations.",
+    //   viewMenu: "/dinner-catering-menu/",
+    //   downloadMenu: data.summerDinnerPartyPDF.publicURL,
+    // },
     {
-      id: "summer-dinner-party",
-      image: data.menuSummerDinnerParty.childImageSharp.gatsbyImageData,
-      heading: "Summer Dinner Party Menu",
+      id: "dinner-party",
+      image: data.menuHarvestDinnerParty.childImageSharp.gatsbyImageData,
+      heading: "Harvest Dinner Party Menu",
       text:
-        "Make it a dinner party to remember with great summer eats from Flavor Chef Catering. This menu features lighter fare perfect for summertime evening celebrations.",
+        "Celebrate the bounty of the harvest with farm-to-table catering prepared especially for you and your guests—always seasonal and fresh!",
       viewMenu: "/dinner-catering-menu/",
-      downloadMenu: data.summerDinnerPartyPDF.publicURL,
+      downloadMenu: data.harvestDinnerPartyPDF.publicURL,
     },
     {
       id: "small-bites",
@@ -72,6 +81,15 @@ const Page = ({ data }) => {
         "Our top chefs will come to you! Our Flavor Mobile menu features the same types of high-quality, locally sourced dishes we’re known for.",
       viewMenu: "/flavor-mobile-menu/",
       downloadMenu: data.flavorMobilePDF.publicURL,
+    },
+    {
+      id: "holiday",
+      image: data.menuHoliday.childImageSharp.gatsbyImageData,
+      heading: "Holiday Menu",
+      text:
+        "Fill your holiday with delicious memories! Our menus include everything from festive appetizers to traditional entrées and holiday-themed desserts.",
+      viewMenu: "/holiday-catering-menu/",
+      downloadMenu: data.holidayPDF.publicURL,
     },
   ];
 
@@ -172,8 +190,8 @@ const Page = ({ data }) => {
               </li>
               <li>
                 <AnchorLink
-                  to={url + "#summer-dinner-party"}
-                  title="Summer Dinner Party"
+                  to={url + "#dinner-party"}
+                  title="Harvest Dinner Party"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
@@ -206,6 +224,14 @@ const Page = ({ data }) => {
                 <AnchorLink
                   to={url + "#flavor-mobile"}
                   title="Flavor Mobile"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  stripHash
+                />
+              </li>
+              <li>
+                <AnchorLink
+                  to={url + "#holiday"}
+                  title="Holiday"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
@@ -321,6 +347,20 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
+    menuHarvestDinnerParty: file(
+      relativePath: { eq: "menus/Menus Hub/Summer-Dinner-Party.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
+    menuHoliday: file(
+      relativePath: { eq: "menus/Menus Hub/Holiday-Menu.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
     menuSmallBites: file(
       relativePath: { eq: "menus/Menus Hub/4.0 Small Bites Menu.jpg" }
     ) {
@@ -404,6 +444,11 @@ export const query = graphql`
     ) {
       publicURL
     }
+    harvestDinnerPartyPDF: file(
+      relativePath: { eq: "harvest-dinner-party-menu.pdf" }
+    ) {
+      publicURL
+    }
     boxedMealsPDF: file(relativePath: { eq: "boxed-meals-menu.pdf" }) {
       publicURL
     }
@@ -414,6 +459,9 @@ export const query = graphql`
       publicURL
     }
     smallBitesPDF: file(relativePath: { eq: "small-bites-menu.pdf" }) {
+      publicURL
+    }
+    holidayPDF: file(relativePath: { eq: "holiday-menu.pdf" }) {
       publicURL
     }
     menuIcon: file(relativePath: { eq: "global/menu.svg" }) {

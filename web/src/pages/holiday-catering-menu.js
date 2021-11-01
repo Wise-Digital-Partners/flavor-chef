@@ -17,72 +17,88 @@ const Page = ({ data }) => {
     },
   ];
 
-  const appetizers = [
+  const passedAppetizer = [
+    {
+      name: "Duck Confit & Brie Crostini",
+      description:
+        "Duck confit, toasted baguette, caramelized apple mustard, melted brie",
+    },
+    {
+      name: "Swedish Meatballs",
+      description: "pork & beef meatballs, creamy lingenberry gravy",
+    },
     {
       name: "Lollipop Lamb Chop",
-      description: "seared lamb chop, rosemary, garlic, mint-pomeganate glaze",
-    },
-    {
-      name: "Sausage Stuffed Mushroom",
-      description: "crimini, sausage, sage, shredded parmesan",
-    },
-    {
-      name: "Duck Confit Crostini",
       description:
-        "toasted baguette, duck confit, caramelized applemustard, melted brie",
+        "Pan seared lamb chop, rosemary, garlic, mint, pomegranate glaze",
     },
     {
-      name: "Fig & Candied Onion Pizza",
+      name: "Kimchi Pancake",
+      description: "Pan fried kimchi pancake, chive crème fraise",
+    },
+    {
+      name: "Fried Kale & Hot Honey Crostini",
       description:
-        "Fig chutney, candied onion, goat cheese, arugula,balsamic drizzle",
+        "Fried kale, whipped herb ricotta, grilled baguette, hot honey drizzle",
     },
     {
-      name: "Butternut Squash Soup Shot",
-      description: "roasted squash, coconut milk, cinnamon, herbedcrouton",
-    },
-    {
-      name: "Mini Beef Wellington",
-      description: "beef tenderloin, mushroom duxelles, puff pastry",
+      name: "Winter Rolls",
+      description:
+        "Delicata squash, winter vegetables, rice paper, sweet chili cashew sauce",
     },
   ];
 
-  const starter = [
+  const appetizerDisplay = [
+    {
+      name: "The Hodge Podge",
+      description:
+        "Variety of cheeses, toasted nuts, crackers, fresh & dried fruit, honeycomb, seasonal vegetables, hummus, dried and cured meats, seasonal jam",
+    },
+    {
+      name: "Season Crudité & Dips",
+      description:
+        "Seasonal vegetables, warm pita, artichoke spinach dip, organic hummus",
+    },
+    {
+      name: "Holiday Nacho Bar",
+      description:
+        "Local tortilla chips, house made queso, guacamole, carnitas, pico de Gallo, crema",
+    },
+  ];
+
+  const salad = [
     {
       name: "Harvest Salad",
       description:
-        "arugula, radish, carrot, persimmon, feta, pecans, dark balsamic",
+        "organic greens, pecans, persimmons, pomegranate seeds, radish, carrot, feta, cinnamon pear balsamic, EVOO",
     },
     {
-      name: "Leek & Potato Soup",
-      description: "roasted leek & potato, cream, fried leek & bacon",
-    },
-    {
-      name: "Beets & Burrata",
+      name: "Roasted Beet Salad",
       description:
-        "roasted beets, golden pears, burrata, greens, ginger balsamic",
+        "Roasted gold and red beets, arugula, goat cheese, heirloom carrot, orange squeeze, pistachio, grapefruit balsamic, EVOO",
     },
   ];
 
   const main = [
     {
-      name: "Roasted Herb Chicken",
-      description: "Jidori airline breast, herbs, garlic, creamy mornay",
+      name: "Chicken Saltimbocca",
+      description: "Chicken breast, prosciutto, sage, tomato-fig ragout",
     },
     {
-      name: "Braised Short Rib",
-      description: "slow braised beef, red wine demi, fried leeks",
+      name: "Prime Rib Carving",
+      description: "Slow roasted beef, au jus, horseradish cream, giardiniera",
     },
     {
       name: "Pan Seared Salmon",
-      description: "Wild Isle salmon, juniper & cranberry beurreblanc",
+      description: "Wild Isle salmon, juniper & cranberry beurre blanc",
     },
     {
-      name: "Berkshire Pork Chop",
-      description: "Bone In pork chop, blackberry & sage compote",
+      name: "Short Rib",
+      description: "Slow braised beef, red wine demi",
     },
     {
-      name: "Pepper Crusted Filet Mignon",
-      description: "seared filet mignon, wild mushroom demi glace",
+      name: "Roasted Pork Tenderloin",
+      description: "Pan seared tenderloin, blackberry & sage compote",
     },
     {
       name: "Stuffed Acorn Squash",
@@ -92,48 +108,70 @@ const Page = ({ data }) => {
 
   const starch = [
     {
-      name: "Roasted Fingerling Potatoes",
-      description: "roasted fingerling potatoes, Calabrian chili oil",
+      name: "Golden Gratin",
+      description: "Yukon gold potato, fennel, cream, gruyere cheese",
+    },
+    {
+      name: "Roasted Garlic Mashed Potatoes",
+      description: "Yukon gold, roasted garlic, cream, butter",
     },
     {
       name: "Butternut Squash Risotto",
       description:
         "butternut squash, sage, arborio, white wine, parmesan Reggiano",
     },
-    {
-      name: "Mashed Potatoes",
-      description: "yukon gold, roasted garlic, cream, butter",
-    },
   ];
 
   const vegetable = [
     {
-      name: "Sauteed Broccolini",
-      description: "broccolini, garlic, butter",
-    },
-    {
-      name: "Roasted Cauliflower",
-      description: "cauliflower, garlic, fresh herbs",
+      name: "Green Bean Almondine",
+      description: "Fresh green beans, butter, fresh herbs, toasted almonds",
     },
     {
       name: "Petit Heirloom Carrots",
       description: "heirloom carrot, fresh herbs, butter",
     },
+    {
+      name: "Roasted Brussel Sprouts",
+      description: "brussels sprout, pepitas, balsamic glaze",
+    },
   ];
 
   const dessert = [
     {
-      name: "Chocolate Lava Cake",
-      description: "chocolate cake, molten center, vanilla ice cream",
+      name: "Chai Cream Puff",
+      description: "Pat a choux, chai infused whipped cream",
     },
     {
-      name: "Pumpkin Crème Brulee",
-      description: "pumpkin puree, sweet cream, caramelized sugar",
+      name: "Eggnog Crème Brulee",
+      description: "Sweet cream, cinnamon, nutmeg, caramelized sugar",
+    },
+    {
+      name: "Butterscotch Blondie Bars",
+      description: "Butterscotch chips, walnuts, brown sugar",
+    },
+    {
+      name: "Peppermint Mousse",
+      description:
+        "Chocolate mousse, peppermint whipped cream, candy cane crumble",
     },
     {
       name: "Turtle Trifle",
       description:
-        "short cake, candied pecans, caramel, chocolate, whippedcream",
+        "House made brownie, candied pecans, caramel, chocolate, vanilla bean custard",
+    },
+  ];
+
+  const beverages = [
+    {
+      name: "Hot Cocoa Bar",
+      description:
+        "House made hot cocoa, gourmet marshmallows, cinnamon, candy canes, pirouette cookies, whipped cream",
+    },
+    {
+      name: "Fresh Coffee Bar",
+      description:
+        "Organic drip coffee, half and half, non-dairy creamer, cinnamon, sugar in the raw, stevia",
     },
   ];
 
@@ -144,8 +182,8 @@ const Page = ({ data }) => {
       headerHasBorder={true}
     >
       <SearchEngineOptimization
-        title="Dinner Catering Menu | Flavor Chef Catering"
-        description="Celebrate the bounty of the harvest with farm-to-table catering prepared especially for you and your guests—always seasonal and fresh!"
+        title="Holiday Catering Menu | Flavor Chef Catering"
+        description="Fill your holiday with delicious memories! Our menus include everything from festive appetizers to traditional entrées and holiday-themed desserts."
         openGraphImage={data.openGraphImage.publicURL}
         twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
@@ -159,7 +197,7 @@ const Page = ({ data }) => {
         <div className="text-white font-display text-xl tracking-wider leading-5 mb-4">
           Menu
         </div>
-        <h1 className="text-white mb-0">Harvest Dinner Party</h1>
+        <h1 className="text-white mb-0">Holiday</h1>
       </HeroFullWidth>
 
       <div className="pt-14 md:pt-18">
@@ -170,11 +208,11 @@ const Page = ({ data }) => {
             </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Appetizers</b> / Choose 3
+              <b>Appetizer Display</b>
             </div>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
-                {appetizers.slice(0, 3).map((item, i) => {
+                {appetizerDisplay.slice(0, 2).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -186,7 +224,7 @@ const Page = ({ data }) => {
                 })}
               </div>
               <div>
-                {appetizers.slice(3).map((item, i) => {
+                {appetizerDisplay.slice(2).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -198,21 +236,13 @@ const Page = ({ data }) => {
                 })}
               </div>
             </div>
-          </div>
-        </section>
-
-        <section id="starter" className="mb-12 md:mb-16">
-          <div className="container">
-            <header className="mb-14 md:mb-12">
-              <h2>Starter</h2>
-            </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Starter</b> / Choose 1
+              <b>Passed Appetizer</b>
             </div>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
-                {starter.slice(0, 2).map((item, i) => {
+                {passedAppetizer.slice(0, 3).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -224,7 +254,7 @@ const Page = ({ data }) => {
                 })}
               </div>
               <div>
-                {starter.slice(2).map((item, i) => {
+                {passedAppetizer.slice(3).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -242,12 +272,9 @@ const Page = ({ data }) => {
         <section id="main" className="mb-12 md:mb-16">
           <div className="container">
             <header className="mb-14 md:mb-12">
-              <h2>Main</h2>
+              <h2>Mains</h2>
             </header>
 
-            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Main</b> / Choose 1 or 2
-            </div>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
                 {main.slice(0, 3).map((item, i) => {
@@ -277,6 +304,41 @@ const Page = ({ data }) => {
           </div>
         </section>
 
+        <section id="salad" className="mb-12 md:mb-16">
+          <div className="container">
+            <header className="mb-14 md:mb-12">
+              <h2>Salads</h2>
+            </header>
+
+            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
+              <div>
+                {salad.slice(0, 1).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+              <div>
+                {salad.slice(1).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="startch-vegetable" className="mb-12 md:mb-16">
           <div className="container">
             <header className="mb-14 md:mb-12">
@@ -286,7 +348,7 @@ const Page = ({ data }) => {
             <div className="grid md:grid-cols-2 gap-y-6 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
                 <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                  <b>Startch</b> / Choose 1
+                  <b>Startch</b>
                 </div>
                 {starch.map((item, i) => {
                   return (
@@ -302,7 +364,7 @@ const Page = ({ data }) => {
 
               <div>
                 <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                  <b>Vegetable</b> / Choose 1
+                  <b>Vegetable</b>
                 </div>
                 {vegetable.map((item, i) => {
                   return (
@@ -322,15 +384,12 @@ const Page = ({ data }) => {
         <section id="dessert" className="mb-12 md:mb-16">
           <div className="container">
             <header className="mb-14 md:mb-12">
-              <h2>Dessert</h2>
+              <h2>Desserts</h2>
             </header>
 
-            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Dessert</b> / Choose 1
-            </div>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
-                {dessert.slice(0, 2).map((item, i) => {
+                {dessert.slice(0, 3).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -342,7 +401,42 @@ const Page = ({ data }) => {
                 })}
               </div>
               <div>
-                {dessert.slice(2).map((item, i) => {
+                {dessert.slice(3).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="beverages" className="mb-12 md:mb-16">
+          <div className="container">
+            <header className="mb-14 md:mb-12">
+              <h2>Beverages</h2>
+            </header>
+
+            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
+              <div>
+                {beverages.slice(0, 1).map((item, i) => {
+                  return (
+                    <div key={i} className="mb-8 md:mb-10">
+                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                        {item.name}
+                      </p>
+                      <p className="mb-0">{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+              <div>
+                {beverages.slice(1).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -378,9 +472,7 @@ export const query = graphql`
       publicURL
     }
     heroDesktop: file(
-      relativePath: {
-        eq: "menus/Harvest Dinner Party/1.0 Harvest Dinner Party Hero Desktop.jpg"
-      }
+      relativePath: { eq: "menus/Holiday Menu/1.0-Holiday-Hero-Desktop.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
@@ -388,7 +480,7 @@ export const query = graphql`
     }
     heroMobile: file(
       relativePath: {
-        eq: "menus/Harvest Dinner Party/1.0 Harvest Dinner Party Hero Mobile.jpg"
+        eq: "menus/Holiday Menu/1.0 Holiday Party Hero Mobile.jpg"
       }
     ) {
       childImageSharp {

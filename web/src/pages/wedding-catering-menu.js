@@ -44,7 +44,7 @@ const Page = ({ data }) => {
     },
     {
       name: "Curry Chicken Skewer",
-      description: "Curry Chicken Skewer",
+      description: "chicken, coconut milk, curry, cashew tamarind sauce",
     },
     {
       name: "Steak & Brie Crostini",
