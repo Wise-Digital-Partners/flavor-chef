@@ -89,29 +89,26 @@ const Page = ({ data }) => {
     },
   ];
 
-  const boxedLunchesAddOnsRegular = [
-    {
-      name: "Assorted Kettle Chips",
-      description: "assorted flavors of Hawaiian Kettle Chips",
-    },
-    {
-      name: "Organic Whole Fruit",
-      description: "organic seasonal whole fruit",
-    },
-  ];
-
-  const boxedLunchesAddOnsPremium = [
+  const boxedLunchesAddOns = [
     {
       name: "Lemon Bars",
       description: "Meyer lemon, gluten free short bread crust, powdered sugar",
+    },
+    {
+      name: "Classic Chocolate Chip Cookies",
+      description: "house made chocolate chip cookies",
+    },
+    {
+      name: "Assorted Kettle Chips",
+      description: "assorted flavors of Hawaiian Kettle Chips",
     },
     {
       name: "Salted Caramel Brownies",
       description: "double chocolate brownie, caramel drizzle, Maldon sea salt",
     },
     {
-      name: "Classic Chocolate Chip Cookies",
-      description: "house made chocolate chip cookies",
+      name: "Organic Whole Fruit",
+      description: "organic seasonal whole fruit",
     },
   ];
 
@@ -250,19 +247,25 @@ const Page = ({ data }) => {
           <div className="container">
             <header className="mb-14">
               <h2>Boxed Lunches</h2>
+              <p className="font-heading font-bold mb-5">
+                <i>
+                  Minimum of 25 each is required for order. May select from all
+                  categories
+                </i>
+              </p>
             </header>
 
             <div className="grid md:grid-cols-2 gap-y-6 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
                 <div className="font-heading text-mobile-4xl md:text-4xl text-gray-600 border-b border-gray-400 border-opacity-30 pb-3 mb-4 md:mb-5 flex items-center justify-between">
                   <span>Salads</span>
-                  <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
+                  {/* <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
                     $10
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="font-heading font-bold mb-5">
-                  <i>add chicken / salmon $4</i>
+                  <i>add chicken / salmon</i>
                 </div>
 
                 {boxedLunchesSalads.map((item, i) => {
@@ -280,9 +283,9 @@ const Page = ({ data }) => {
               <div>
                 <div className="font-heading text-mobile-4xl md:text-4xl text-gray-600 border-b border-gray-400 border-opacity-30 pb-3 mb-4 md:mb-5 flex items-center justify-between">
                   <span>Fresh Bowls</span>
-                  <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
+                  {/* <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
                     $15
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="mt-8 md:mt-16"></div>
@@ -304,9 +307,9 @@ const Page = ({ data }) => {
               <div>
                 <div className="font-heading text-mobile-4xl md:text-4xl text-gray-600 border-b border-gray-400 border-opacity-30 pb-3 mb-4 md:mb-5 flex items-center justify-between">
                   <span>Sandwiches</span>
-                  <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
+                  {/* <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
                     $15
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="font-heading font-bold mb-5">
@@ -330,9 +333,9 @@ const Page = ({ data }) => {
               <div>
                 <div className="font-heading text-mobile-4xl md:text-4xl text-gray-600 border-b border-gray-400 border-opacity-30 pb-3 mb-4 md:mb-5 flex items-center justify-between">
                   <span>Wraps</span>
-                  <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
+                  {/* <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
                     $15
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="font-heading font-bold mb-5">
@@ -354,16 +357,16 @@ const Page = ({ data }) => {
               </div>
             </div>
 
+            <div className="font-heading text-mobile-4xl md:text-4xl text-gray-600 border-b border-gray-400 border-opacity-30 pb-3 mb-8 md:mb-12 flex items-center justify-between">
+              <span>Add ons</span>
+              {/* <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
+                    $1
+                  </div> */}
+            </div>
+
             <div className="grid md:grid-cols-2 gap-y-6 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
-                <div className="font-heading text-mobile-4xl md:text-4xl text-gray-600 border-b border-gray-400 border-opacity-30 pb-3 mb-8 md:mb-12 flex items-center justify-between">
-                  <span>Add ons (regular)</span>
-                  <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
-                    $1
-                  </div>
-                </div>
-
-                {boxedLunchesAddOnsRegular.map((item, i) => {
+                {boxedLunchesAddOns.slice(0, 3).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -376,14 +379,8 @@ const Page = ({ data }) => {
               </div>
 
               <div>
-                <div className="font-heading text-mobile-4xl md:text-4xl text-gray-600 border-b border-gray-400 border-opacity-30 pb-3 mb-8 md:mb-12 flex items-center justify-between">
-                  <span>Add ons (premium)</span>
-                  <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
-                    $2
-                  </div>
-                </div>
-
-                {boxedLunchesAddOnsPremium.map((item, i) => {
+                {" "}
+                {boxedLunchesAddOns.slice(3).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -402,20 +399,21 @@ const Page = ({ data }) => {
           <div className="container">
             <header className="mb-14">
               <h2>All In Ones</h2>
-              <div className="font-heading font-bold mb-5">
+              <p className="font-heading font-bold mb-5">
                 <i>
-                  Choose one style of menu and give quantities of each entree
+                  Minimum of 25 each is required for order. May select from all
+                  categories
                 </i>
-              </div>
+              </p>
             </header>
 
             <div className="grid md:grid-cols-2 gap-y-6 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
                 <div className="font-heading text-mobile-4xl md:text-4xl text-gray-600 border-b border-gray-400 border-opacity-30 pb-3 mb-8 md:mb-12 flex items-center justify-between">
                   <span>California Bistro</span>
-                  <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
+                  {/* <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
                     $25
-                  </div>
+                  </div> */}
                 </div>
 
                 {californiaBistro.map((item, i) => {
@@ -433,9 +431,9 @@ const Page = ({ data }) => {
               <div>
                 <div className="font-heading text-mobile-4xl md:text-4xl text-gray-600 border-b border-gray-400 border-opacity-30 pb-3 mb-8 md:mb-12 flex items-center justify-between">
                   <span>Thai</span>
-                  <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
+                  {/* <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
                     $25
-                  </div>
+                  </div> */}
                 </div>
 
                 {thai.map((item, i) => {
@@ -455,9 +453,9 @@ const Page = ({ data }) => {
               <div>
                 <div className="font-heading text-mobile-4xl md:text-4xl text-gray-600 border-b border-gray-400 border-opacity-30 pb-3 mb-8 md:mb-12 flex items-center justify-between">
                   <span>Mediterranean</span>
-                  <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
+                  {/* <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
                     $25
-                  </div>
+                  </div> */}
                 </div>
 
                 {mediterranean.map((item, i) => {
@@ -475,9 +473,9 @@ const Page = ({ data }) => {
               <div>
                 <div className="font-heading text-mobile-4xl md:text-4xl text-gray-600 border-b border-gray-400 border-opacity-30 pb-3 mb-8 md:mb-12 flex items-center justify-between">
                   <span>Hawaiian</span>
-                  <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
+                  {/* <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
                     $25
-                  </div>
+                  </div> */}
                 </div>
 
                 {hawaiian.map((item, i) => {
@@ -497,9 +495,9 @@ const Page = ({ data }) => {
               <div>
                 <div className="font-heading text-mobile-4xl md:text-4xl text-gray-600 border-b border-gray-400 border-opacity-30 pb-3 mb-8 md:mb-12 flex items-center justify-between">
                   <span>Mexican</span>
-                  <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
+                  {/* <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
                     $25
-                  </div>
+                  </div> */}
                 </div>
 
                 {mexican.map((item, i) => {
@@ -517,9 +515,9 @@ const Page = ({ data }) => {
               <div>
                 <div className="font-heading text-mobile-4xl md:text-4xl text-gray-600 border-b border-gray-400 border-opacity-30 pb-3 mb-8 md:mb-12 flex items-center justify-between">
                   <span>Tuscan</span>
-                  <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
+                  {/* <div className="w-10 h-10 rounded-full bg-primary-50 text-primary-400 font-display text-base leading-5 flex items-center justify-center">
                     $25
-                  </div>
+                  </div> */}
                 </div>
 
                 {tuscan.map((item, i) => {

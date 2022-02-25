@@ -23,8 +23,9 @@ const Page = ({ data }) => {
       description: "seared lamb chop, rosemary, garlic, mint-pomeganate glaze",
     },
     {
-      name: "Sausage Stuffed Mushroom",
-      description: "crimini, sausage, sage, shredded parmesan",
+      name: "Shrimp Lime Ceviche ",
+      description:
+        "shrimp, cherry tomato, cucumber, avocado, red onion, micro cilantro, tostada",
     },
     {
       name: "Duck Confit Crostini",
@@ -32,61 +33,75 @@ const Page = ({ data }) => {
         "toasted baguette, duck confit, caramelized applemustard, melted brie",
     },
     {
-      name: "Fig & Candied Onion Pizza",
+      name: "Ricotta &Tomato Jam Crostini ",
+      description: "grilled baguette, tomato jam, whipped ricotta",
+    },
+    {
+      name: "Mini Sope",
       description:
-        "Fig chutney, candied onion, goat cheese, arugula,balsamic drizzle",
+        "black bean puree, blistered shishito pepper, cotija, pickled onion",
     },
     {
-      name: "Butternut Squash Soup Shot",
-      description: "roasted squash, coconut milk, cinnamon, herbedcrouton",
+      name: "Avocado Toast",
+      description:
+        "fresh avocado, Prager Brothers spelt bread, heirloom tomato, everything bagel ",
     },
     {
-      name: "Mini Beef Wellington",
-      description: "beef tenderloin, mushroom duxelles, puff pastry",
+      name: "duck Confit Crostini ",
+      description:
+        "toasted baguette, blackberry jam, duck confit, pickled kumquat",
     },
   ];
 
-  const starter = [
+  const salad = [
     {
-      name: "Harvest Salad",
+      name: "Peach Strawberry Salad ",
       description:
-        "arugula, radish, carrot, persimmon, feta, pecans, dark balsamic",
+        "arugula, sliced peach & strawberry, cucumber, feta, micro mint, lemon EVOO",
     },
     {
-      name: "Leek & Potato Soup",
-      description: "roasted leek & potato, cream, fried leek & bacon",
+      name: "Butter Lettuce Caesar ",
+      description:
+        "butter lettuce, crouton, blistered tomato, shaved parmesan ",
     },
     {
-      name: "Beets & Burrata",
+      name: "Baby Wedge",
       description:
-        "roasted beets, golden pears, burrata, greens, ginger balsamic",
+        "baby iceberg lettuce, house made Point Reyes bleu cheese, green onion, cherry tomato, crumbled bacon",
     },
   ];
 
   const main = [
     {
       name: "Roasted Herb Chicken",
-      description: "Jidori airline breast, herbs, garlic, creamy mornay",
+      description:
+        "Jidori airline breast, herbs, garlic, grilled apricot & Hatch green chili glaze",
     },
     {
-      name: "Braised Short Rib",
-      description: "slow braised beef, red wine demi, fried leeks",
+      name: "Pepper Crusted Filet Mignon ",
+      description: "seared filet mignon, wild mushroom demi",
     },
     {
       name: "Pan Seared Salmon",
       description: "Wild Isle salmon, juniper & cranberry beurreblanc",
     },
     {
-      name: "Berkshire Pork Chop",
-      description: "Bone In pork chop, blackberry & sage compote",
+      name: "Braised Short Rib ",
+      description: "slow braised beef, red wine jus",
     },
     {
-      name: "Pepper Crusted Filet Mignon",
-      description: "seared filet mignon, wild mushroom demi glace",
+      name: "Stuffed Lobster Tail",
+      description:
+        "Butterflied Maine lobster tail, lump crab, bell pepper, onion, Old Bay, panko breadcrumbs",
     },
     {
-      name: "Stuffed Acorn Squash",
-      description: "roasted squash, quinoa, toasted almonds, cranberry",
+      name: "Stuffed Portobella Mushroom ",
+      description:
+        "marinated portobella, creamy spinach & artichoke heart, parmesan Reggiano",
+    },
+    {
+      name: "Seared Sea Bass",
+      description: "Local sea bass, tomato & fennel ragout",
     },
   ];
 
@@ -96,13 +111,13 @@ const Page = ({ data }) => {
       description: "roasted fingerling potatoes, Calabrian chili oil",
     },
     {
-      name: "Butternut Squash Risotto",
+      name: "Sweet Corn Risotto ",
       description:
-        "butternut squash, sage, arborio, white wine, parmesan Reggiano",
+        "sweet corn, saffron, arborio, white wine, parmesan Reggiano",
     },
     {
-      name: "Mashed Potatoes",
-      description: "yukon gold, roasted garlic, cream, butter",
+      name: "Garlic Mashed Potatoes",
+      description: "yukon gold, roasted garlic, cream, butter ",
     },
   ];
 
@@ -112,12 +127,12 @@ const Page = ({ data }) => {
       description: "broccolini, garlic, butter",
     },
     {
-      name: "Roasted Cauliflower",
-      description: "cauliflower, garlic, fresh herbs",
+      name: "Grilled Eightball Squash",
+      description: "squash, garlic, sea salt",
     },
     {
-      name: "Petit Heirloom Carrots",
-      description: "heirloom carrot, fresh herbs, butter",
+      name: "Farmer’s Market Medley",
+      description: "seasonal assorted vegetables, fresh herbs, butter",
     },
   ];
 
@@ -127,13 +142,12 @@ const Page = ({ data }) => {
       description: "chocolate cake, molten center, vanilla ice cream",
     },
     {
-      name: "Pumpkin Crème Brulee",
-      description: "pumpkin puree, sweet cream, caramelized sugar",
+      name: "Summer Berry Crème Brulee ",
+      description: "fresh berries, sweet cream, caramelized sugar",
     },
     {
-      name: "Turtle Trifle",
-      description:
-        "short cake, candied pecans, caramel, chocolate, whippedcream",
+      name: "Seasonal Galette",
+      description: "fresh fruit, pie crust, vanilla ice cream",
     },
   ];
 
@@ -159,7 +173,7 @@ const Page = ({ data }) => {
         <div className="text-white font-display text-xl tracking-wider leading-5 mb-4">
           Menu
         </div>
-        <h1 className="text-white mb-0">Harvest Dinner Party</h1>
+        <h1 className="text-white mb-0">Seasonal Dinner</h1>
       </HeroFullWidth>
 
       <div className="pt-14 md:pt-18">
@@ -174,7 +188,7 @@ const Page = ({ data }) => {
             </div>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
-                {appetizers.slice(0, 3).map((item, i) => {
+                {appetizers.slice(0, 4).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -201,18 +215,18 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="starter" className="mb-12 md:mb-16">
+        <section id="salad" className="mb-12 md:mb-16">
           <div className="container">
             <header className="mb-14 md:mb-12">
-              <h2>Starter</h2>
+              <h2>Salad</h2>
             </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Starter</b> / Choose 1
+              <b>salad</b> / Choose 1
             </div>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
-                {starter.slice(0, 2).map((item, i) => {
+                {salad.slice(0, 2).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -224,7 +238,7 @@ const Page = ({ data }) => {
                 })}
               </div>
               <div>
-                {starter.slice(2).map((item, i) => {
+                {salad.slice(2).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -250,7 +264,7 @@ const Page = ({ data }) => {
             </div>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
               <div>
-                {main.slice(0, 3).map((item, i) => {
+                {main.slice(0, 4).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -262,7 +276,7 @@ const Page = ({ data }) => {
                 })}
               </div>
               <div>
-                {main.slice(3).map((item, i) => {
+                {main.slice(4).map((item, i) => {
                   return (
                     <div key={i} className="mb-8 md:mb-10">
                       <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -379,7 +393,7 @@ export const query = graphql`
     }
     heroDesktop: file(
       relativePath: {
-        eq: "menus/Harvest Dinner Party/1.0-Harvest-Dinner-Party-Hero-Desktop.jpg"
+        eq: "menus/Seasonal Dinner/1.0 Summer Dinner Party Hero Desktop.jpg"
       }
     ) {
       childImageSharp {
@@ -388,7 +402,7 @@ export const query = graphql`
     }
     heroMobile: file(
       relativePath: {
-        eq: "menus/Harvest Dinner Party/1.0-Harvest-Dinner-Party-Hero-Mobile.jpg"
+        eq: "menus/Seasonal Dinner/1.0 Summer Dinner Party Hero Mobile.jpg"
       }
     ) {
       childImageSharp {

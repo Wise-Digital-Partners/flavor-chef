@@ -34,11 +34,6 @@ const Page = ({ data }) => {
       description:
         "7oz patty, pepper-jack cheese, peppered bacon, guacamole, mixed greens, chipotle aioli, brioche bun, house pickles, shoestring fries",
     },
-    {
-      name: "Beyond Flavor Burger",
-      description:
-        "beyond meatless patty, American cheese, arugula, caramelized onions, garlic mayo, tomato, brioche bun, house pickles, shoestring fries",
-    },
   ];
 
   const bbq = [
@@ -53,73 +48,49 @@ const Page = ({ data }) => {
         "braised pork, peach habanero BBQ, honey-ginger slaw, brioche bun, steak fries",
     },
     {
-      name: "Rib Plate",
-      description: "baby back ribs, house BBQ, honey-ginger slaw, steak fries",
-    },
-    {
       name: "BBQ Braised Jackfruit Sandwich",
       description:
         "braised jackfruit, sweet and spicy BBQ, honey-ginger slaw, brioche bun, steak fries",
     },
   ];
 
-  const kona = [
+  const pho = [
     {
-      name: "Loco Moco",
+      name: "Chicken Pho",
       description:
-        "beef patty, fried egg, caramelized onion demi, green onion, steamed jasmine rice, Hawaiian mac salad",
+        "shredded chicken, house made broth, mung bean sprouts, cilantro, green onion, jalapeno, Thai basil, lime, hoisin sauce, soy sauce",
     },
     {
-      name: "Kahlua Pork Sliders",
+      name: "Beef Pho",
       description:
-        "braised pork butt, Hawaiian sea salt, banana leaves, Korean BBQ sauce, Hawaiian slider buns, cole slaw, Hawaiian mac salad, shoestring fries",
+        "thinly sliced beef, house made broth, mung bean sprouts, cilantro, green onion, jalapeno, Thai basil, lime, hoisin sauce, soy sauce",
     },
     {
-      name: "Huli Huli Chicken",
+      name: "Veggie Pho",
       description:
-        "seared bone in chicken thigh, grilled pineapple, steamed jasmine rice, Hawaiian mac salad",
-    },
-    {
-      name: "Korean BBQ Spare Ribs",
-      description:
-        "Korean style bone in short rib, Fresno chilis green onion, steamed jasmine rice, Hawaiian mac salad",
+        "Shitake mushrooms, house made broth, mung bean sprouts, cilantro, green onion, jalapeno, Thai basil, lime, hoisin sauce, soy sauce",
     },
   ];
 
-  const southOfTheBorder = [
+  const birria = [
     {
-      name: "Baja Tacos",
+      name: "Chicken Birria Taco",
       description:
-        "beer battered cod, pico slaw, cilantro lime crema, corn tortilla",
+        "shredded chicken, jack cheese, onion & cilantro, corn tortilla, consommé, black beans, Mexican rice",
     },
     {
-      name: "Birria Taco",
+      name: "Beef Birria Taco",
       description:
-        "braised beef, jack cheese, onion & cilantro mix, corn tortilla, consommé",
+        "shredded beef, jack cheese, onion & cilantro, corn tortilla, consommé, black beans, Mexican rice",
     },
     {
-      name: "Chicken Adobada Quesadilla",
+      name: "Jackfruit Birria Taco",
       description:
-        "seared chicken, pineapple, jalapeno, jack cheese, flour tortilla, crema, green onion",
-    },
-    {
-      name: "Black Bean & Yam Taquitos",
-      description:
-        "chipotle black bean, sweet potato, jack cheese, smoked jalapeno relish, roasted salad & guacamole",
+        "shredded jackfruit, jack cheese, onion & cilantro, corn tortilla, consommé, black beans, Mexican rice",
     },
   ];
 
   const riceBowl = [
-    {
-      name: "Poke Bowl",
-      description:
-        "fresh ahi, house poke sauce, cucumber, carrot, green onion, cilantro, edamame, radishes, sriracha aioli, sesame seeds, steamed jasmine rice",
-    },
-    {
-      name: "Beef Bulgogi Bowl",
-      description:
-        "bulgogi beef, house kimchi, fresh orange, sesame seeds, green onion, steamed jasmine rice",
-    },
     {
       name: "Chicken Teriyaki Bowl",
       description:
@@ -130,6 +101,11 @@ const Page = ({ data }) => {
       description:
         "coconut shrimp, house sweet chili sauce, green onion, jalapeno, pineapple, steamed jasmine rice",
     },
+    {
+      name: "Beef Bulgogi Bowl",
+      description:
+        "bulgogi beef, house kimchi, fresh orange, sesame seeds, green onion, steamed jasmine rice",
+    },
   ];
 
   const caliFresh = [
@@ -139,19 +115,32 @@ const Page = ({ data }) => {
         "seared salmon, smashed coconut sweet potato, cabbage slaw, fresh citrus",
     },
     {
-      name: "Steak Salad",
+      name: "Grilled Flank Steak Plate",
       description:
-        "seared flank steak, arugula, chimichurri, blistered cherry tomato, crispy fried onion, marcona almonds ",
+        "seared flank steak, chimichurri, smashed potatoes, seasonal veggie medley",
     },
     {
       name: "Citrus Chicken Plate",
       description:
         "seared chicken breast, smashed coconut sweet potato, cabbage slaw, fresh citrus",
     },
+  ];
+
+  const hotSandwich = [
     {
-      name: "Grilled Polenta Cake",
+      name: "French Dip",
       description:
-        "grilled polenta, arugula, chimichurri, tomato ragout, blistered cherry tomato",
+        "thinly sliced roast beef, provolone, French roll, au jus, herb fries",
+    },
+    {
+      name: "Philly Cheese Steak",
+      description:
+        "thinly sliced roast beef, sautéed peppers & onions, melted cheese sauce, French roll, herb fries",
+    },
+    {
+      name: "The Reuben",
+      description:
+        "house-made corned beef, swiss, house kraut, thousand island dressing, marble rye",
     },
   ];
 
@@ -201,16 +190,8 @@ const Page = ({ data }) => {
       description: "vanilla bean, sweet cream, caramelized sugar",
     },
     {
-      name: "Churros",
+      name: "Churro bites",
       description: "fresh churros, cinnamon sugar, caramel drizzle",
-    },
-    {
-      name: "Deep Fried Oreos",
-      description: "deep fried oreos, chocolate syrup drizzle, powdered sugar",
-    },
-    {
-      name: "Strawberry Cheesecake",
-      description: "Wontonscream cheese, strawberry compote, fried wonton",
     },
   ];
 
@@ -307,6 +288,19 @@ const Page = ({ data }) => {
             <ul
               className={`px-14 lg:px-0 flex flex-col lg:flex-row md:items-center space-y-4 lg:space-y-0 w-full lg:w-auto overflow-y-scroll lg:overflow-visible transition-all duration-300 ease-linear ${setHeight}`}
             >
+              <li className="inline-flex items-center relative">
+                <AnchorLink
+                  to={url + "#apps"}
+                  title="Appetizers"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  stripHash
+                />
+                {/* <img
+                  src={data.addOnIcon.publicURL}
+                  alt="Add-on icon"
+                  className="-mt-1 ml-1 lg:ml-0 lg:right-7 md:absolute"
+                /> */}
+              </li>
               <li>
                 <AnchorLink
                   to={url + "#burger"}
@@ -325,24 +319,24 @@ const Page = ({ data }) => {
               </li>
               <li>
                 <AnchorLink
-                  to={url + "#kona"}
-                  title="Kona"
-                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
-                  stripHash
-                />
-              </li>
-              <li>
-                <AnchorLink
-                  to={url + "#south-of-the-border"}
-                  title="South of the Border"
-                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
-                  stripHash
-                />
-              </li>
-              <li>
-                <AnchorLink
                   to={url + "#rice-bowls"}
                   title="Rice Bowls"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  stripHash
+                />
+              </li>
+              <li>
+                <AnchorLink
+                  to={url + "#pho"}
+                  title="Pho"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  stripHash
+                />
+              </li>
+              <li>
+                <AnchorLink
+                  to={url + "#birria"}
+                  title="Birria"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
@@ -355,66 +349,71 @@ const Page = ({ data }) => {
                   stripHash
                 />
               </li>
-              <li className="inline-flex items-center relative">
+              <li>
                 <AnchorLink
-                  to={url + "#apps"}
-                  title="Apps"
-                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:pl-6 lg:pr-12"
+                  to={url + "#hot-sandwich"}
+                  title="Hot Sandwich"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
-                />
-                <img
-                  src={data.addOnIcon.publicURL}
-                  alt="Add-on icon"
-                  className="-mt-1 ml-1 lg:ml-0 lg:right-7 md:absolute"
                 />
               </li>
               <li className="inline-flex items-center relative">
                 <AnchorLink
                   to={url + "#desserts"}
                   title="Desserts"
-                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:pl-6 lg:pr-12"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
-                <img
+                {/* <img
                   src={data.addOnIcon.publicURL}
                   alt="Add-on icon"
                   className="-mt-1 ml-1 lg:ml-0 lg:right-7 md:absolute"
-                />
+                /> */}
               </li>
               <li className="inline-flex items-center relative">
                 <AnchorLink
                   to={url + "#kids"}
                   title="Kids"
-                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:pl-6 lg:pr-12"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
-                <img
+                {/* <img
                   src={data.addOnIcon.publicURL}
                   alt="Add-on icon"
                   className="-mt-1 ml-1 lg:ml-0 lg:right-7 md:absolute"
-                />
+                /> */}
               </li>
             </ul>
           </nav>
         </div>
 
-        <section className="mb-12 md:mb-24">
+        <section id="apps" className="mb-12 md:mb-16">
           <div className="container">
-            <div className="max-w-3xl mx-auto text-center">
-              <p className="font-heading text-lg mb-4">
-                Pick your Flavor Mobile package and choose 3 entrees from that
-                package
-              </p>
+            <header className="mb-14 md:mb-12">
+              <h2>Passed Appetizers</h2>
+            </header>
 
-              <div className="flex items-center justify-center text-sm text-gray-600 text-opacity-50">
-                <img
-                  src={data.addOnIcon.publicURL}
-                  alt="Add-on icon"
-                  className="mr-3"
-                />
-                <span className="mr-2">=</span>
-                <span>add-ons</span>
-              </div>
+            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12 flex items-center">
+              <span>
+                <b>Appetizers</b> / Choose 3{/* / Add-ons */}
+              </span>
+              {/* <img
+                src={data.addOnIcon.publicURL}
+                alt="Add-on icon"
+                className="ml-3"
+              /> */}
+            </div>
+            <div className="md:columns-2 md:gap-x-10 lg:gap-x-20 mb-24">
+              {apps.map((item, i) => {
+                return (
+                  <div key={i} className="mb-8 md:mb-10">
+                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                      {item.name}
+                    </p>
+                    <p className="mb-0">{item.description}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -423,36 +422,29 @@ const Page = ({ data }) => {
           <div className="container">
             <header className="mb-14 md:mb-12">
               <h2>Burger Flavor Mobile</h2>
+              <p className="font-heading font-bold mb-5">
+                <i>
+                  Choose 1 Entrée Package and estimate how many of each item
+                  you’d like to order. <br />
+                  Each guest allowed one entrée per person
+                </i>
+              </p>
             </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Burger Package</b> / Choose 3
+              <b>Entrées</b>
             </div>
-            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-              <div>
-                {burgerPackage.slice(0, 2).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <div>
-                {burgerPackage.slice(2).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
+            <div className="md:columns-2 md:gap-x-10 lg:gap-x-20 mb-24">
+              {burgerPackage.map((item, i) => {
+                return (
+                  <div key={i} className="mb-8 md:mb-10">
+                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                      {item.name}
+                    </p>
+                    <p className="mb-0">{item.description}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -461,112 +453,29 @@ const Page = ({ data }) => {
           <div className="container">
             <header className="mb-14 md:mb-12">
               <h2>BBQ Flavor Mobile</h2>
+              <p className="font-heading font-bold mb-5">
+                <i>
+                  Choose 1 Entrée Package and estimate how many of each item
+                  you’d like to order. <br />
+                  Each guest allowed one entrée per person
+                </i>
+              </p>
             </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>BBQ Package</b> / Choose 3
+              <b>Entrées</b>
             </div>
-            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-              <div>
-                {bbq.slice(0, 2).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <div>
-                {bbq.slice(2).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="kona" className="mb-12 md:mb-16">
-          <div className="container">
-            <header className="mb-14 md:mb-12">
-              <h2>Kona Flavor Mobile</h2>
-            </header>
-
-            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Kona Package</b> / Choose 3
-            </div>
-            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-              <div>
-                {kona.slice(0, 2).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <div>
-                {kona.slice(2).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="south-of-the-border" className="mb-12 md:mb-16">
-          <div className="container">
-            <header className="mb-14 md:mb-12">
-              <h2>South of the Border Flavor Mobile</h2>
-            </header>
-
-            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>South of the Border Package</b> / Choose 3
-            </div>
-            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-              <div>
-                {southOfTheBorder.slice(0, 2).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <div>
-                {southOfTheBorder.slice(2).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
+            <div className="md:columns-2 md:gap-x-10 lg:gap-x-20 mb-24">
+              {bbq.map((item, i) => {
+                return (
+                  <div key={i} className="mb-8 md:mb-10">
+                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                      {item.name}
+                    </p>
+                    <p className="mb-0">{item.description}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -575,36 +484,91 @@ const Page = ({ data }) => {
           <div className="container">
             <header className="mb-14 md:mb-12">
               <h2>Rice Bowl Flavor Mobile</h2>
+              <p className="font-heading font-bold mb-5">
+                <i>
+                  Choose 1 Entrée Package and estimate how many of each item
+                  you’d like to order. <br />
+                  Each guest allowed one entrée per person
+                </i>
+              </p>
             </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Rice Bowls Package</b> / Choose 3
+              <b>Entrées</b>
             </div>
-            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-              <div>
-                {riceBowl.slice(0, 2).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <div>
-                {riceBowl.slice(2).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
+            <div className="md:columns-2 md:gap-x-10 lg:gap-x-20 mb-24">
+              {riceBowl.map((item, i) => {
+                return (
+                  <div key={i} className="mb-8 md:mb-10">
+                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                      {item.name}
+                    </p>
+                    <p className="mb-0">{item.description}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        <section id="pho" className="mb-12 md:mb-16">
+          <div className="container">
+            <header className="mb-14 md:mb-12">
+              <h2>Pho Flavor Mobile</h2>
+              <p className="font-heading font-bold mb-5">
+                <i>
+                  Choose 1 Entrée Package and estimate how many of each item
+                  you’d like to order. <br />
+                  Each guest allowed one entrée per person
+                </i>
+              </p>
+            </header>
+
+            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+              <b>Entrées</b>
+            </div>
+            <div className="md:columns-2 md:gap-x-10 lg:gap-x-20 mb-24">
+              {pho.map((item, i) => {
+                return (
+                  <div key={i} className="mb-8 md:mb-10">
+                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                      {item.name}
+                    </p>
+                    <p className="mb-0">{item.description}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        <section id="birria" className="mb-12 md:mb-16">
+          <div className="container">
+            <header className="mb-14 md:mb-12">
+              <h2>Birria Flavor Mobile</h2>
+              <p className="font-heading font-bold mb-5">
+                <i>
+                  Choose 1 Entrée Package and estimate how many of each item
+                  you’d like to order. <br />
+                  Each guest allowed one entrée per person
+                </i>
+              </p>
+            </header>
+
+            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+              <b>Entrées</b>
+            </div>
+            <div className="md:columns-2 md:gap-x-10 lg:gap-x-20 mb-24">
+              {birria.map((item, i) => {
+                return (
+                  <div key={i} className="mb-8 md:mb-10">
+                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                      {item.name}
+                    </p>
+                    <p className="mb-0">{item.description}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -613,81 +577,60 @@ const Page = ({ data }) => {
           <div className="container">
             <header className="mb-14 md:mb-12">
               <h2>Cali Fresh Flavor Mobile</h2>
+              <p className="font-heading font-bold mb-5">
+                <i>
+                  Choose 1 Entrée Package and estimate how many of each item
+                  you’d like to order. <br />
+                  Each guest allowed one entrée per person
+                </i>
+              </p>
             </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Cali Fresh Package</b> / Choose 3
+              <b>Entrées</b>
             </div>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-              <div>
-                {caliFresh.slice(0, 2).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <div>
-                {caliFresh.slice(2).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
+              {caliFresh.map((item, i) => {
+                return (
+                  <div key={i} className="mb-8 md:mb-10">
+                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                      {item.name}
+                    </p>
+                    <p className="mb-0">{item.description}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
 
-        <section id="apps" className="mb-12 md:mb-16">
+        <section id="hot-sandwich" className="mb-12 md:mb-16">
           <div className="container">
             <header className="mb-14 md:mb-12">
-              <h2>Passed Hors D‘eouvres</h2>
+              <h2>Hot Sandiwch Flavor Mobile</h2>
+              <p className="font-heading font-bold mb-5">
+                <i>
+                  Choose 1 Entrée Package and estimate how many of each item
+                  you’d like to order. <br />
+                  Each guest allowed one entrée per person
+                </i>
+              </p>
             </header>
 
-            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12 flex items-center">
-              <span>
-                <b>Apps</b> / Add-ons
-              </span>
-              <img
-                src={data.addOnIcon.publicURL}
-                alt="Add-on icon"
-                className="ml-3"
-              />
+            <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
+              <b>Entrées</b>
             </div>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-              <div>
-                {apps.slice(0, 3).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <div>
-                {apps.slice(3).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
+              {hotSandwich.map((item, i) => {
+                return (
+                  <div key={i} className="mb-8 md:mb-10">
+                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                      {item.name}
+                    </p>
+                    <p className="mb-0">{item.description}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -700,39 +643,26 @@ const Page = ({ data }) => {
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12 flex items-center">
               <span>
-                <b>Dessert</b> / Add-ons
+                <b>Dessert</b> / Choose 1-2
+                {/* / Add-ons */}
               </span>
-              <img
+              {/* <img
                 src={data.addOnIcon.publicURL}
                 alt="Add-on icon"
                 className="ml-3"
-              />
+              /> */}
             </div>
-            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-              <div>
-                {desserts.slice(0, 3).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <div>
-                {desserts.slice(3).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
+            <div className="md:columns-2 md:gap-x-10 lg:gap-x-20 mb-24">
+              {desserts.map((item, i) => {
+                return (
+                  <div key={i} className="mb-8 md:mb-10">
+                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                      {item.name}
+                    </p>
+                    <p className="mb-0">{item.description}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -745,39 +675,26 @@ const Page = ({ data }) => {
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12 flex items-center">
               <span>
-                <b>Kids</b> / Add-ons
+                <b>Kids</b>
+                {/* / Add-ons */}
               </span>
-              <img
+              {/* <img
                 src={data.addOnIcon.publicURL}
                 alt="Add-on icon"
                 className="ml-3"
-              />
+              /> */}
             </div>
-            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-              <div>
-                {kids.slice(0, 2).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <div>
-                {kids.slice(2).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
+            <div className="md:columns-2 md:gap-x-10 lg:gap-x-20 mb-24">
+              {kids.map((item, i) => {
+                return (
+                  <div key={i} className="mb-8 md:mb-10">
+                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                      {item.name}
+                    </p>
+                    <p className="mb-0">{item.description}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>

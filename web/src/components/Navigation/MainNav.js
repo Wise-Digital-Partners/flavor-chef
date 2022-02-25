@@ -68,26 +68,6 @@ const StyledMainNav = styled.nav`
         }
       }
     }
-    .submenu-parent {
-      ${tw`relative`}
-      .submenu {
-        ${tw`absolute flex flex-col space-y-3 w-auto bg-primary-900 shadow-3xl py-7 px-8 opacity-0 invisible z-10 transform -translate-x-10 translate-y-12 transition-all duration-300 ease-linear`}
-        li {
-          ${tw`whitespace-nowrap w-36`}
-          &:not(:last-child) {
-            ${tw`border-b border-white border-opacity-30 pb-3`}
-          }
-          a {
-            ${tw`relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline`}
-          }
-        }
-      }
-      &:hover {
-        .submenu {
-          ${tw`opacity-100 visible translate-y-7`}
-        }
-      }
-    }
   }
 
   #navigation-mobile {
@@ -129,6 +109,10 @@ const MainNav = ({
   const [subMenuHovering2, setSubMenuHovering2] = useState(false);
   const isHoveringSubMenu2 = () => setSubMenuHovering2(true);
   const notHoveringSubMenu2 = () => setSubMenuHovering2(false);
+
+  const [subMenuHovering3, setSubMenuHovering3] = useState(false);
+  const isHoveringSubMenu3 = () => setSubMenuHovering3(true);
+  const notHoveringSubMenu3 = () => setSubMenuHovering3(false);
 
   // handle click of navigation items
   const clickHandler = () => {
@@ -225,7 +209,7 @@ const MainNav = ({
             className="hidden lg:flex lg:items-center lg:justify-end lg:mr-10"
           >
             <li
-              className={`submenu-parent ${subMenuHovering1 ? "active" : ""}`}
+              className={`relative group ${subMenuHovering1 ? "active" : ""}`}
             >
               <AniLink
                 fade
@@ -235,60 +219,169 @@ const MainNav = ({
               >
                 Services
               </AniLink>
-              <ul className="submenu">
-                <li>
-                  <AniLink fade to="/full-service-wedding-catering/">
+              <ul className="absolute flex flex-col space-y-3 w-auto bg-primary-900 shadow-3xl py-7 px-8 opacity-0 invisible z-10 transform -translate-x-10 translate-y-12 transition-all duration-300 ease-linear group-hover:opacity-100 group-hover:visible group-hover:translate-y-7">
+                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
+                  <AniLink
+                    fade
+                    to="/full-service-wedding-catering/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
                     Weddings
                   </AniLink>
                 </li>
-                <li>
-                  <AniLink fade to="/social-event-catering/">
+                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
+                  <AniLink
+                    fade
+                    to="/social-event-catering/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
                     Social Events
                   </AniLink>
                 </li>
-                <li>
-                  <AniLink fade to="/corporate-catering-san-diego/">
+                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
+                  <AniLink
+                    fade
+                    to="/corporate-catering-san-diego/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
                     Corporate
                   </AniLink>
                 </li>
-                <li>
-                  <AniLink fade to="/mobile-food-truck-catering/">
+                <li className="whitespace-nowrap w-36">
+                  <AniLink
+                    fade
+                    to="/mobile-food-truck-catering/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
                     Food Truck
                   </AniLink>
                 </li>
               </ul>
             </li>
 
-            <li>
-              <AniLink fade to="/menus/">
+            <li
+              className={`relative group ${subMenuHovering2 ? "active" : ""}`}
+            >
+              <AniLink
+                fade
+                to="/menus/"
+                onMouseEnter={isHoveringSubMenu2}
+                onMouseLeave={notHoveringSubMenu2}
+              >
                 Menus
               </AniLink>
+              <ul className="absolute flex flex-col space-y-3 w-auto bg-primary-900 shadow-3xl py-7 px-8 opacity-0 invisible z-10 transform -translate-x-10 translate-y-12 transition-all duration-300 ease-linear group-hover:opacity-100 group-hover:visible group-hover:translate-y-7">
+                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
+                  <AniLink
+                    fade
+                    to="/wedding-catering-menu/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
+                    Weddings
+                  </AniLink>
+                </li>
+                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
+                  <AniLink
+                    fade
+                    to="/dinner-catering-menu/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
+                    Harvest Dinner Party
+                  </AniLink>
+                </li>
+                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
+                  <AniLink
+                    fade
+                    to="/appetizer-catering-menu/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
+                    Small Bites
+                  </AniLink>
+                </li>
+                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
+                  <AniLink
+                    fade
+                    to="/dessert-catering-menu/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
+                    Sweet Treats
+                  </AniLink>
+                </li>
+                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
+                  <AniLink
+                    fade
+                    to="/boxed-lunch-catering-menu/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
+                    Boxed Lunch
+                  </AniLink>
+                </li>
+                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
+                  <AniLink
+                    fade
+                    to="/flavor-mobile-menu/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
+                    Flavor Mobile
+                  </AniLink>
+                </li>
+                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
+                  <AniLink
+                    fade
+                    to="/holiday-catering-menu/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
+                    Holiday
+                  </AniLink>
+                </li>
+                <li className="whitespace-nowrap w-36">
+                  <AniLink
+                    fade
+                    to="/seasonal-catering-menu/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
+                    Seasonal Dinner
+                  </AniLink>
+                </li>
+              </ul>
             </li>
 
             <li
-              className={`submenu-parent ${subMenuHovering2 ? "active" : ""}`}
+              className={`relative group ${subMenuHovering3 ? "active" : ""}`}
             >
               <AniLink
                 fade
                 to="/about/"
-                onMouseEnter={isHoveringSubMenu2}
-                onMouseLeave={notHoveringSubMenu2}
+                onMouseEnter={isHoveringSubMenu3}
+                onMouseLeave={notHoveringSubMenu3}
               >
                 About
               </AniLink>
-              <ul className="submenu">
-                <li>
-                  <AniLink fade to="/about/">
+              <ul className="absolute flex flex-col space-y-3 w-auto bg-primary-900 shadow-3xl py-7 px-8 opacity-0 invisible z-10 transform -translate-x-10 translate-y-12 transition-all duration-300 ease-linear group-hover:opacity-100 group-hover:visible group-hover:translate-y-7">
+                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
+                  <AniLink
+                    fade
+                    to="/about/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
                     Our Company
                   </AniLink>
                 </li>
-                <li>
-                  <AniLink fade to="/faqs/">
+                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
+                  <AniLink
+                    fade
+                    to="/faqs/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
                     FAQs
                   </AniLink>
                 </li>
-                <li>
-                  <AniLink fade to="/careers/">
+                <li className="whitespace-nowrap w-36">
+                  <AniLink
+                    fade
+                    to="/careers/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
                     Careers
                   </AniLink>
                 </li>
@@ -368,16 +461,102 @@ const MainNav = ({
                     </li>
                   </Accordion>
                 </li>
+
                 <li className="mb-7">
-                  <AniLink
-                    fade
-                    to="/menus/"
-                    onKeyDown={clickHandler}
-                    onClick={clickHandler}
-                  >
-                    Menus
-                  </AniLink>
+                  <Accordion title="Menus" className="submenu-parent">
+                    <li>
+                      <AniLink
+                        fade
+                        to="/menus/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        All Menus
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/wedding-catering-menu/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        Weddings
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/dinner-catering-menu/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        Harvest Dinner Party
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/appetizer-catering-menu/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        Small Bites
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/dessert-catering-menu/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        Sweet Treats
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/boxed-lunch-catering-menu/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        Boxed Lunch
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/flavor-mobile-menu/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        Flavor Mobile
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/holiday-catering-menu/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        Holiday
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/seasonal-catering-menu/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        Seasonal Dinner
+                      </AniLink>
+                    </li>
+                  </Accordion>
                 </li>
+
                 <li className="mb-7">
                   <Accordion title="About" className="submenu-parent">
                     <li>

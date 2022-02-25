@@ -20,8 +20,8 @@ const Page = ({ data }) => {
 
   const passedHorsDeouvres = [
     {
-      name: "Stuffed Mushroom",
-      description: "cremini, goat cheese, parmesan, fresh herbs",
+      name: "Sausage Stuffed Mushroom",
+      description: "cremini, smoked gouda, sausage, sage, parmesan",
     },
     {
       name: "Bacon Wrapped Date",
@@ -30,7 +30,7 @@ const Page = ({ data }) => {
     },
     {
       name: "Mini Crab Cake",
-      description: "lump crab, onions, peppers, basil aoli",
+      description: "lump crab, onions, peppers, cajun aioli",
     },
     {
       name: "Sweet Potato Empanada",
@@ -38,34 +38,41 @@ const Page = ({ data }) => {
         "roasted sweet potato, black beans, cheese, smoked jalapeño relish, chipotle aioli",
     },
     {
-      name: "Avocado Toast Pointe",
+      name: "Avocado Toast",
       description:
-        "fresh avocado, pickled red onion, pickled cumquat, lemon oil, cilantro, grilled baguette",
-    },
-    {
-      name: "Curry Chicken Skewer",
-      description: "chicken, coconut milk, curry, cashew tamarind sauce",
+        "fresh avocado, Prager Brothers spelt bread, heirloom tomato, everything bagel spice",
     },
     {
       name: "Steak & Brie Crostini",
       description: "NY strip steak, brie, caramelized onion, dijon",
     },
     {
-      name: "Prosciutto Shrimp Skewer",
-      description: "shrimp, prosciutto, sriracha aioli",
-    },
-    {
       name: "Heirloom Tomato Bruschetta",
       description: "Heirloom Tomato Bruschetta",
     },
     {
-      name: "Mediterranean Beef Skewer",
-      description: "dry rubbed beef sirloin, cucumber tzatziki",
+      name: "Filet Mignon Skewer",
+      description: "beef tenderloin, house dry rub, chimichurri",
+    },
+    {
+      name: "Chicken Shawarma Canape",
+      description:
+        "spiced chicken, blistered cherry tomato, toasted naan, cashew tamarind sauce",
+    },
+    {
+      name: "Mini Sope",
+      description:
+        "black bean puree, blistered shishito pepper, cotija, pickled onion",
     },
     {
       name: "Ahi Poke Crisps",
       description:
         "crispy wonton, tamari, ginger, scallion, sesame seeds, sriracha aioli",
+    },
+    {
+      name: "Hot Honey & Kale Crostini",
+      description:
+        "fried kale, spicy honey, whipped herb ricotta, toasted baguette",
     },
     {
       name: "Chicken & Waffle",
@@ -77,9 +84,8 @@ const Page = ({ data }) => {
       description: "marinated lamb chop, rosemary, mustard dill sauce",
     },
     {
-      name: "Fresh Spring Roll",
-      description:
-        "rice paper, mint, cilantro, sesame noodles, pickled vegetables, sweet chili sauce",
+      name: "Spam Musubi",
+      description: "fried spam, sushi rice, seaweed",
     },
   ];
 
@@ -90,19 +96,14 @@ const Page = ({ data }) => {
         "seasonal vegetables, warm pita chips, artichoke spinach dip, sprouted bean hummus",
     },
     {
-      name: "Charcuterie Display",
+      name: "Chips & Dips",
       description:
-        "seasonal vegetables, warm pita chips, artichoke spinach dip, sprouted bean hummus",
+        "House made salsa, fresh guacamole, chipotle queso with tortilla chips",
     },
     {
       name: "The Hodge Podge",
       description:
-        "variety of cheeses, dried fruit, toasted nuts, crackers, baguette, assorted fresh fruit, berries, seasonal vegetables, sprouted bean hummus, dried and cured meats, seasonal jam",
-    },
-    {
-      name: "Raw Bar",
-      description:
-        "live oyster shucking, crab legs, grilled shrimp cocktail garnish station of mignonette sauce, raw horseradish, lemon, spicy cocktail sauce",
+        "variety of cheeses, dried fruit, toasted nuts, crackers, baguette, assorted fresh fruit, berries, seasonal vegetables, sprouted bean hummus, dried and cured meats, seasonal jams",
     },
   ];
 
@@ -128,7 +129,7 @@ const Page = ({ data }) => {
     {
       name: "Farmer’s Market Medley ",
       description:
-        "seasonal vegetables, broccoli, cauliflower, heirloom carrot, summer squash, garlic, herbs, butte",
+        "seasonal vegetables, broccoli, cauliflower, heirloom carrot, summer squash, garlic, herbs, butter",
     },
     {
       name: "Seasonal Roasted Vegetable Platter",
@@ -136,8 +137,8 @@ const Page = ({ data }) => {
         "grilled asparagus, seasonal squash, broccolini, bell pepper, roasted mushrooms, balsamic vinegar, EVOO",
     },
     {
-      name: "Petit Heirloom Carrots",
-      description: "Heirloom carrots, butter, garlic, fresh herbs",
+      name: "Sauteed Broccolini",
+      description: "Broccolini, garlic, butter",
     },
   ];
 
@@ -154,18 +155,20 @@ const Page = ({ data }) => {
       name: "Citrus Risotto",
       description: "arborio rice, thyme, lemon zest, parmesan ",
     },
+    {
+      name: "Cacio E Pepe",
+      description: "Spaghetti noodles, butter, cracked black pepper, Pecorino",
+    },
   ];
 
   const buffetMains = [
     {
-      name: "Pan Roasted Dijon Chicken",
-      description:
-        "Jidori airline chicken breast, Dijon, white wine, thyme, garlic",
+      name: "Pan Roasted Chicken",
+      description: "Seared chicken breast, Dijon, champagne cream sauce",
     },
     {
-      name: "Chicken Florentine",
-      description:
-        "chicken breast, panko, spinach, goat cheese, citrus bechamel",
+      name: "Chicken Parmesan",
+      description: "chicken breast, panko, house marinara, mozzarella,",
     },
     {
       name: "Pan Seared Salmon",
@@ -173,8 +176,7 @@ const Page = ({ data }) => {
     },
     {
       name: "Citrus Seabass",
-      description:
-        "local seabass, ginger & lime beurre blanc, cilantro gremolat",
+      description: "local seabass, tomato & fennel ragout",
     },
     {
       name: "Grilled Flank Steak",
@@ -248,34 +250,33 @@ const Page = ({ data }) => {
       description: "Garnet yam, coconut milk, nutmeg",
     },
     {
-      name: "Citrus Risotto",
-      description: "arborio rice, thyme, lemon zest, parmesan ",
+      name: "Spring Pea Risotto",
+      description: "arborio rice, lemon zest, fresh peas mascarpone, parmesan",
+    },
+    {
+      name: "Roasted Fingerling Potatoes",
+      description: "fingerling potatoes, fresh herbs, garlic",
     },
   ];
 
   const platedMains = [
     {
-      name: "Pan Roasted Dijon Chicken",
+      name: "Pan Roasted Chicken",
       description:
-        "Jidori airline chicken breast, Dijon, white wine, thyme, garlic",
-    },
-    {
-      name: "Chicken Saltimbocca",
-      description:
-        "stuffed chicken breast, prosciutto, sage, mozzarella, fig & tomato ragout",
+        "Jidori airline chicken breast, creamy white wine Dijon sauce",
     },
     {
       name: "Pan Seared Salmon",
       description: "Wild Isle salmon, orange, basil, California EVOO",
     },
     {
-      name: "Tropical Sea Bass",
-      description:
-        "citrus marinated local seabass, pineapple & mango salsa, micro cilantro, EVOO",
+      name: "Citrus Sea Bass",
+      description: "citrus marinated local seabass, tomato & fennel ragout",
     },
     {
-      name: "Split Lobster Tail ",
-      description: "Maine lobster, lemon, butter, white wine, parsley",
+      name: "Stuffed Lobster Tail",
+      description:
+        "Butterflied Maine lobster tail, lump crab, bell pepper, onion, Old Bay, panko breadcrumbs",
     },
     {
       name: "Braised Beef Short Ribs",
@@ -284,11 +285,7 @@ const Page = ({ data }) => {
     },
     {
       name: "Pepper Crusted Filet Mignon",
-      description: "7oz center cut filet mignon, tamarind mushroom demi",
-    },
-    {
-      name: "Shrimp Scampi",
-      description: "fresh shrimp, butter, lemon, white wine, fresh herbs",
+      description: "center cut filet mignon, tamarind mushroom demi",
     },
     {
       name: "Spinach Stuffed Mushroom",
@@ -304,75 +301,90 @@ const Page = ({ data }) => {
     },
   ];
 
-  const familyStyleSalads = [
+  const chefInteractiveStations = [
     {
-      name: "House Salad",
-      description:
-        "baby greens, slivered red onion, pepperoncini, carrot, radish, cucumber, red wine vinaigrette ",
+      name: "Garden Station",
+      description: (
+        <>
+          <ul className="list-disc pl-6">
+            <li>organic green salad</li>
+            <li>bistro salad</li>
+            <li>seasonal roasted vegetable platter</li>
+          </ul>
+        </>
+      ),
     },
     {
-      name: "Bistro Salad",
-      description:
-        "organic greens, candied pecan, seasonal fruits, heirloom carrot, cucumber, radish, feta, orange balsamic, EVOO",
+      name: "Burger Sliders",
+      description: (
+        <>
+          <ul className="list-disc pl-6">
+            <li>Kobe beef sliders, brioche buns</li>
+            <li>caramelized onion, American cheese</li>
+            <li>arugula, roasted garlic aioli</li>
+          </ul>
+        </>
+      ),
     },
     {
-      name: "Roasted Beet Salad ",
-      description:
-        "arugula, roasted red & gold beets, goat cheese, heirloom carrot, orange squeeze, pistachio, grapefruit balsamic, EVOO",
-    },
-  ];
-
-  const familyStyleVeggies = [
-    {
-      name: "Seasonal Roasted Vegetable Platter",
-      description:
-        "grilled asparagus, seasonal squash, broccolini, bell pepper, roasted mushrooms, balsamic vinegar, EVOO ",
-    },
-    {
-      name: "Grilled Asparagus",
-      description: "grilled asparagus, sea salt, lemon, EVOO",
+      name: "French Fry Station ",
+      description: (
+        <>
+          <ul className="list-disc pl-6">
+            <li>freshly fried fries, parmesan herb mix</li>
+            <li>sriracha ketchup, house made ranch, Flavor Fry Sauce</li>
+            <li>(must be ordered with slider station)</li>
+          </ul>
+        </>
+      ),
     },
     {
-      name: "Petit Heirloom Carrots",
-      description: "Heirloom carrots, butter, garlic, fresh herbs",
-    },
-  ];
-
-  const familyStyleStarches = [
-    {
-      name: "Garlic Mashed Potatoes",
-      description: "Yukon gold potato, cream, roasted garlic, butter ",
-    },
-    {
-      name: "Wild Rice Pilaf",
-      description:
-        "wild rice, traditional vegetables, fresh herbs, toasted almonds",
+      name: "Argentine Grill ",
+      description: (
+        <>
+          <ul className="list-disc pl-6">
+            <li>freshly grilled Santa Maria style tri tip</li>
+            <li>roasted salsa, fresh garlic bread</li>
+          </ul>
+        </>
+      ),
     },
     {
-      name: "Roasted Root Vegetables",
-      description:
-        "sweet potato, carrot, purple potato, gold potato, rutabaga, garlic, fresh herbs",
-    },
-  ];
-
-  const familyStyleMains = [
-    {
-      name: "Pan Roasted Dijon Chicken",
-      description:
-        "Jidori airline chicken breast, Dijon, white wine, thyme, garlic",
-    },
-    {
-      name: "Grilled Tomahawk Steak",
-      description:
-        "grilled tomahawk steak, rosemary, garlic, shallot & herb compound butter",
+      name: "Pasta Bar",
+      description: (
+        <>
+          <ul className="list-disc pl-6">
+            <li>Penne, marinara and alfredo</li>
+            <li>chicken breast and Italian sausage</li>
+            <li>spinach, mushroom, tomato</li>
+            <li>parmesan cheese, pepper flakes</li>
+          </ul>
+        </>
+      ),
     },
     {
-      name: "Grilled Berkshire Pork Chop",
-      description: "grilled Berkshire pork, blackberry & sage compote",
+      name: "Birria Tacos",
+      description: (
+        <>
+          <ul className="list-disc pl-6">
+            <li>beef or chicken birria tacos</li>
+            <li>jack cheese, Consommé</li>
+            <li>onion, cilantro, radish</li>
+          </ul>
+        </>
+      ),
     },
     {
-      name: "Blackened Shrimp Skewers",
-      description: "Cajun marinated shrimp, tequila & lime butter",
+      name: "Yakisoba Wok",
+      description: (
+        <>
+          <ul className="list-disc pl-6">
+            <li>Yakisoba noodles</li>
+            <li>teriyaki sauce shitake, broccoli, cabbage</li>
+            <li>beef or chicken</li>
+          </ul>
+        </>
+      ),
     },
   ];
 
@@ -479,8 +491,8 @@ const Page = ({ data }) => {
               </li>
               <li>
                 <AnchorLink
-                  to={url + "#family-style"}
-                  title="Family Style"
+                  to={url + "#chef-interactive-stations"}
+                  title="Chef Interactive Stations"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
@@ -719,82 +731,32 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="family-style" className="mb-8 md:mb-10">
+        <section id="chef-interactive-stations" className="mb-8 md:mb-10">
           <div className="container">
             <header className="mb-14 md:mb-12">
-              <h2>Family Style</h2>
+              <h2>Chef Interactive Stations</h2>
             </header>
 
-            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
+            <div className="mb-10">
               <div>
                 <div className="mb-14 md:mb-20">
                   <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                    <b>Salads</b> / Choose 1
+                    Choose 3-4 Stations
                   </div>
-                  {familyStyleSalads.map((item, i) => {
-                    return (
-                      <div key={i} className="mb-8 md:mb-10">
-                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                          {item.name}
-                        </p>
-                        <p className="mb-0">{item.description}</p>
-                      </div>
-                    );
-                  })}
-                </div>
 
-                <div className="mb-14 md:mb-20">
-                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                    <b>Veggies</b> / Choose 1
-                  </div>
-                  {familyStyleVeggies.map((item, i) => {
-                    return (
-                      <div key={i} className="mb-8 md:mb-10">
-                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                          {item.name}
-                        </p>
-                        <p className="mb-0">{item.description}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div>
-                <div className="mb-14 md:mb-20">
-                  <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                    <b>Starches</b> / Choose 1
-                  </div>
-                  {familyStyleStarches.map((item, i) => {
-                    return (
-                      <div key={i} className="mb-8 md:mb-10">
-                        <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                          {item.name}
-                        </p>
-                        <p className="mb-0">{item.description}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-                  <b>Mains</b> / Choose 1 or 2
-                </div>
-                {familyStyleMains.map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      {item.plantBased && (
-                        <div className="bg-[#269566] text-center text-white text-xs px-3 py-1.5 mb-3 rounded inline-flex">
-                          Plant Based
+                  <div className="md:columns-2 md:gap-x-10 lg:gap-x-20">
+                    {chefInteractiveStations.map((item, i) => {
+                      return (
+                        <div key={i} className="mb-8 md:mb-10">
+                          <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                            {item.name}
+                          </p>
+                          <p className="mb-0">{item.description}</p>
                         </div>
-                      )}
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
             </div>
           </div>

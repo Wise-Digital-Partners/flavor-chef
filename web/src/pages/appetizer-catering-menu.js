@@ -27,8 +27,9 @@ const Page = ({ data }) => {
       description: "lump crab, onion, bell pepper, herbs, cajun aioli",
     },
     {
-      name: "Flank Steak Crostini",
-      description: "seared flank steak, chimichurri, pickled red onion",
+      name: "Hot Honey & Kale Crostini",
+      description:
+        "fried kale, spicy honey, whipped herb ricotta, toasted baguette",
     },
     {
       name: "Ahi Poke Crisp",
@@ -36,12 +37,8 @@ const Page = ({ data }) => {
         "fresh ahi, house poke sauce, green onion, sriracha aioli, fried wonton",
     },
     {
-      name: "Bacon Wrapped Scallops",
-      description: "fresh scallop, applewood bacon, sriracha aioli",
-    },
-    {
-      name: "Mediterranean Chicken Skewer",
-      description: "chicken, house spice rub, cucumber tzatziki",
+      name: "Bacon Wrapped Shrimp",
+      description: "fresh shrimp, applewood bacon, chili-ginger glaze",
     },
     {
       name: "Stuffed Mushroom",
@@ -58,12 +55,12 @@ const Page = ({ data }) => {
         "roasted sweet potato, black beans, cheese, smoked jalapeño relish",
     },
     {
-      name: "Avocado Toast Pointe",
+      name: "Avocado Toast",
       description:
-        "fresh avocado, pickled red onion, lemon oil, cilantro, grilled baguette",
+        "fresh avocado, Prager Brothers spelt bread, heirloom tomato, everything bagel spice",
     },
     {
-      name: "Grilled Shrimp Cocktail",
+      name: "Shrimp Cocktail",
       description: "fresh shrimp, garlic, spicy cocktail sauce",
     },
     {
@@ -71,12 +68,8 @@ const Page = ({ data }) => {
       description: "tomato, basil, burrata, grilled baguette, balsamic",
     },
     {
-      name: "Mediterranean Beef Skewer",
-      description: "beef sirloin, house marinade, cucumber tzatziki",
-    },
-    {
-      name: "Prosciutto Shrimp Skewer",
-      description: "shrimp, prosciutto, basil aioli",
+      name: "Filet Mignon Skewer",
+      description: "beef tenderloin, house dry rub, chimichurri",
     },
     {
       name: "Chicken & Waffle",
@@ -87,6 +80,11 @@ const Page = ({ data }) => {
       name: "Fresh Spring Roll",
       description:
         "rice paper, mint, cilantro, sesame noodles, pickled vegetables, sweet chili sauce",
+    },
+    {
+      name: "Mini Sope",
+      description:
+        "black bean puree, blistered shishito pepper, cotija, pickled onion",
     },
     {
       name: "Curry Chicken Skewer",
@@ -101,13 +99,8 @@ const Page = ({ data }) => {
       description: "poached lobster, lemon-tarragon aioli, brioche",
     },
     {
-      name: "Seared Blackened Ahi Tacos",
-      description: "spiced ahi tuna, wasabi slaw, siracha aioli, tortilla",
-    },
-    {
-      name: "Lamb Slider",
-      description:
-        "ground lamb, fresh mint, goat cheese, arugula, roasted garlic aioli",
+      name: "Spam Musubi",
+      description: "fried spam, sushi rice, seaweed",
     },
     {
       name: "Roasted Red Pepper Polenta Cake",
@@ -127,19 +120,47 @@ const Page = ({ data }) => {
         "Seasonal vegetables, warm pita, artichoke spinach dip, sprouted bean hummus",
     },
     {
-      name: "Charcuterie Display",
-      description:
-        "variety of cheese, olives, cornichons, pepperoncini, toasted nuts, crackers, baguette, house made jam, cured meats",
-    },
-    {
       name: "The Hodge Podge",
       description:
         "variety of cheeses, dried fruit, toasted nuts, crackers, baguette, assorted fresh fruit, berries, seasonal vegetables, sprouted bean hummus, dried and cured meats, seasonal jam",
     },
+  ];
+
+  const plateStations = [
+    {
+      name: "Argentine Grill",
+      description:
+        "freshly grilled chicken and beef kabobs, cucumber tzatziki and chimichurri sauce",
+    },
+    {
+      name: "Yakisoba Wok",
+      description:
+        "Yakisoba noodles, shitake, broccoli, cabbage, teriyaki sauce beef or chicken",
+    },
+    {
+      name: "Burger Sliders",
+      description:
+        "Kobe beef sliders, brioche buns, caramelized onion, American cheese, arugula, roasted garlic aioli",
+    },
+    {
+      name: "French Fry Station",
+      description:
+        "freshly fried fries, parmesan herb mix, sriracha ketchup, house made ranch, Flavor Fry Sauce",
+    },
+    {
+      name: "Pasta Bar",
+      description:
+        "marinara and alfredo, penne pasta, chicken breast and Italian sausage, spinach, mushroom, tomato, parmesan cheese, pepper flakes",
+    },
     {
       name: "Raw Bar",
       description:
-        "live oyster shucking, crab legs, grilled shrimp cocktail garnish station of mignonette sauce, raw horseradish, lemon, spicy cocktail sauce",
+        "live oyster shucking crab legs, shrimp cocktail, Mignonette sauce, raw horseradish, lemon, spicy cocktail sauce, Tabasco",
+    },
+    {
+      name: "Shrimp & Grits",
+      description:
+        "live action sauteed shrimp, pepper-jack grits, bell pepper, onion, blackened lime butter",
     },
   ];
 
@@ -169,72 +190,65 @@ const Page = ({ data }) => {
       </HeroFullWidth>
 
       <div className="pt-14 md:pt-18">
-        <section id="passed-hors-deouvres" className="mb-12 md:mb-16">
+        <section id="passed-hors-deouvres" className="mb-12 md:mb-24">
           <div className="container">
             <header className="mb-14 md:mb-12">
               <h2>Passed Hors D‘eouvres</h2>
             </header>
 
-            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-              <div>
-                {passedHorsDeouvres.slice(0, 11).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <div>
-                {passedHorsDeouvres.slice(11).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
+            <div className="md:columns-2 md:gap-x-10 lg:gap-x-20">
+              {passedHorsDeouvres.map((item, i) => {
+                return (
+                  <div key={i} className="mb-8 md:mb-10">
+                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                      {item.name}
+                    </p>
+                    <p className="mb-0">{item.description}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
 
-        <section id="appetizer" className="mb-12 md:mb-16">
+        <section id="appetizer" className="mb-12 md:mb-24">
           <div className="container">
             <header className="mb-14 md:mb-12">
-              <h2>Appetizer Display</h2>
+              <h2>Appetizer Displays</h2>
             </header>
 
-            <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-              <div>
-                {appetizers.slice(0, 3).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <div>
-                {appetizers.slice(3).map((item, i) => {
-                  return (
-                    <div key={i} className="mb-8 md:mb-10">
-                      <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
-                        {item.name}
-                      </p>
-                      <p className="mb-0">{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
+            <div className="md:columns-2 md:gap-x-10 lg:gap-x-20">
+              {appetizers.map((item, i) => {
+                return (
+                  <div key={i} className="mb-8 md:mb-10">
+                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                      {item.name}
+                    </p>
+                    <p className="mb-0">{item.description}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        <section id="appetizer" className="mb-12 md:mb-24">
+          <div className="container">
+            <header className="mb-14 md:mb-12">
+              <h2>Small Plate Station</h2>
+            </header>
+
+            <div className="md:columns-2 md:gap-x-10 lg:gap-x-20">
+              {plateStations.map((item, i) => {
+                return (
+                  <div key={i} className="mb-8 md:mb-10">
+                    <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
+                      {item.name}
+                    </p>
+                    <p className="mb-0">{item.description}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>

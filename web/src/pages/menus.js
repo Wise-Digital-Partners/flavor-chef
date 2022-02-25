@@ -91,6 +91,15 @@ const Page = ({ data }) => {
       viewMenu: "/holiday-catering-menu/",
       downloadMenu: data.holidayPDF.publicURL,
     },
+    {
+      id: "seasonal-dinner",
+      image: data.menuSeasonal.childImageSharp.gatsbyImageData,
+      heading: "Seasonal Dinner Menu",
+      text:
+        "Enjoy decadent, flavorful cuisine made with the freshest fruits, vegetables and ingredients of the season.",
+      viewMenu: "/seasonal-catering-menu/",
+      downloadMenu: data.seasonalPDF.publicURL,
+    },
   ];
 
   const url = typeof window !== "undefined" ? window.location.pathname : "";
@@ -236,6 +245,14 @@ const Page = ({ data }) => {
                   stripHash
                 />
               </li>
+              <li>
+                <AnchorLink
+                  to={url + "#seasonal"}
+                  title="Seasonal Dinner"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  stripHash
+                />
+              </li>
             </ul>
           </nav>
         </div>
@@ -348,7 +365,7 @@ export const query = graphql`
       }
     }
     menuHarvestDinnerParty: file(
-      relativePath: { eq: "menus/Menus Hub/Summer-Dinner-Party.jpg" }
+      relativePath: { eq: "menus/Menus Hub/Harvest.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
@@ -356,6 +373,13 @@ export const query = graphql`
     }
     menuHoliday: file(
       relativePath: { eq: "menus/Menus Hub/Holiday-Menu.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
+    menuSeasonal: file(
+      relativePath: { eq: "menus/Menus Hub/Seasonal Dinner Party Menu.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
@@ -449,7 +473,7 @@ export const query = graphql`
     ) {
       publicURL
     }
-    boxedMealsPDF: file(relativePath: { eq: "boxed-meals-menu.pdf" }) {
+    boxedMealsPDF: file(relativePath: { eq: "corporate-menu.pdf" }) {
       publicURL
     }
     flavorMobilePDF: file(relativePath: { eq: "flavor-mobile-menu.pdf" }) {
@@ -462,6 +486,9 @@ export const query = graphql`
       publicURL
     }
     holidayPDF: file(relativePath: { eq: "holiday-menu.pdf" }) {
+      publicURL
+    }
+    seasonalPDF: file(relativePath: { eq: "seasonal-dinner-menu.pdf" }) {
       publicURL
     }
     menuIcon: file(relativePath: { eq: "global/menu.svg" }) {
