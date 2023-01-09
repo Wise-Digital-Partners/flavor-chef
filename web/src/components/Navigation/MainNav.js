@@ -177,7 +177,7 @@ const MainNav = ({
     >
       <div className="container flex justify-between items-center">
         <div className="flex-auto flex items-center md:hidden">
-          <a href="tel:619-430-3981">
+          <a href="tel:6199168360">
             <i
               className={`fas fa-phone-alt text-lg ${
                 headerStyle === "overlap" ? "text-white" : "text-black"

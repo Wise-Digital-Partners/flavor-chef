@@ -4,7 +4,6 @@ require("dotenv").config({
 });
 
 const clientConfig = require("./client-config");
-
 const isProd = process.env.NODE_ENV === "production";
 
 const {
@@ -116,14 +115,14 @@ module.exports = {
         overlayDrafts: !isProd,
       },
     },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `3269465088`,
-        access_token: "a valid access token",
-        instagram_id: "your instagram_business_account id",
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-instagram`,
+    //   options: {
+    //     username: `3269465088`,
+    //     access_token: "a valid access token",
+    //     instagram_id: "your instagram_business_account id",
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

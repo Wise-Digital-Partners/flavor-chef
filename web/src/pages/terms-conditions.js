@@ -293,7 +293,7 @@ const Page = () => {
 
           <p>By Mail: 1175 Park Center Dr, Vista, CA 92081</p>
 
-          <p>By Phone: (619) 430-3981</p>
+          <p>By Phone: (619)-916-8360</p>
 
           <p>By E-mail: flavorchefcatering@gmail.com</p>
           <ul>
