@@ -73,7 +73,7 @@
     "autoprefixer": "^10.2.5",
     "cssnano": "^5.0.0",
     "date-fns": "^2.19.0",
-    "gatsby-plugin-advanced-sitemap": "^2.0.0",
+    "gatsby-plugin-advanced-sitemap": "^2.1.0",
     "gatsby-plugin-emotion": "^7.8.0",
     "gatsby-plugin-sanity-image": "^0.11.0",
     "gatsby-source-instagram": "^0.9.0",
