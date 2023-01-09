@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 // Load variables from `.env` as soon as possible
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV || "development"}`,
@@ -110,7 +111,8 @@ module.exports = {
       resolve: "gatsby-source-sanity",
       options: {
         ...clientConfig.sanity,
-        token: process.env.SANITY_READ_TOKEN,
+        token: process.env.
+        SANITY_READ_TOKEN,
         watchMode: !isProd,
         overlayDrafts: !isProd,
       },
