@@ -1,7 +1,9 @@
 [build]
-  base = "web/project/"
-  publish = "public"
-
+  base = "./"
+  command = "npm run build"
+  functions = "netlify/functions"
+  publish = "/public"
+  
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"
 
