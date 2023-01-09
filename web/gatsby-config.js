@@ -6,7 +6,7 @@ require("dotenv").config({
 
 const clientConfig = require("./client-config");
 const isProd = process.env.NODE_ENV === "production";
-
+const previewEnabled = true;
 const {
   NODE_ENV,
   URL: NETLIFY_SITE_URL = "https://flavor-chef.netlify.app/",
@@ -32,6 +32,16 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
     {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          placeholder: `blurred`,
+          quality: 100,
+          breakpoints: [640, 768, 1024, 1280, 1536],
+        },
+      },
+    },
+    {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         resolveEnv: () => NETLIFY_ENV,
@@ -40,12 +50,14 @@ module.exports = {
             policy: [{ userAgent: "*" }],
           },
           "branch-deploy": {
-            policy: [{ userAgent: "*", disallow: ["/"] }],
+            policy: [{ userAgent: "*", 
+            disallow: ["/"] }],
             sitemap: null,
             host: null,
           },
           "deploy-preview": {
-            policy: [{ userAgent: "*", disallow: ["/"] }],
+            policy: [{ userAgent: "*", 
+            disallow: ["/"] }],
             sitemap: null,
             host: null,
           },
@@ -114,7 +126,7 @@ module.exports = {
         token: process.env.
         SANITY_READ_TOKEN,
         watchMode: !isProd,
-        overlayDrafts: !isProd,
+        overlayDrafts: !isProd || previewEnabled, // drafts in dev & Gatsby Cloud Preview
       },
     },
     // {
