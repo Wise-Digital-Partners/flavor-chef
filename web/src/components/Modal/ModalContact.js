@@ -125,8 +125,8 @@ const Modal = () => {
             <div className="px-6 md:px-20 pb-24">
               <header className="mb-3 flex justify-between items-center">
                 <p className="heading-three mb-0">Contact Us</p>
-                <a href="tel:6199168360" className="font-medium no-underline">
-                  <i className="fas fa-phone-alt mr-1"></i> (619) 916-8360 
+                <a href="tel:619-430-3981" className="font-medium no-underline">
+                  <i className="fas fa-phone-alt mr-1"></i> (619) 430-3981
                 </a>
               </header>
               <p className="text-sm">
