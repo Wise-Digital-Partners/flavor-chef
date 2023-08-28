@@ -31,8 +31,8 @@ const Page = ({ data }) => {
       headerHasBorder={true}
     >
       <SearchEngineOptimization
-        title="Corporate Catering San Diego | Flavor Chef Catering"
-        description="Contact us, tell us your plan, and check the catering off your to-do list. Choose Flavor Chef Catering in San Diego for your next corporate catering event."
+        title="Corporate Catering Menu | Flavor Chef Catering"
+        description="Elevate your corporate event with our diverse catering menu. Impress your guests with delectable dishes. Explore our options for a memorable experience."
         openGraphImage={data.openGraphImage.publicURL}
         twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />

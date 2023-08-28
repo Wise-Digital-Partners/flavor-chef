@@ -150,8 +150,8 @@ const Page = ({ data }) => {
       headerHasBorder={true}
     >
       <SearchEngineOptimization
-        title="Flavor Mobile Menu | Food Truck Catering | Flavor Chef"
-        description="Let us come to you. Hire the Flavor Chef Catering 'Flavor Mobile' for your next event. Our mobile food truck catering brings fresh dishes straight to you."
+        title="Interactive Food Station Menu | Flavor Chef Catering"
+        description="Elevate your event with our interactive food station menu. Delight in a unique culinary experience that engages and satisfies. Explore the options now!"
         openGraphImage={data.openGraphImage.publicURL}
         twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
