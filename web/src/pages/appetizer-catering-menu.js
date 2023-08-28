@@ -20,149 +20,162 @@ const Page = ({ data }) => {
   const passedHorsDeouvres = [
     {
       name: "Lollipop Lamb Chop",
-      description: "seared lamb chop, rosemary, garlic, dill-mustard",
+      description: "New Zealand grass fed lamb, rosemary, garlic, mustard dill sauce",
     },
     {
       name: "Mini Crab Cake",
-      description: "lump crab, onion, bell pepper, herbs, cajun aioli",
+      description: "lump crab, onion, bell pepper, basil, cajun remoulade",
     },
     {
-      name: "Hot Honey & Kale Crostini",
+      name: "Pesto Caprese Crostini",
       description:
-        "fried kale, spicy honey, whipped herb ricotta, toasted baguette",
+        "pesto, heirloom cherry tomato, pearl mozzarella, ciabatta crostini, balsamic reduction, basil",
     },
     {
-      name: "Ahi Poke Crisp",
+      name: "Poke Crisp",
       description:
-        "fresh ahi, house poke sauce, green onion, sriracha aioli, fried wonton",
+        "ahi tuna, tamari, ginger, scallion, sesame seeds, crispy wonton, sriracha aioli",
     },
     {
-      name: "Bacon Wrapped Shrimp",
-      description: "fresh shrimp, applewood bacon, chili-ginger glaze",
+      name: "Pig in a Blanket",
+      description: "beef mini weenie, puff pastry, everything bagel seasoning, sweet & spicy BBQ",
     },
     {
       name: "Stuffed Mushroom",
-      description: "cremini, goat cheese, parmesan, fresh herbs",
-    },
-    {
-      name: "Bacon Wrapped Date",
-      description:
-        "medjool date, applewood smoked bacon, goat cheese, carmamelized onions, basil",
+      description: "remini duxelle, goat cheese, caramelized onion, parmesan, basil",
     },
     {
       name: "Sweet Potato Empanada",
       description:
-        "roasted sweet potato, black beans, cheese, smoked jalapeño relish",
+        "roasted sweet potato, black beans, cheese, chipotle aioli, smoked jalapeño relish",
     },
+    {
+      name: "Short Rib Empanada",
+      description:
+        "braised beef short rib, cheddar cheese, jalapeno, avocado salsa verde, green onion",
+    },
+    
     {
       name: "Avocado Toast",
       description:
-        "fresh avocado, Prager Brothers spelt bread, heirloom tomato, everything bagel spice",
-    },
-    {
-      name: "Shrimp Cocktail",
-      description: "fresh shrimp, garlic, spicy cocktail sauce",
-    },
-    {
-      name: "Heirloom Tomato Bruschetta",
-      description: "tomato, basil, burrata, grilled baguette, balsamic",
+        "avocado, pickled red onion, kumquat, ciabatta toast, everything bagel seasoning, micro cilantro",
     },
     {
       name: "Filet Mignon Skewer",
-      description: "beef tenderloin, house dry rub, chimichurri",
+      description: "dry rubbed beef tenderloin, red chimichurri, micro cilantro",
     },
     {
       name: "Chicken & Waffle",
       description:
-        "fried chicken, buttermilk waffle, buffalo sauce, maple glaze, house pickle",
+        "fried chicken breast, buttermilk waffle, buffalo maple glaze, house pickle",
+    },
+    {
+      name: "Bacon Wrapped Date",
+      description:
+        "applewood smoked bacon, medjool date, goat cheese, caramelized onion, basil, balsamic reduction",
+    },
+    {
+      name: "Duck Confit Crostini",
+      description: "apricot jalapeno jam, duck confit, toasted baguette, micro arugulai",
     },
     {
       name: "Fresh Spring Roll",
       description:
-        "rice paper, mint, cilantro, sesame noodles, pickled vegetables, sweet chili sauce",
-    },
-    {
-      name: "Mini Sope",
-      description:
-        "black bean puree, blistered shishito pepper, cotija, pickled onion",
+        "pickled vegetables, mint, cilantro, rice noodles, butter lettuce, rice paper, sweet chili sauce",
     },
     {
       name: "Curry Chicken Skewer",
-      description: "chicken, coconut milk, curry, cashew tamarind sauce",
+      description: "chicken thigh, coconut milk, yellow curry, mint chutney",
     },
     {
       name: "Steak & Brie Crostini",
-      description: "NY strip steak, brie, caramelized onion, dijon",
+      description: "NY strip steak, brie, caramelized onion, Dijon, toasted baguette, parsley",
     },
     {
       name: "Mini Lobster Rolls",
-      description: "poached lobster, lemon-tarragon aioli, brioche",
+      description: "poached lobster, lemon-tarragon aioli, Hawaiian sweet roll, green onion",
     },
     {
       name: "Spam Musubi",
-      description: "fried spam, sushi rice, seaweed",
+      description: "fried spam, hoisin ginger glaze, sushi rice, seaweed, furikake",
     },
     {
-      name: "Roasted Red Pepper Polenta Cake",
-      description: "grilled polenta, red pepper ragout, goat cheese",
+      name: "Stuffed Arancini",
+      description: "citrus risotto, mozzarella, panko breadcrumbs, marinara, Parmesan Reggiano, micro basil",
     },
+    {
+      name: "Chinese Chicken Lettuce Wrap",
+      description: "spiced chicken salad, bell pepper, carrot, green onion, chopped peanuts, iceberg lettuce wrap",
+    },
+    {
+      name: "Pork Tostone",
+      description: "Mojo pork tenderloin, fried plantain, sweet Caribbean chutney",
+    },
+    {
+      name: "Wonton Wrapped Shrimp",
+      description: "shrimp, crispy wonton wrapper, sweet chili glaze",
+    },
+    {
+      name: "Pork Belly Bao Bun",
+      description: "Braised pork belly, sweet & spicy glaze, pickled vegetables, cilantro, steamed bun",
+    },
+    {
+      name: "Tomato Fennel Bisque Shot",
+      description: "House made tomato & fennel bisque, micro basil, Parmesan crisp",
+    },
+
   ];
 
   const appetizers = [
-    {
-      name: "Chips & Dips",
-      description:
-        "Local tortilla chips, fresh guacamole, roasted salsa, chipotle queso",
-    },
-    {
-      name: "Seasonal Crudites",
-      description:
-        "Seasonal vegetables, warm pita, artichoke spinach dip, sprouted bean hummus",
-    },
     {
       name: "The Hodge Podge",
       description:
         "variety of cheeses, dried fruit, toasted nuts, crackers, baguette, assorted fresh fruit, berries, seasonal vegetables, sprouted bean hummus, dried and cured meats, seasonal jam",
     },
+    {
+      name: "Mediterranean Mezze Display",
+      description:
+        "locally sourced vegetables, hummus, spinach & artichoke dip, cucumber tzatziki, olives, artichoke hearts, warm naan, lavash",
+    },
   ];
 
-  const plateStations = [
-    {
-      name: "Argentine Grill",
-      description:
-        "freshly grilled chicken and beef kabobs, cucumber tzatziki and chimichurri sauce",
-    },
-    {
-      name: "Yakisoba Wok",
-      description:
-        "Yakisoba noodles, shitake, broccoli, cabbage, teriyaki sauce beef or chicken",
-    },
-    {
-      name: "Burger Sliders",
-      description:
-        "Kobe beef sliders, brioche buns, caramelized onion, American cheese, arugula, roasted garlic aioli",
-    },
-    {
-      name: "French Fry Station",
-      description:
-        "freshly fried fries, parmesan herb mix, sriracha ketchup, house made ranch, Flavor Fry Sauce",
-    },
-    {
-      name: "Pasta Bar",
-      description:
-        "marinara and alfredo, penne pasta, chicken breast and Italian sausage, spinach, mushroom, tomato, parmesan cheese, pepper flakes",
-    },
-    {
-      name: "Raw Bar",
-      description:
-        "live oyster shucking crab legs, shrimp cocktail, Mignonette sauce, raw horseradish, lemon, spicy cocktail sauce, Tabasco",
-    },
-    {
-      name: "Shrimp & Grits",
-      description:
-        "live action sauteed shrimp, pepper-jack grits, bell pepper, onion, blackened lime butter",
-    },
-  ];
+  // const plateStations = [
+  //   {
+  //     name: "Argentine Grill",
+  //     description:
+  //       "freshly grilled chicken and beef kabobs, cucumber tzatziki and chimichurri sauce",
+  //   },
+  //   {
+  //     name: "Yakisoba Wok",
+  //     description:
+  //       "Yakisoba noodles, shitake, broccoli, cabbage, teriyaki sauce beef or chicken",
+  //   },
+  //   {
+  //     name: "Burger Sliders",
+  //     description:
+  //       "Kobe beef sliders, brioche buns, caramelized onion, American cheese, arugula, roasted garlic aioli",
+  //   },
+  //   {
+  //     name: "French Fry Station",
+  //     description:
+  //       "freshly fried fries, parmesan herb mix, sriracha ketchup, house made ranch, Flavor Fry Sauce",
+  //   },
+  //   {
+  //     name: "Pasta Bar",
+  //     description:
+  //       "marinara and alfredo, penne pasta, chicken breast and Italian sausage, spinach, mushroom, tomato, parmesan cheese, pepper flakes",
+  //   },
+  //   {
+  //     name: "Raw Bar",
+  //     description:
+  //       "live oyster shucking crab legs, shrimp cocktail, Mignonette sauce, raw horseradish, lemon, spicy cocktail sauce, Tabasco",
+  //   },
+  //   {
+  //     name: "Shrimp & Grits",
+  //     description:
+  //       "live action sauteed shrimp, pepper-jack grits, bell pepper, onion, blackened lime butter",
+  //   },
+  // ];
 
   return (
     <Layout
@@ -232,7 +245,7 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="appetizer" className="mb-12 md:mb-24">
+        {/* <section id="appetizer" className="mb-12 md:mb-24">
           <div className="container">
             <header className="mb-14 md:mb-12">
               <h2>Small Plate Station</h2>
@@ -251,7 +264,7 @@ const Page = ({ data }) => {
               })}
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
 
       <Divider />
