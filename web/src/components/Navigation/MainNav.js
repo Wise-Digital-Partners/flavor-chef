@@ -283,10 +283,19 @@ const MainNav = ({
                 <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
                   <AniLink
                     fade
-                    to="/dinner-catering-menu/"
+                    to="/flavor-mobile-menu/"
                     className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
                   >
-                    Harvest Dinner Party
+                    Flavor Mobile
+                  </AniLink>
+                </li>
+                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
+                  <AniLink
+                    fade
+                    to="/interactive-food-station-menu/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
+                    Interactive Stations
                   </AniLink>
                 </li>
                 <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
@@ -301,28 +310,29 @@ const MainNav = ({
                 <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
                   <AniLink
                     fade
+                    to="/seasonal-catering-menu/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
+                    Seasonal Dinner
+                  </AniLink>
+                </li>
+                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
+                  <AniLink
+                    fade
+                    to="/dinner-catering-menu/"
+                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
+                  >
+                    Harvest Dinner Party
+                  </AniLink>
+                </li>
+                
+                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
+                  <AniLink
+                    fade
                     to="/dessert-catering-menu/"
                     className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
                   >
                     Sweet Treats
-                  </AniLink>
-                </li>
-                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
-                  <AniLink
-                    fade
-                    to="/boxed-lunch-catering-menu/"
-                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
-                  >
-                    Boxed Lunch
-                  </AniLink>
-                </li>
-                <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
-                  <AniLink
-                    fade
-                    to="/flavor-mobile-menu/"
-                    className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
-                  >
-                    Flavor Mobile
                   </AniLink>
                 </li>
                 <li className="whitespace-nowrap w-36 border-b border-white border-opacity-30 pb-3">
@@ -337,12 +347,15 @@ const MainNav = ({
                 <li className="whitespace-nowrap w-36">
                   <AniLink
                     fade
-                    to="/seasonal-catering-menu/"
+                    to="/corporate-catering-menu/"
                     className="relative font-display text-base tracking-wider leading-5 text-white hover:text-primary-50 no-underline"
                   >
-                    Seasonal Dinner
+                    Corporate
                   </AniLink>
                 </li>
+                
+                
+                
               </ul>
             </li>
 

@@ -78,28 +78,28 @@ const Page = ({ data }) => {
     },
   ];
 
-  const cupcakes = [
-    {
-      name: "Double Chocolate",
-      description:
-        "chocolate cupcake, dutch cocoa buttercream frosting, chocolate sprinkles",
-    },
-    {
-      name: "S’mores",
-      description:
-        "graham cracker crust, chocolate cupcake, toasted marsh- mallow fluff",
-    },
-    {
-      name: "Carrot Cake",
-      description:
-        "shredded carrot, coconut, golden raisins, cream cheese frosting",
-    },
-    {
-      name: "Funfetti",
-      description:
-        "funfetti cupcake, vanilla bean buttercream frosting, rain- bow sprinkles",
-    },
-  ];
+  // const cupcakes = [
+  //   {
+  //     name: "Double Chocolate",
+  //     description:
+  //       "chocolate cupcake, dutch cocoa buttercream frosting, chocolate sprinkles",
+  //   },
+  //   {
+  //     name: "S’mores",
+  //     description:
+  //       "graham cracker crust, chocolate cupcake, toasted marsh- mallow fluff",
+  //   },
+  //   {
+  //     name: "Carrot Cake",
+  //     description:
+  //       "shredded carrot, coconut, golden raisins, cream cheese frosting",
+  //   },
+  //   {
+  //     name: "Funfetti",
+  //     description:
+  //       "funfetti cupcake, vanilla bean buttercream frosting, rain- bow sprinkles",
+  //   },
+  // ];
 
   const liveActionStations = [
     {
@@ -174,7 +174,7 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="cupcakes" className="mb-12 md:mb-16">
+        {/* <section id="cupcakes" className="mb-12 md:mb-16">
           <div className="container">
             <header className="mb-14 md:mb-12">
               <h2>Cupcakes</h2>
@@ -207,7 +207,7 @@ const Page = ({ data }) => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section id="live-action-stations" className="mb-12 md:mb-16">
           <div className="container">

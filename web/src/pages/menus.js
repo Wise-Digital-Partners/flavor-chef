@@ -28,6 +28,15 @@ const Page = ({ data }) => {
       viewMenu: "/wedding-catering-menu/",
       downloadMenu: data.weddingPDF.publicURL,
     },
+    {
+      id: "flavor-mobile",
+      image: data.menuFlavorMobile.childImageSharp.gatsbyImageData,
+      heading: "Flavor Mobile Mneu",
+      text:
+        "Our top chefs will come to you! Our Flavor Mobile menu features the same types of high-quality, locally sourced dishes we’re known for.",
+      viewMenu: "/flavor-mobile-menu/",
+      downloadMenu: data.flavorMobilePDF.publicURL,
+    },
     // {
     //   id: "summer-dinner-party",
     //   image: data.menuSummerDinnerParty.childImageSharp.gatsbyImageData,
@@ -37,14 +46,17 @@ const Page = ({ data }) => {
     //   viewMenu: "/dinner-catering-menu/",
     //   downloadMenu: data.summerDinnerPartyPDF.publicURL,
     // },
+    
+    
+    
     {
-      id: "dinner-party",
-      image: data.menuHarvestDinnerParty.childImageSharp.gatsbyImageData,
-      heading: "Harvest Dinner Party Menu",
+      id: "interactive",
+      image: data.menuInteractive.childImageSharp.gatsbyImageData,
+      heading: "Interactive Stations Menu",
       text:
-        "Celebrate the bounty of the harvest with farm-to-table catering prepared especially for you and your guests—always seasonal and fresh!",
-      viewMenu: "/dinner-catering-menu/",
-      downloadMenu: data.harvestDinnerPartyPDF.publicURL,
+        "Thrill your guests with a hands-on experience that allows them to prepare and customize their own dishes. Interactive stations are a great way to add an element of fun to your event, party, or gathering.",
+      viewMenu: "/interactive-food-station-menu/",
+      downloadMenu: data.interactivePDF.publicURL,
     },
     {
       id: "small-bites",
@@ -54,6 +66,34 @@ const Page = ({ data }) => {
         "Don’t forget the appetizers! Your guests will love our menu of delectable small bites. They’re created by our top chefs and feature, as always, locally sourced ingredients.",
       viewMenu: "/appetizer-catering-menu/",
       downloadMenu: data.smallBitesPDF.publicURL,
+    },
+    // {
+    //   id: "boxed-lunch",
+    //   image: data.menuBoxedLunch.childImageSharp.gatsbyImageData,
+    //   heading: "Corporate Menu",
+    //   text:
+    //     "When you want to keep it simple, order from our boxed lunch menu. These fresh meals are packaged and ready to go!",
+    //   viewMenu: "/boxed-lunch-catering-menu/",
+    //   downloadMenu: data.boxedMealsPDF.publicURL,
+    // },
+    
+    {
+      id: "seasonal-dinner",
+      image: data.menuSeasonal.childImageSharp.gatsbyImageData,
+      heading: "Seasonal Dinner Menu",
+      text:
+        "Enjoy decadent, flavorful cuisine made with the freshest fruits, vegetables and ingredients of the season.",
+      viewMenu: "/seasonal-catering-menu/",
+      downloadMenu: data.seasonalPDF.publicURL,
+    },
+    {
+      id: "dinner-party",
+      image: data.menuHarvestDinnerParty.childImageSharp.gatsbyImageData,
+      heading: "Harvest Dinner Party Menu",
+      text:
+        "Celebrate the bounty of the harvest with farm-to-table catering prepared especially for you and your guests—always seasonal and fresh!",
+      viewMenu: "/dinner-catering-menu/",
+      downloadMenu: data.harvestDinnerPartyPDF.publicURL,
     },
     {
       id: "sweet-treats",
@@ -65,24 +105,6 @@ const Page = ({ data }) => {
       downloadMenu: data.sweetTreatsPDF.publicURL,
     },
     {
-      id: "boxed-lunch",
-      image: data.menuBoxedLunch.childImageSharp.gatsbyImageData,
-      heading: "Boxed Lunch Menu",
-      text:
-        "When you want to keep it simple, order from our boxed lunch menu. These fresh meals are packaged and ready to go!",
-      viewMenu: "/boxed-lunch-catering-menu/",
-      downloadMenu: data.boxedMealsPDF.publicURL,
-    },
-    {
-      id: "flavor-mobile",
-      image: data.menuFlavorMobile.childImageSharp.gatsbyImageData,
-      heading: "Flavor Mobile Mneu",
-      text:
-        "Our top chefs will come to you! Our Flavor Mobile menu features the same types of high-quality, locally sourced dishes we’re known for.",
-      viewMenu: "/flavor-mobile-menu/",
-      downloadMenu: data.flavorMobilePDF.publicURL,
-    },
-    {
       id: "holiday",
       image: data.menuHoliday.childImageSharp.gatsbyImageData,
       heading: "Holiday Menu",
@@ -91,15 +113,7 @@ const Page = ({ data }) => {
       viewMenu: "/holiday-catering-menu/",
       downloadMenu: data.holidayPDF.publicURL,
     },
-    {
-      id: "seasonal-dinner",
-      image: data.menuSeasonal.childImageSharp.gatsbyImageData,
-      heading: "Seasonal Dinner Menu",
-      text:
-        "Enjoy decadent, flavorful cuisine made with the freshest fruits, vegetables and ingredients of the season.",
-      viewMenu: "/seasonal-catering-menu/",
-      downloadMenu: data.seasonalPDF.publicURL,
-    },
+    
   ];
 
   const url = typeof window !== "undefined" ? window.location.pathname : "";
@@ -199,8 +213,16 @@ const Page = ({ data }) => {
               </li>
               <li>
                 <AnchorLink
-                  to={url + "#dinner-party"}
-                  title="Harvest Dinner Party"
+                  to={url + "#flavor-mobile"}
+                  title="Flavor Mobile"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  stripHash
+                />
+              </li>
+              <li>
+                <AnchorLink
+                  to={url + "#interactive"}
+                  title="Interactive Stations"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
@@ -215,28 +237,38 @@ const Page = ({ data }) => {
               </li>
               <li>
                 <AnchorLink
+                  to={url + "#seasonal"}
+                  title="Seasonal Dinner"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  stripHash
+                />
+              </li>
+              <li>
+                <AnchorLink
+                  to={url + "#dinner-party"}
+                  title="Harvest Dinner Party"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  stripHash
+                />
+              </li>
+              
+              <li>
+                <AnchorLink
                   to={url + "#sweet-treats"}
                   title="Sweet Treats"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
               </li>
-              <li>
+              {/* <li>
                 <AnchorLink
                   to={url + "#boxed-lunch"}
-                  title="Boxed Lunch"
+                  title="Corporate"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
-              </li>
-              <li>
-                <AnchorLink
-                  to={url + "#flavor-mobile"}
-                  title="Flavor Mobile"
-                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
-                  stripHash
-                />
-              </li>
+              </li> */}
+              
               <li>
                 <AnchorLink
                   to={url + "#holiday"}
@@ -245,14 +277,7 @@ const Page = ({ data }) => {
                   stripHash
                 />
               </li>
-              <li>
-                <AnchorLink
-                  to={url + "#seasonal"}
-                  title="Seasonal Dinner"
-                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
-                  stripHash
-                />
-              </li>
+              
             </ul>
           </nav>
         </div>
@@ -352,6 +377,13 @@ export const query = graphql`
     }
     menuWedding: file(
       relativePath: { eq: "menus/Menus Hub/2.0 Wedding Menu.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
+    menuInteractive: file(
+      relativePath: { eq: "menus/Menus Hub/Interactive station - hub.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
@@ -460,11 +492,11 @@ export const query = graphql`
     downloadIcon: file(relativePath: { eq: "global/Download.svg" }) {
       publicURL
     }
-    weddingPDF: file(relativePath: { eq: "wedding-menu.pdf" }) {
+    weddingPDF: file(relativePath: { eq: "FCC Wedding 2023.pdf" }) {
       publicURL
     }
     summerDinnerPartyPDF: file(
-      relativePath: { eq: "summer-dinner-party-menu.pdf" }
+      relativePath: { eq: "FCC Summer 2023 .pdf" }
     ) {
       publicURL
     }
@@ -473,16 +505,20 @@ export const query = graphql`
     ) {
       publicURL
     }
+    
+    interactivePDF: file(relativePath: { eq: "FC_InteractiveStations_2023_v4.pdf" }) {
+      publicURL
+    }
     boxedMealsPDF: file(relativePath: { eq: "corporate-menu.pdf" }) {
       publicURL
     }
-    flavorMobilePDF: file(relativePath: { eq: "flavor-mobile-menu.pdf" }) {
+    flavorMobilePDF: file(relativePath: { eq: "FC_FlavorMobileMenu2023_v1.pdf" }) {
       publicURL
     }
-    sweetTreatsPDF: file(relativePath: { eq: "sweet-treats-menu.pdf" }) {
+    sweetTreatsPDF: file(relativePath: { eq: "FCC Sweet Treats 2023.pdf" }) {
       publicURL
     }
-    smallBitesPDF: file(relativePath: { eq: "small-bites-menu.pdf" }) {
+    smallBitesPDF: file(relativePath: { eq: "FC_SmallBitesMenu_2023_v2.pdf" }) {
       publicURL
     }
     holidayPDF: file(relativePath: { eq: "holiday-menu.pdf" }) {

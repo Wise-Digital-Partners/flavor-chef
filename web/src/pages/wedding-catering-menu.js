@@ -21,188 +21,190 @@ const Page = ({ data }) => {
   const passedHorsDeouvres = [
     {
       name: "Sausage Stuffed Mushroom",
-      description: "cremini, smoked gouda, sausage, sage, parmesan",
+      description: "cremini duxelle, goat cheese, caramelized onion, parme- san, basil",
     },
     {
       name: "Bacon Wrapped Date",
       description:
-        "medjool date, applewood smoked bacon, goat cheese, caramelized onions, basil, balsamic reduction",
+        "applewood smoked bacon, medjool date, goat cheese, car- amelized onion, basil, balsamic reduction",
     },
     {
       name: "Mini Crab Cake",
-      description: "lump crab, onions, peppers, cajun aioli",
+      description: "lump crab, onion, bell pepper, basil, cajun remoulade",
     },
     {
       name: "Sweet Potato Empanada",
       description:
-        "roasted sweet potato, black beans, cheese, smoked jalapeño relish, chipotle aioli",
+        "roasted sweet potato, black beans, cheese, chipotle aioli, smoked jalapeño relish",
+    },
+    {
+      name: "Short Rib Empanada",
+      description:
+        "braised beef short rib, cheddar cheese, jalapeno, avocado salsa verde, green onion",
     },
     {
       name: "Avocado Toast",
       description:
-        "fresh avocado, Prager Brothers spelt bread, heirloom tomato, everything bagel spice",
+        "avocado, pickled red onion, kumquat, ciabatta toast, ev- erything bagel seasoning, micro cilantro",
     },
     {
       name: "Steak & Brie Crostini",
-      description: "NY strip steak, brie, caramelized onion, dijon",
+      description: "NY strip steak, brie, caramelized onion, Dijon, toasted baguette, parsley",
     },
     {
-      name: "Heirloom Tomato Bruschetta",
-      description: "Heirloom Tomato Bruschetta",
+      name: "Pork Belly Bao Bun",
+      description: "Braised pork belly, sweet & spicy glaze, pickled vegetables, cilantro, steamed bun",
     },
     {
       name: "Filet Mignon Skewer",
-      description: "beef tenderloin, house dry rub, chimichurri",
+      description: "dry rubbed beef tenderloin, red chimichurri, micro cilantro",
     },
     {
-      name: "Chicken Shawarma Canape",
+      name: "Poke Crisp",
       description:
-        "spiced chicken, blistered cherry tomato, toasted naan, cashew tamarind sauce",
-    },
-    {
-      name: "Mini Sope",
-      description:
-        "black bean puree, blistered shishito pepper, cotija, pickled onion",
-    },
-    {
-      name: "Ahi Poke Crisps",
-      description:
-        "crispy wonton, tamari, ginger, scallion, sesame seeds, sriracha aioli",
-    },
-    {
-      name: "Hot Honey & Kale Crostini",
-      description:
-        "fried kale, spicy honey, whipped herb ricotta, toasted baguette",
+        "ahi tuna, tamari, ginger, scallion, sesame seeds, crispy wonton, sriracha aioli",
     },
     {
       name: "Chicken & Waffle",
       description:
-        "fried chicken, buttermilk waffle, buffalo maple glaze, house pickle",
+        "fried chicken breast, buttermilk waffle, buffalo maple glaze, house pickle",
     },
     {
-      name: "Lamb Chops",
-      description: "marinated lamb chop, rosemary, mustard dill sauce",
+      name: "Lollipop Lamb Chop",
+      description:
+        "New Zealand grass fed lamb, rosemary, garlic, mustard dill sauce",
     },
+    {
+      name: "Pesto Caprese Crostini",
+      description:
+        "pesto, heirloom cherry tomato, pearl mozzarella, ciabatta crostini, balsamic reduction, basil",
+    },
+    
     {
       name: "Spam Musubi",
-      description: "fried spam, sushi rice, seaweed",
+      description: "fried spam, hoisin ginger glaze, sushi rice, seaweed, furikake",
     },
   ];
 
   const appetizerDisplay = [
     {
-      name: "Seasonal Crudites",
-      description:
-        "seasonal vegetables, warm pita chips, artichoke spinach dip, sprouted bean hummus",
-    },
-    {
-      name: "Chips & Dips",
-      description:
-        "House made salsa, fresh guacamole, chipotle queso with tortilla chips",
-    },
-    {
       name: "The Hodge Podge",
       description:
-        "variety of cheeses, dried fruit, toasted nuts, crackers, baguette, assorted fresh fruit, berries, seasonal vegetables, sprouted bean hummus, dried and cured meats, seasonal jams",
+        "Chef selection of cheeses, dried and cured meats, locally sourced vegetables, hummus, grapes, fresh berries, dried fruit, marcona almonds, seasonal jam, honeycomb, crackers",
     },
+    {
+      name: "Mediterranean Mezze Display",
+      description:
+        "locally sourced vegetables, hummus, spinach & artichoke dip, cucumber tzatziki, olives, artichoke hearts, warm naan, lavash",
+    },
+   
   ];
 
   const buffetSalads = [
     {
       name: "Bistro Salad",
       description:
-        "organic greens, candied pecan, seasonal fruits, heirloom carrot, cucumber, radish, feta, orange balsamic, EVOO",
+        "organic greens, locally sourced fruit, heirloom carrot, cucumber, radish, feta, candied pecan, seasonal balsamic vinaigrette",
     },
     {
       name: "Organic Green Salad",
       description:
-        "organic greens, heirloom carrot, cucumber, radish, cherry tomato, infused balsamic, EVOO",
+        "organic greens, heirloom carrot, cucumber, radish, cherry tomato, balsamic vinaigrette",
     },
     {
-      name: "House Salad",
+      name: "Butter Lettuce Caesar",
       description:
-        "baby greens, slivered red onion, pepperoncini, carrot, radish, cucumber, red wine vinaigrette, parmesan Reggiano",
+        "butter lettuce, baby greens, focaccia crouton, blistered cherry tomato, heirloom radish, house dressing, Parmesan Reggiano",
     },
   ];
 
   const buffetVeggies = [
     {
+      name: "Sauteed Broccolini",
+      description: "broccolini, garlic butter, sea salt",
+    },
+    {
       name: "Farmer’s Market Medley ",
       description:
-        "seasonal vegetables, broccoli, cauliflower, heirloom carrot, summer squash, garlic, herbs, butter",
+        "sauteed seasonal vegetables, garlic, fine herbs, butter",
     },
     {
-      name: "Seasonal Roasted Vegetable Platter",
+      name: "Roasted Heirloom Carrots",
       description:
-        "grilled asparagus, seasonal squash, broccolini, bell pepper, roasted mushrooms, balsamic vinegar, EVOO",
+        "heirloom carrots, za’atar, cumin, crumbled feta, honey drizzle, parsley",
     },
     {
-      name: "Sauteed Broccolini",
-      description: "Broccolini, garlic, butter",
+      name: "Roasted Vegetable Platter",
+      description: "seasonal squash, asparagus, broccolini, bell pepper, mush- rooms, balsamic vinegar",
     },
   ];
 
   const buffetStarches = [
     {
       name: "Garlic Mashed Potatoes",
-      description: "Yukon gold potato, cream, roasted garlic, butter ",
+      description: "Yukon gold potato, cream, roasted garlic, butter, chives",
     },
     {
-      name: "Roasted Fingerling Potatoes",
-      description: "fingerling potatoes, fresh herbs, garlic ",
+      name: "Roasted Potatoes",
+      description: "fingerling potatoes, rosemary, parsley, garlic, Calabrian chili oil",
     },
     {
       name: "Citrus Risotto",
-      description: "arborio rice, thyme, lemon zest, parmesan ",
+      description: "arborio rice, thyme, lemon zest, Parmesan Reggiano",
     },
     {
-      name: "Cacio E Pepe",
-      description: "Spaghetti noodles, butter, cracked black pepper, Pecorino",
+      name: "Pesto Primavera Orzo",
+      description: "orzo pasta, pesto, artichoke heart, blistered cherry tomato, toasted pine nuts",
     },
   ];
 
   const buffetMains = [
     {
-      name: "Pan Roasted Chicken",
-      description: "Seared chicken breast, Dijon, champagne cream sauce",
+      name: "Roasted Chicken Breast",
+      description: "Jidori airline chicken breast, seasonal chutney",
     },
     {
-      name: "Chicken Parmesan",
-      description: "chicken breast, panko, house marinara, mozzarella,",
+      name: "Seared Chicken Thigh",
+      description: "bone in, skin on chicken thigh, wild mushroom cream sauce",
     },
     {
-      name: "Pan Seared Salmon",
-      description: "Wild Isle salmon, orange, basil, California EVOO",
+      name: "Local Catch",
+      description: "seasonal catch, tomato & fennel ragout",
     },
     {
-      name: "Citrus Seabass",
-      description: "local seabass, tomato & fennel ragout",
+      name: "Seared Salmon",
+      description: "Wild Isle salmon, orange, basil",
     },
     {
       name: "Grilled Flank Steak",
       description:
-        "Cedar River Farms flank steak, garlic, herbs, Argentinian chimichurri, Fresno chili peppers ",
+        "Cedar River Farms flank steak, garlic, herbs, Argentinian chimichurri, Fresno chili peppers",
     },
     {
       name: "Braised Beef Short Ribs",
       description:
-        "Cedar River Farms boneless beef short rib, traditional vegetables, fresh herbs, red wine jus",
+        "Cedar River Farms boneless beef short rib, traditional vegetables, roasted cippolini onion, red wine jus, parsley",
     },
     {
       name: "Prime Rib Carving",
       description:
-        "slow roasted Prime Rib, au jus, horseradish cream, giardiniera",
+        "slow roasted prime rib, green peppercorn brandy cream sauce, horseradish cream, giardiniera",
+    },
+    {
+      name: "Beef Tenderloin Carving",
+      description:
+        "whole roasted beef tenderloin, green peppercorn brandy cream sauce, horseradish cream, giardiniera",
     },
     {
       name: "Spinach Stuffed Mushroom",
       description:
-        "Portabella mushroom, creamy spinach, artichoke heart, parmesan",
+        "portabella mushroom, creamy spinach, artichoke heart, Parmesan Reggiano",
       plantBased: true,
     },
     {
-      name: "Eggplant Parmesan",
+      name: "Tofu Ricotta & Pesto Manicotti",
       description:
-        "panko crusted eggplant, house marinara, parmesan Reggiano , fresh basil",
+        "herbed tofu ricotta, basil, mozzarella, pesto cream sauce, toasted pine nuts, roasted cherry tomatoes",
       plantBased: true,
     },
   ];
@@ -211,92 +213,92 @@ const Page = ({ data }) => {
     {
       name: "Butter Lettuce Caesar",
       description:
-        "butter lettuce, garlic crouton, house dressing, blistered cherry tomato, parmesan Reggiano",
+        "butter lettuce, focaccia crouton, house dressing, blistered cherry tomato, heirloom radish, parmesan Reggiano",
     },
     {
       name: "Bistro Salad",
       description:
-        "organic greens, candied pecan, seasonal fruits, heirloom carrot, cucumber, radish, feta, orange balsamic, EVOO",
+        "organic greens, locally sourced fruit, heirloom carrot, cucumber, radish, feta, candied pecan, seasonal balsamic vinaigrette",
     },
     {
-      name: "Wedge Salad",
+      name: "Beet Salad",
       description:
-        "baby iceburg lettuce, house Point Reyes blue cheese, heirloom cherry tomatoes, crumbled bacon, green onion",
+        "roasted red & gold beets, organic greens, arugula, heir- loom carrot, cucumber, radish, crumbled goat cheese, toasted pistachios, citrus vinaigrette",
     },
   ];
 
   const platedVeggies = [
     {
       name: "Grilled Asparagus",
-      description: "grilled asparagus, sea salt, lemon, EVOO",
+      description: "sea salt, lemon, extra virgin olive oil",
     },
     {
       name: "Petit Heirloom Carrots",
-      description: "Heirloom carrots, butter, garlic, fresh herbs",
+      description: "butter, garlic, fine herbs",
     },
     {
       name: "Sautéed Broccolini ",
-      description: "broccolini, garlic, sea salt, butter",
+      description: "butter, garlic, sea salt",
     },
   ];
 
   const platedStarches = [
     {
       name: "Garlic Mashed Potatoes",
-      description: "Yukon gold potato, cream, roasted garlic, butter ",
+      description: "Yukon gold potato, cream, roasted garlic, butter",
     },
     {
-      name: "Sweet Potato Mash",
-      description: "Garnet yam, coconut milk, nutmeg",
+      name: "Citrus Risotto",
+      description: "arborio rice, thyme, lemon zest, parmesan Reggiano",
     },
     {
-      name: "Spring Pea Risotto",
-      description: "arborio rice, lemon zest, fresh peas mascarpone, parmesan",
+      name: "Golden Gratin",
+      description: "Yukon gold potato, fennel, cream, gruyere cheese",
     },
     {
-      name: "Roasted Fingerling Potatoes",
-      description: "fingerling potatoes, fresh herbs, garlic",
+      name: "Corn Polenta",
+      description: "creamy polenta, sweet corn, thyme, Parmesan Reggiano",
     },
   ];
 
   const platedMains = [
     {
-      name: "Pan Roasted Chicken",
+      name: "Roasted Chicken Breast",
       description:
-        "Jidori airline chicken breast, creamy white wine Dijon sauce",
+        "Jidori airline chicken breast, seasonal chutney",
     },
     {
-      name: "Pan Seared Salmon",
-      description: "Wild Isle salmon, orange, basil, California EVOO",
+      name: "Seared Salmon",
+      description: "Wild Isle salmon, orange, basil",
     },
     {
-      name: "Citrus Sea Bass",
-      description: "citrus marinated local seabass, tomato & fennel ragout",
-    },
-    {
-      name: "Stuffed Lobster Tail",
-      description:
-        "Butterflied Maine lobster tail, lump crab, bell pepper, onion, Old Bay, panko breadcrumbs",
+      name: "Local Catch",
+      description: "seasonal catch, tomato & fennel ragout",
     },
     {
       name: "Braised Beef Short Ribs",
       description:
-        "Cedar River Farms boneless beef short rib, traditional vegetables, fresh herbs, red wine jus",
+        "Cedar River Farms boneless beef short rib, traditional vegetables, roasted cippolini onion, red wine jus, parsley",
     },
     {
-      name: "Pepper Crusted Filet Mignon",
-      description: "center cut filet mignon, tamarind mushroom demi",
-    },
-    {
-      name: "Spinach Stuffed Mushroom",
+      name: "Seared Filet Mignon",
       description:
-        "Portabella mushroom, creamy spinach, artichoke heart, parmesan",
+        "7oz center cut filet mignon, green peppercorn cream sauce",
+    },
+    {
+      name: "Split Maine Lobster Tail",
+      description: "1⁄2 8oz lobster tail, garlic butter, fine herbs, lemon",
+    },
+    {
+      name: "Roasted Ratatouille Stack",
+      description:
+        "eggplant, zucchini, squash, bell pepper, marinara, micro basil",
       plantBased: true,
     },
     {
-      name: "Grilled Polenta Cake",
+      name: "Seared Polenta Cake",
       description:
-        "organic polenta, fresh herbs, tomato ragout, parmesan Reggiano",
+        "Polenta, thyme, tomato & fennel ragout, Parmesan Reggiano",
       plantBased: true,
     },
   ];

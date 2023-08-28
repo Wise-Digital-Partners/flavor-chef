@@ -20,7 +20,7 @@ const Page = ({ data }) => {
   const appetizers = [
     {
       name: "Lollipop Lamb Chop",
-      description: "seared lamb chop, rosemary, garlic, mint-pomeganate glaze",
+      description: "seared lamb chop, rosemary, garlic, dill-mustard",
     },
     {
       name: "Shrimp Lime Ceviche ",
@@ -30,7 +30,7 @@ const Page = ({ data }) => {
     {
       name: "Duck Confit Crostini",
       description:
-        "toasted baguette, duck confit, caramelized applemustard, melted brie",
+        "toasted baguette, blackberry jam, duck confit, pickled kumquat",
     },
     {
       name: "Ricotta &Tomato Jam Crostini ",
@@ -44,12 +44,7 @@ const Page = ({ data }) => {
     {
       name: "Avocado Toast",
       description:
-        "fresh avocado, Prager Brothers spelt bread, heirloom tomato, everything bagel ",
-    },
-    {
-      name: "duck Confit Crostini ",
-      description:
-        "toasted baguette, blackberry jam, duck confit, pickled kumquat",
+        "fresh avocado, Prager Brothers spelt bread, heirloom tomato, everything bagel",
     },
   ];
 
