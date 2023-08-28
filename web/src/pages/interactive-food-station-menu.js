@@ -18,174 +18,100 @@ const Page = ({ data }) => {
     },
   ];
 
-  const burgerPackage = [
+  const garden = [
     {
-      name: "Flavor Burger",
-      description:
-        "7 oz patty, American cheese, arugula, caramelized onions, garlic mayo, tomato, brioche bun, house pickles, shoestring fries",
+      name: "Bistro Salad",
+      description: "organic greens, seasonal fruits, heirloom carrot, cucumber, radish, feta, candied pecan, seasonal balsamic vinaigrette",
     },
     {
-      name: "Veggie Flavor Burger",
-      description:
-        "veggie burger patty, American cheese, arugula, caramelized onions, garlic mayo, tomato, brioche bun, house pickles, shoestring fries",
-    },
-  ];
-
-  const bbq = [
-    {
-      name: "BBQ Brisket Sandwich",
-      description:
-        "smoked brisket, sweet and spicy BBQ, honey-ginger slaw, brioche bun, shoestring fries",
+      name: "Seasonal Roasted Vegetable Platter",
+      description: "asparagus, seasonal squash, broccolini, bell pepper, mushrooms, balsamic vinegar, EVOO",
     },
     {
-      name: "BBQ Pork Sandwich",
-      description:
-        "braised pork, sweet and spicy BBQ, honey-ginger slaw, brioche bun, shoestring fries",
-    },
-    {
-      name: "BBQ Braised Jackfruit Sandwich",
-      description:
-        "braised jackfruit, sweet and spicy BBQ, honey-ginger slaw, brioche bun, shoestring fries",
+      name: "Butter Lettuce Caesar",
+      description: "butter lettuce, baby greens, focaccia crouton, house dressing, blistered cherry tomato, slivered seasonal radish, parmesan Reggiano",
     },
     {
       name: "  ",
       description:
         "  ",
+    },
+  ];
+
+  const pasta = [
+    {
+      name: "Short Rib Bolognese ",
+      description: "penne pasta, Bolognese sauce, braised beef short rib, Parmesan Reggiano, red pepper flakes ",
+    },
+    {
+      name: "Tuscan Chicken Alfredo ",
+      description: "penne pasta, alfredo sauce , spinach, cherry tomato, herbed chicken, Parmesan Reggiano, red pepper flakes ",
     },
   ];
 
  
 
-  const birria = [
+  const poke = [
    
     {
-      name: "Beef Birria Taco",
-      description:
-        "shredded beef, jack cheese, onion & cilantro, corn tortilla, consommé, black beans, Mexican rice",
+      name: "Ahi Tuna Bowl ",
+      description: "marinated ahi tuna, steamed jasmine rice, cucumber, carrot, green onion, cilantro, edamame, radishes, sriracha aioli, sesame seeds ",
     },
     {
-      name: "Jackfruit Birria Taco",
-      description:
-        "shredded jackfruit, jack cheese, onion & cilantro, corn torti- lla, consommé, black beans, Mexican rice",
+      name: "Spicy Tuna Bowl ",
+      description: "spicy marinated ahi tuna, steamed jasmine rice, cucumber, carrot, green onion, cilantro, edamame, radishes, sriracha aioli, sesame seed ",
     },
   ];
 
-  const riceBowl = [
+  const wok = [
     {
-      name: "Beef Bulgogi Bowl",
-      description:
-        "bulgogi beef, kimchi, fresh orange, sesame seeds, green onion, steamed jasmine rice",
+      name: "Beef Bulgogi ",
+      description: "beef bulgogi, yakisoba noodles, shitake, broccoli, cabbage, sriracha, soy sauce ",
     },
     {
-      name: "Chicken Teriyaki Bowl",
-      description:
-        "chicken teriyaki, kimchi, fresh orange, sesame seeds, green onion, steamed jasmine rice",
-    },
-    {
-      name: "Veggie Stir Fry Bowl",
-      description:
-        "seasonal veggie stir fry, kimchi, fresh orange, sesame seeds, green onion, steamed jasmine rice",
-    },
-    {
-      name: "  ",
-      description:
-        "  ",
+      name: "Veggie Stir Fry ",
+      description: "yakisoba noodles, shitake, broccoli, cabbage, sriracha, soy sauce ",
     },
   ];
 
-  const caliFresh = [
+  const sliders = [
     {
-      name: "Wild Isle Salmon Plate",
-      description:
-        "seared salmon, sweet mashed potatoes, citrus slaw",
+      name: "Kobe beef slider ",
+      description: "American cheese, arugula, roasted garlic aioli, brioche bun ",
     },
     {
-      name: "Grilled Flank Steak Plate",
-      description:
-        "seared flank steak, chimichurri, sweet mashed potatoes, citrus slaw",
-    },
-    {
-      name: "Citrus Chicken Plate",
-      description:
-        "seared chicken breast, citrus glaze, sweet mashed potatoes, citrus slaw",
-    },
-    {
-      name: "  ",
-      description:
-        "  ",
+      name: "Shoestring fries ",
+      description: "parmesan herb mix, sriracha ketchup, house made ranch ",
     },
   ];
 
-  const chickenSandwich = [
+  const streetTaco = [
     {
-      name: "Buffalo Blue Chicken Sandwich",
-      description:
-        "buffalo tossed crispy fried chicken, house made blue cheese, organic greens, tomato, brioche bun, house pickles, shoe- string fries",
+      name: "Carnitas tacos ",
+      description: "arrangement of roasted salsa, fresh guacamole, pickled red onion, onion & cilantro mix",
     },
     {
-      name: "Crispy Chicken Sandwich",
-      description:
-        "crispy fried chicken, mayonnaise, organic greens, tomato, brioche bun, house pickles, shoestring frie",
+      name: "Chicken Adobada tacos ",
+      description: "arrangement of roasted salsa, fresh guacamole, pickled red onion, onion & cilantro mix ",
     },
   
   ];
 
-  // const apps = [
-  //   {
-  //     name: "Deep Fried Artichoke Hearts",
-  //     description:
-  //       "beer battered artichoke hearts, house made buttermilk ranch",
-  //   },
-  //   {
-  //     name: "Crispy Coconut shrimp",
-  //     description: "fried coconut shrimp, house sweet chili sauce",
-  //   },
-  //   {
-  //     name: "Sweet Potato black bean empanadas",
-  //     description:
-  //       "sweet potato, chipotle black bean, jack cheese, smoked jalapeno relish",
-  //   },
-  //   {
-  //     name: "Mozzarella sticks",
-  //     description: "fried mozzarella sticks, house made marinara ",
-  //   },
-  //   {
-  //     name: "Mini Loaded Fries",
-  //     description:
-  //       "fresh fries, house queso, ground beef, jalapeno, green onion, crema",
-  //   },
-  //   {
-  //     name: "Thai Chili Wings",
-  //     description:
-  //       "freshly fried wings, house sweet chili sauce, green onion, ",
-  //   },
-  // ];
-
-  const hawaiian = [
+  const pizza = [
     {
-      name: "Kahlua Pork Slider Plate",
-      description:
-        "Kahlua pulled pork, KBBQ sauce, Hawaiian sweet rolls, steamed jasmine rice, spam macaroni salad",
+      name: "Margherita Pizza ",
+      description: "heirloom tomato, buffalo mozzarella, garlic, fresh basil, EVOO, locally made dough, crushed red pepper flakes ",
     },
     {
-      name: "KBBQ Short Rib Plate",
-      description: "bone in beef short ribs, KBBQ sauce, steamed jasmine rice, spam macaroni salad",
+      name: "Pepperoni Pizza ",
+      description: "house made marinara, mozzarella, Parmesan Reggiano, pepperoni, locally made dough, crushed red pepper flakes ",
     },
   ];
 
-  const kids = [
+  const parmesan = [
     {
-      name: "Cheese Quesadilla",
-      description: "jack cheese, flour tortilla, fresh fries & ketchup",
-    },
-    {
-      name: "Jr. Flavor Burger",
-      description:
-        "all beef patty, American cheese, brioche bun, fresh fries & ketchup",
-    },
-    {
-      name: "Chicken Tenders",
-      description: "fried chicken tenders, fresh fries & ketchup",
+      name: "Cacio E Pepe ",
+      description: "freshly spun in whole parmesan wheel ",
     },
     {
       name: "  ",
@@ -193,6 +119,8 @@ const Page = ({ data }) => {
         "  ",
     },
   ];
+
+  
 
   const url = typeof window !== "undefined" ? window.location.pathname : "";
 
@@ -237,7 +165,7 @@ const Page = ({ data }) => {
         <div className="text-white font-display text-xl tracking-wider leading-5 mb-4">
           Menu
         </div>
-        <h1 className="text-white mb-0">Flavor Mobile</h1>
+        <h1 className="text-white mb-0">Interactive Stations</h1>
       </HeroFullWidth>
 
       <div className="relative">
@@ -286,8 +214,8 @@ const Page = ({ data }) => {
               {/* </li> */}
               <li>
                 <AnchorLink
-                  to={url + "#burger"}
-                  title="Burger"
+                  to={url + "#garden"}
+                  title="Garden"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
@@ -295,16 +223,16 @@ const Page = ({ data }) => {
               
               <li>
                 <AnchorLink
-                  to={url + "#chicken-sandwich"}
-                  title="Chicken Sandwich"
+                  to={url + "#pasta"}
+                  title="Pasta"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
               </li>
               <li>
                 <AnchorLink
-                  to={url + "#bbq"}
-                  title="BBQ"
+                  to={url + "#poke"}
+                  title="Poke Bowl"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
@@ -319,16 +247,16 @@ const Page = ({ data }) => {
               </li>
               <li>
                 <AnchorLink
-                  to={url + "#birria"}
-                  title="Birria"
+                  to={url + "#wok"}
+                  title="Wok Station"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
               </li>
               <li className="inline-flex items-center relative">
                 <AnchorLink
-                  to={url + "#hawaiian"}
-                  title="Hawaiian"
+                  to={url + "#sliders"}
+                  title="Sliders & Fries"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
@@ -340,16 +268,16 @@ const Page = ({ data }) => {
               </li>
               <li>
                 <AnchorLink
-                  to={url + "#cali-fresh"}
-                  title="Cali Fresh"
+                  to={url + "#streetTacos"}
+                  title="Street Tacos"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
               </li>
               <li className="inline-flex items-center relative">
                 <AnchorLink
-                  to={url + "#kids"}
-                  title="Kids"
+                  to={url + "#pizza"}
+                  title="Pizza"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
@@ -358,6 +286,14 @@ const Page = ({ data }) => {
                   alt="Add-on icon"
                   className="-mt-1 ml-1 lg:ml-0 lg:right-7 md:absolute"
                 /> */}
+              </li>
+              <li>
+                <AnchorLink
+                  to={url + "#parmesan"}
+                  title="Parmesan"
+                  className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
+                  stripHash
+                />
               </li>
             </ul>
           </nav>
@@ -393,25 +329,28 @@ const Page = ({ data }) => {
             </div>
           </div>
         </section> */} 
-
-        <section id="burger" className="mb-12 md:mb-16">
+        <div className="mb-14">
+          <p className="mx-auto text-center mb-6 font-heading"><b>Interactive stations require a minimum guest count of approximately 75 guests. </b></p>
+          <p className="mx-auto text-center mb-6 font-heading"><b>Please choose three to four stations.</b> </p>
+        </div>
+        <section id="garden" className="mb-12 md:mb-16">
           <div className="container">
             <header className="mb-14 md:mb-12">
-              <h2>Burger Flavor Mobile</h2>
-              <p className="font-heading font-bold mb-5">
+              <h2>Garden Station</h2>
+              {/* <p className="font-heading font-bold mb-5">
                 <i>
                   Choose 1 Entrée Package and estimate how many of each item
                   you’d like to order. <br />
                   Each guest allowed one entrée per person
                 </i>
-              </p>
+              </p> */}
             </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Entrées</b>
+              {/* <b>Entrées</b> */}
             </div>
             <div className="md:columns-2 md:gap-x-10 lg:gap-x-20 mb-24">
-              {burgerPackage.map((item, i) => {
+              {garden.map((item, i) => {
                 return (
                   <div key={i} className="mb-8 md:mb-10">
                     <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -431,24 +370,21 @@ const Page = ({ data }) => {
 
        
 
-        <section id="chicken-sandwich" className="mb-12 md:mb-16">
+        <section id="pasta" className="mb-12 md:mb-16">
           <div className="container">
             <header className="mb-14 md:mb-12">
-              <h2>Chicken Sandwich Flavor Mobile</h2>
-              <p className="font-heading font-bold mb-5">
-                <i>
-                  Choose 1 Entrée Package and estimate how many of each item
-                  you’d like to order. <br />
-                  Each guest allowed one entrée per person
-                </i>
-              </p>
+              <h2>Pasta Small Plate Station</h2>
+              
+                <p className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase flex items-center">Freshly made chef small plates on display</p>
+               
+             
             </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Entrées</b>
+              {/* <b>Entrées</b> */}
             </div>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-              {chickenSandwich.map((item, i) => {
+              {pasta.map((item, i) => {
                 return (
                   <div key={i} className="mb-8 md:mb-10">
                     <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -462,24 +398,25 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="bbq" className="mb-12 md:mb-16">
+        <section id="poke" className="mb-12 md:mb-16">
           <div className="container">
             <header className="mb-14 md:mb-12">
-              <h2>BBQ Flavor Mobile</h2>
-              <p className="font-heading font-bold mb-5">
+              <h2>Poke Bowl Small Plate Station</h2>
+              {/* <p className="font-heading font-bold mb-5">
                 <i>
                   Choose 1 Entrée Package and estimate how many of each item
                   you’d like to order. <br />
                   Each guest allowed one entrée per person
                 </i>
-              </p>
+              </p> */}
+              <p className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase flex items-center">Freshly made chef small plates on display</p>
             </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Entrées</b>
+              {/* <b>Entrées</b> */}
             </div>
             <div className="md:columns-2 md:gap-x-10 lg:gap-x-20 mb-24">
-              {bbq.map((item, i) => {
+              {poke.map((item, i) => {
                 return (
                   <div key={i} className="mb-8 md:mb-10">
                     <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -493,24 +430,25 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="rice-bowls" className="mb-12 md:mb-16">
+        <section id="wok" className="mb-12 md:mb-16">
           <div className="container">
             <header className="mb-14 md:mb-12">
-              <h2>Rice Bowl Flavor Mobile</h2>
-              <p className="font-heading font-bold mb-5">
+              <h2>Wok Station</h2>
+              <p className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase flex items-center">Freshly made “take out” containers with chop sticks</p>
+              {/* <p className="font-heading font-bold mb-5">
                 <i>
                   Choose 1 Entrée Package and estimate how many of each item
                   you’d like to order. <br />
                   Each guest allowed one entrée per person
                 </i>
-              </p>
+              </p> */}
             </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Entrées</b>
+              {/* <b>Entrées</b> */}
             </div>
             <div className="md:columns-2 md:gap-x-10 lg:gap-x-20 mb-24">
-              {riceBowl.map((item, i) => {
+              {wok.map((item, i) => {
                 return (
                   <div key={i} className="mb-8 md:mb-10">
                     <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -524,24 +462,24 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="birria" className="mb-12 md:mb-16">
+        <section id="sliders" className="mb-12 md:mb-16">
           <div className="container">
             <header className="mb-14 md:mb-12">
-              <h2>Birria Flavor Mobile</h2>
-              <p className="font-heading font-bold mb-5">
+              <h2>Sliders & Fries Station</h2>
+              {/* <p className="font-heading font-bold mb-5">
                 <i>
                   Choose 1 Entrée Package and estimate how many of each item
                   you’d like to order. <br />
                   Each guest allowed one entrée per person
                 </i>
-              </p>
+              </p> */}
             </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Entrées</b>
+              {/* <b>Entrées</b> */}
             </div>
             <div className="md:columns-2 md:gap-x-10 lg:gap-x-20 mb-24">
-              {birria.map((item, i) => {
+              {sliders.map((item, i) => {
                 return (
                   <div key={i} className="mb-8 md:mb-10">
                     <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -554,15 +492,15 @@ const Page = ({ data }) => {
             </div>
           </div>
         </section>
-        <section id="hawaiian" className="mb-12 md:mb-16">
+        <section id="streetTaco" className="mb-12 md:mb-16">
           <div className="container">
             <header className="mb-14 md:mb-12">
-              <h2>Hawaiian Flavor Mobile</h2>
+              <h2>Street Taco Station</h2>
             </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12 flex items-center">
               <span>
-                <b>Hawaiian</b> 
+                {/* <b>Hawaiian</b>  */}
                 {/* / Add-ons */}
               </span>
               {/* <img
@@ -572,7 +510,7 @@ const Page = ({ data }) => {
               /> */}
             </div>
             <div className="md:columns-2 md:gap-x-10 lg:gap-x-20 mb-24">
-              {hawaiian.map((item, i) => {
+              {streetTaco.map((item, i) => {
                 return (
                   <div key={i} className="mb-8 md:mb-10">
                     <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -586,24 +524,24 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="cali-fresh" className="mb-12 md:mb-16">
+        <section id="pizza" className="mb-12 md:mb-16">
           <div className="container">
             <header className="mb-14 md:mb-12">
-              <h2>Cali Fresh Flavor Mobile</h2>
-              <p className="font-heading font-bold mb-5">
+              <h2>Pizza Station</h2>
+              {/* <p className="font-heading font-bold mb-5">
                 <i>
                   Choose 1 Entrée Package and estimate how many of each item
                   you’d like to order. <br />
                   Each guest allowed one entrée per person
                 </i>
-              </p>
+              </p> */}
             </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12">
-              <b>Entrées</b>
+              {/* <b>Entrées</b> */}
             </div>
             <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 mb-10">
-              {caliFresh.map((item, i) => {
+              {pizza.map((item, i) => {
                 return (
                   <div key={i} className="mb-8 md:mb-10">
                     <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">
@@ -618,25 +556,26 @@ const Page = ({ data }) => {
         </section>
 
 
-        <section id="kids" className="mb-12 md:mb-16">
+        <section id="parmesan" className="mb-12 md:mb-16">
           <div className="container">
             <header className="mb-14 md:mb-12">
-              <h2>Kids Flavor Mobile</h2>
+              <h2>Parmesan Wheel Station</h2>
             </header>
 
             <div className="font-body text-sm md:text-base text-gray-600 text-opacity-40 tracking-wider uppercase border-b border-gray-400 border-opacity-30 pb-4 mb-8 md:mb-12 flex items-center">
               <span>
-                <b>Kids</b>
+                <p><b>Freshly made chef small plates on display | *aged parmesan wheel is an additional cost on top of menu price.</b></p>
+               
                 {/* / Add-ons */}
               </span>
-              {/* <img
+               <img
                 src={data.addOnIcon.publicURL}
                 alt="Add-on icon"
-                className="ml-3"
-              /> */}
+                className="ml-3 -mt-6"
+              /> 
             </div>
             <div className="md:columns-2 md:gap-x-10 lg:gap-x-20 mb-24">
-              {kids.map((item, i) => {
+              {parmesan.map((item, i) => {
                 return (
                   <div key={i} className="mb-8 md:mb-10">
                     <p className="font-display text-xl text-gray-600 tracking-wider leading-6 mb-2">

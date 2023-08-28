@@ -239,14 +239,14 @@ const Page = ({ data }) => {
         <div className="text-white font-display text-xl tracking-wider leading-5 mb-4">
           Menu
         </div>
-        <h1 className="text-white mb-0">Boxed Lunch</h1>
+        <h1 className="text-white mb-0">Corporate Catering</h1>
       </HeroFullWidth>
 
       <div className="pt-14 md:pt-18">
         <section id="boxed-lunches" className="mb-12 md:mb-16">
           <div className="container">
             <header className="mb-14">
-              <h2>Boxed Lunches</h2>
+              <h2>Corporate Catering Lunches</h2>
               <p className="font-heading font-bold mb-5">
                 <i>
                   Minimum of 25 each is required for order. May select from all
