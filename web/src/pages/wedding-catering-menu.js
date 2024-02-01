@@ -21,7 +21,8 @@ const Page = ({ data }) => {
   const passedHorsDeouvres = [
     {
       name: "Sausage Stuffed Mushroom",
-      description: "cremini duxelle, goat cheese, caramelized onion, parme- san, basil",
+      description:
+        "cremini duxelle, goat cheese, caramelized onion, parme- san, basil",
     },
     {
       name: "Bacon Wrapped Date",
@@ -49,15 +50,18 @@ const Page = ({ data }) => {
     },
     {
       name: "Steak & Brie Crostini",
-      description: "NY strip steak, brie, caramelized onion, Dijon, toasted baguette, parsley",
+      description:
+        "NY strip steak, brie, caramelized onion, Dijon, toasted baguette, parsley",
     },
     {
       name: "Pork Belly Bao Bun",
-      description: "Braised pork belly, sweet & spicy glaze, pickled vegetables, cilantro, steamed bun",
+      description:
+        "Braised pork belly, sweet & spicy glaze, pickled vegetables, cilantro, steamed bun",
     },
     {
       name: "Filet Mignon Skewer",
-      description: "dry rubbed beef tenderloin, red chimichurri, micro cilantro",
+      description:
+        "dry rubbed beef tenderloin, red chimichurri, micro cilantro",
     },
     {
       name: "Poke Crisp",
@@ -79,10 +83,11 @@ const Page = ({ data }) => {
       description:
         "pesto, heirloom cherry tomato, pearl mozzarella, ciabatta crostini, balsamic reduction, basil",
     },
-    
+
     {
       name: "Spam Musubi",
-      description: "fried spam, hoisin ginger glaze, sushi rice, seaweed, furikake",
+      description:
+        "fried spam, hoisin ginger glaze, sushi rice, seaweed, furikake",
     },
   ];
 
@@ -97,7 +102,6 @@ const Page = ({ data }) => {
       description:
         "locally sourced vegetables, hummus, spinach & artichoke dip, cucumber tzatziki, olives, artichoke hearts, warm naan, lavash",
     },
-   
   ];
 
   const buffetSalads = [
@@ -125,8 +129,7 @@ const Page = ({ data }) => {
     },
     {
       name: "Farmer’s Market Medley ",
-      description:
-        "sauteed seasonal vegetables, garlic, fine herbs, butter",
+      description: "sauteed seasonal vegetables, garlic, fine herbs, butter",
     },
     {
       name: "Roasted Heirloom Carrots",
@@ -135,7 +138,8 @@ const Page = ({ data }) => {
     },
     {
       name: "Roasted Vegetable Platter",
-      description: "seasonal squash, asparagus, broccolini, bell pepper, mush- rooms, balsamic vinegar",
+      description:
+        "seasonal squash, asparagus, broccolini, bell pepper, mush- rooms, balsamic vinegar",
     },
   ];
 
@@ -146,7 +150,8 @@ const Page = ({ data }) => {
     },
     {
       name: "Roasted Potatoes",
-      description: "fingerling potatoes, rosemary, parsley, garlic, Calabrian chili oil",
+      description:
+        "fingerling potatoes, rosemary, parsley, garlic, Calabrian chili oil",
     },
     {
       name: "Citrus Risotto",
@@ -154,7 +159,8 @@ const Page = ({ data }) => {
     },
     {
       name: "Pesto Primavera Orzo",
-      description: "orzo pasta, pesto, artichoke heart, blistered cherry tomato, toasted pine nuts",
+      description:
+        "orzo pasta, pesto, artichoke heart, blistered cherry tomato, toasted pine nuts",
     },
   ];
 
@@ -264,8 +270,7 @@ const Page = ({ data }) => {
   const platedMains = [
     {
       name: "Roasted Chicken Breast",
-      description:
-        "Jidori airline chicken breast, seasonal chutney",
+      description: "Jidori airline chicken breast, seasonal chutney",
     },
     {
       name: "Seared Salmon",
@@ -282,8 +287,7 @@ const Page = ({ data }) => {
     },
     {
       name: "Seared Filet Mignon",
-      description:
-        "7oz center cut filet mignon, green peppercorn cream sauce",
+      description: "7oz center cut filet mignon, green peppercorn cream sauce",
     },
     {
       name: "Split Maine Lobster Tail",
@@ -297,8 +301,7 @@ const Page = ({ data }) => {
     },
     {
       name: "Seared Polenta Cake",
-      description:
-        "Polenta, thyme, tomato & fennel ragout, Parmesan Reggiano",
+      description: "Polenta, thyme, tomato & fennel ragout, Parmesan Reggiano",
       plantBased: true,
     },
   ];
@@ -491,14 +494,14 @@ const Page = ({ data }) => {
                   stripHash
                 />
               </li>
-              <li>
+              {/* <li>
                 <AnchorLink
                   to={url + "#chef-interactive-stations"}
                   title="Chef Interactive Stations"
                   className="font-display text-lg lg:text-base tracking-wider leading-5 text-gray-600 lg:text-primary-400 hover:text-primary-400 lg:hover:bg-primary-50 no-underline lg:py-3 lg:px-6"
                   stripHash
                 />
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
@@ -733,7 +736,7 @@ const Page = ({ data }) => {
           </div>
         </section>
 
-        <section id="chef-interactive-stations" className="mb-8 md:mb-10">
+        {/* <section id="chef-interactive-stations" className="mb-8 md:mb-10">
           <div className="container">
             <header className="mb-14 md:mb-12">
               <h2>Chef Interactive Stations</h2>
@@ -762,7 +765,7 @@ const Page = ({ data }) => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <Divider />
 
