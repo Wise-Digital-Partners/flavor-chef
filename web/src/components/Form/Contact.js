@@ -95,18 +95,31 @@ export default class Form extends Component {
               <input name="bot-field" onChange={this.handleChange} />
             </label>
           </div>
-
-          <div className="field">
-            <label className="label" htmlFor="name">
-              Name*
-            </label>
-            <input
-              type="text"
-              name="name"
-              onChange={this.handleChange}
-              id="name"
-              required={true}
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-6 w-full">
+            <div className="field">
+              <label className="label" htmlFor="name">
+                Name*
+              </label>
+              <input
+                type="text"
+                name="name"
+                onChange={this.handleChange}
+                id="name"
+                required={true}
+              />
+            </div>
+            <div className="field">
+              <label className="label" htmlFor="lastName">
+                Last Name*
+              </label>
+              <input
+                type="text"
+                name="lastName"
+                onChange={this.handleChange}
+                id="lastName"
+                required={true}
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-6 w-full">
@@ -153,51 +166,78 @@ export default class Form extends Component {
               <option value="Social Event">Social Event</option>
               <option value="Corporate Occasion">Corporate Occasion</option>
               <option value="Food Truck">Food Truck Catering</option>
+              <option value="Delivery">Delivery</option>
               <option value="Other">Other</option>
             </select>
           </div>
 
           <div className="field">
+            <label className="label" htmlFor="service-style-of-interest">
+              Service Style of Interest*
+            </label>
+            <select
+              name="service-style-of-interest"
+              id="service-style-of-interest"
+              onBlur={this.handleChange}
+              required={true}
+            >
+              <option value="" disabled defaultValue>
+                Please Select One
+              </option>
+              <option value="Buffet">Buffet</option>
+              <option value="Plated">Plated</option>
+              <option value="Family Style">Family Style</option>
+              <option value="Food Truck">Food Truck</option>
+              <option value="Delivery Buffet">Delivery Buffet</option>
+              <option value="Heavy Appetizers Only">
+                Heavy Appetizers Only
+              </option>
+              <option value="Interactive Stations">Interactive Stations</option>
+              <option value="Not Sure Yet!">Not Sure Yet!</option>
+            </select>
+          </div>
+
+          <div className="field">
             <label className="label" htmlFor="event-location">
-              Event Location
+              Event Venue or City of Event*
             </label>
             <input
               type="text"
               name="event-location"
               onChange={this.handleChange}
               id="event-location"
-              required={false}
+              required={true}
             />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-6 w-full">
             <div className="field">
               <label className="label" htmlFor="date-of-event">
-                Date of Event
+                Date of Event*
               </label>
               <input
                 type="date"
                 name="date-of-event"
                 onChange={this.handleChange}
                 id="date-of-event"
-                required={false}
+                required={true}
               />
             </div>
             <div className="field">
               <label className="label" htmlFor="number-of-guests">
-                Number of Guests
+                Estimated Number of Guests*
               </label>
               <input
                 type="number"
                 name="number-of-guests"
                 onChange={this.handleChange}
                 id="number-of-guests"
-                required={false}
+                required={true}
               />
             </div>
           </div>
 
-          <div className="field">
+          {/* <div className="field">
             <label className="label" htmlFor="message">
               Anything else we should know?
             </label>
@@ -209,7 +249,7 @@ export default class Form extends Component {
               rows="4"
               required={false}
             />
-          </div>
+          </div> */}
 
           <ButtonSolid as="button" type="submit" text="Get Started" />
         </form>
