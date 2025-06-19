@@ -98,7 +98,7 @@ export default class Form extends Component {
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-6 w-full">
             <div className="field">
               <label className="label" htmlFor="name">
-                Name*
+                First Name*
               </label>
               <input
                 type="text"
@@ -237,9 +237,9 @@ export default class Form extends Component {
             </div>
           </div>
 
-          {/* <div className="field">
+          <div className="field">
             <label className="label" htmlFor="message">
-              Anything else we should know?
+              Additional Comments?
             </label>
             <textarea
               className="textarea"
@@ -249,7 +249,7 @@ export default class Form extends Component {
               rows="4"
               required={false}
             />
-          </div> */}
+          </div>
 
           <ButtonSolid as="button" type="submit" text="Get Started" />
         </form>
