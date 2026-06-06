@@ -15,8 +15,8 @@ const Page = ({ data }) => {
   return (
     <Layout>
       <SearchEngineOptimization
-        title="Palm Springs Catering | Flavor Chef Catering"
-        description="Make your next event unforgettable with Flavor Chef Catering, your full-service Palm Springs catering company. Enjoy chef-inspired, local ingredient dishes."
+        title="Palm Springs Private Event Catering | Flavor Chef"
+        description="Enjoy full-service Palm Springs catering with custom menus, professional staff, and unforgettable dining experiences tailored for weddings, private parties, corporate gatherings, and every special celebration worth remembering."
         openGraphImage={data.openGraphImage.publicURL}
         twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />

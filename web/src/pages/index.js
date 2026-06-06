@@ -35,8 +35,8 @@ const Page = ({ data }) => {
       headerHasBorder={true}
     >
       <SearchEngineOptimization
-        title="San Diego Full-Service Catering Company | Flavor Chef"
-        description="Make your next event unforgettable with Flavor Chef Catering, your San Diego full-service catering company. Enjoy chef-inspired, local ingredient dishes!"
+        title="Best Catering Company in San Diego | Flavor Chef Catering"
+        description="Flavor Chef Catering helps make every event memorable with handcrafted menus and attentive service across San Diego County. Book your catering consultation today and bring bold flavor to your next celebration."
         openGraphImage={data.openGraphImage.publicURL}
         twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />

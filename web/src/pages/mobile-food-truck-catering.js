@@ -31,8 +31,8 @@ const Page = ({ data }) => {
       headerHasBorder={true}
     >
       <SearchEngineOptimization
-        title="Mobile Food Truck Catering | Flavor Chef Catering"
-        description="Serve up a staff lunch, add a special touch to your party, or bring mobile food truck catering to your special occasion. The Flavor Mobile adds instant fun."
+        title="Mobile Food Truck Catering for Events in San Diego"
+        description="Host a memorable event with mobile food truck catering from Flavor Chef Catering, perfect for weddings, birthdays, festivals, corporate gatherings, and private occasions. Serve fresh, crowd-pleasing meals your guests will rave about long after the celebration ends."
         openGraphImage={data.openGraphImage.publicURL}
         twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />

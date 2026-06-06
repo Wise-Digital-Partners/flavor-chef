@@ -20,7 +20,8 @@ const Page = ({ data }) => {
   const passedHorsDeouvres = [
     {
       name: "Lollipop Lamb Chop",
-      description: "New Zealand grass fed lamb, rosemary, garlic, mustard dill sauce",
+      description:
+        "New Zealand grass fed lamb, rosemary, garlic, mustard dill sauce",
     },
     {
       name: "Mini Crab Cake",
@@ -38,11 +39,13 @@ const Page = ({ data }) => {
     },
     {
       name: "Pig in a Blanket",
-      description: "beef mini weenie, puff pastry, everything bagel seasoning, sweet & spicy BBQ",
+      description:
+        "beef mini weenie, puff pastry, everything bagel seasoning, sweet & spicy BBQ",
     },
     {
       name: "Stuffed Mushroom",
-      description: "remini duxelle, goat cheese, caramelized onion, parmesan, basil",
+      description:
+        "remini duxelle, goat cheese, caramelized onion, parmesan, basil",
     },
     {
       name: "Sweet Potato Empanada",
@@ -54,7 +57,7 @@ const Page = ({ data }) => {
       description:
         "braised beef short rib, cheddar cheese, jalapeno, avocado salsa verde, green onion",
     },
-    
+
     {
       name: "Avocado Toast",
       description:
@@ -62,7 +65,8 @@ const Page = ({ data }) => {
     },
     {
       name: "Filet Mignon Skewer",
-      description: "dry rubbed beef tenderloin, red chimichurri, micro cilantro",
+      description:
+        "dry rubbed beef tenderloin, red chimichurri, micro cilantro",
     },
     {
       name: "Chicken & Waffle",
@@ -76,7 +80,8 @@ const Page = ({ data }) => {
     },
     {
       name: "Duck Confit Crostini",
-      description: "apricot jalapeno jam, duck confit, toasted baguette, micro arugulai",
+      description:
+        "apricot jalapeno jam, duck confit, toasted baguette, micro arugulai",
     },
     {
       name: "Fresh Spring Roll",
@@ -89,27 +94,33 @@ const Page = ({ data }) => {
     },
     {
       name: "Steak & Brie Crostini",
-      description: "NY strip steak, brie, caramelized onion, Dijon, toasted baguette, parsley",
+      description:
+        "NY strip steak, brie, caramelized onion, Dijon, toasted baguette, parsley",
     },
     {
       name: "Mini Lobster Rolls",
-      description: "poached lobster, lemon-tarragon aioli, Hawaiian sweet roll, green onion",
+      description:
+        "poached lobster, lemon-tarragon aioli, Hawaiian sweet roll, green onion",
     },
     {
       name: "Spam Musubi",
-      description: "fried spam, hoisin ginger glaze, sushi rice, seaweed, furikake",
+      description:
+        "fried spam, hoisin ginger glaze, sushi rice, seaweed, furikake",
     },
     {
       name: "Stuffed Arancini",
-      description: "citrus risotto, mozzarella, panko breadcrumbs, marinara, Parmesan Reggiano, micro basil",
+      description:
+        "citrus risotto, mozzarella, panko breadcrumbs, marinara, Parmesan Reggiano, micro basil",
     },
     {
       name: "Chinese Chicken Lettuce Wrap",
-      description: "spiced chicken salad, bell pepper, carrot, green onion, chopped peanuts, iceberg lettuce wrap",
+      description:
+        "spiced chicken salad, bell pepper, carrot, green onion, chopped peanuts, iceberg lettuce wrap",
     },
     {
       name: "Pork Tostone",
-      description: "Mojo pork tenderloin, fried plantain, sweet Caribbean chutney",
+      description:
+        "Mojo pork tenderloin, fried plantain, sweet Caribbean chutney",
     },
     {
       name: "Wonton Wrapped Shrimp",
@@ -117,13 +128,14 @@ const Page = ({ data }) => {
     },
     {
       name: "Pork Belly Bao Bun",
-      description: "Braised pork belly, sweet & spicy glaze, pickled vegetables, cilantro, steamed bun",
+      description:
+        "Braised pork belly, sweet & spicy glaze, pickled vegetables, cilantro, steamed bun",
     },
     {
       name: "Tomato Fennel Bisque Shot",
-      description: "House made tomato & fennel bisque, micro basil, Parmesan crisp",
+      description:
+        "House made tomato & fennel bisque, micro basil, Parmesan crisp",
     },
-
   ];
 
   const appetizers = [
@@ -184,8 +196,8 @@ const Page = ({ data }) => {
       headerHasBorder={true}
     >
       <SearchEngineOptimization
-        title="Appetizer Catering Menu | Flavor Chef Catering"
-        description="Don't forget the appetizers. Select your choice of delectable small bites from the Flavor Chef Catering appetizer catering menu."
+        title="Finger Food Catering San Diego | Flavor Chef Catering"
+        description="Keep guests engaged with flavorful appetizers, eye-catching presentation, and unforgettable bites from Flavor Chef Catering, perfect for intimate gatherings and large celebrations across San Diego."
         openGraphImage={data.openGraphImage.publicURL}
         twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
